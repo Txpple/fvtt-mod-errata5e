@@ -1,0 +1,15 @@
+# The register check on every push and pull request: REGISTER.md parses and agrees with the code,
+# the manifest, the suites and VERSIONS.md. Offline, no dependencies.
+name: check
+on:
+  push:
+  pull_request:
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/check-register.mjs

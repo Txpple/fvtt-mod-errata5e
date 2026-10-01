@@ -1,0 +1,39 @@
+# The daily upstream watch: new versions of the packages we track, and the vendors' bug reports
+# matched to our issues. It writes watch/ and VERSIONS.md and commits them; with --notify it keeps
+# one open issue per version review due. It needs only Node and the workflow's own token, so no
+# machine of ours has to be on. Judging the pairs it finds is a person's (or the routine's) job.
+name: upstream watch
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily, 06:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency: upstream-watch
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Scan
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/upstream-watch.mjs --json --notify | tee watch-summary.json
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add watch VERSIONS.md
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          msg=$(node -e '
+            const s = JSON.parse(require("fs").readFileSync("watch-summary.json", "utf8"));
+            const d = new Date().toISOString().slice(0, 10);
+            const v = s.newVersions.length ? `${s.newVersions.length} new version(s): ${s.newVersions.join(", ")}` : "no new versions";
+            console.log(`chore: upstream watch ${d} - ${v}, ${s.toJudge + s.possible} to judge, ${s.newlyClosed} cited report(s) newly closed, ${s.newToday} new to us`);
+          ')
+          git commit -m "$msg"
+          git push

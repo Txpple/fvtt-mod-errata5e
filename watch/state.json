@@ -1,0 +1,1378 @@
+{
+ "lastScan": "2026-10-01",
+ "judged": {
+  "260=foundryvtt-premium-content#1666": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Line break in hexblood's eerie token"
+  },
+  "424=foundryvtt-premium-content#1687": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Spectator has minor text typo under Eye Rays referring to beholder"
+  },
+  "369=foundryvtt-premium-content#1687": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Spectator has minor text typo under Eye Rays referring to beholder"
+  },
+  "143=foundryvtt-premium-content#1693": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Kraken's tentacle has empty line after text and weird text formatting"
+  },
+  "481=foundryvtt-premium-content#1727": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Arch-hag's malicious magic has feature name in text"
+  },
+  "395=foundryvtt-premium-content#1773": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Gulthias Blight actions"
+  },
+  "500=foundryvtt-premium-content#1777": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Pixie token art incorrectly framed by ring"
+  },
+  "287=foundryvtt-premium-content#1669": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]:  Backgrounds missing enrichers for items"
+  },
+  "289=foundryvtt-premium-content#1700": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Various subject images have wrong filename"
+  },
+  "284=foundryvtt-premium-content#1700": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Various subject images have wrong filename"
+  },
+  "279=foundryvtt-premium-content#1700": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Various subject images have wrong filename"
+  },
+  "543=foundryvtt-premium-content#1718": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Quiver of Ehlonna's own capacity is still unset after #1253 — parent container is unlimited"
+  },
+  "62=foundryvtt-premium-content#1721": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Example characters (Actors compendium) have incorrect spell preparation flags and attribution"
+  },
+  "34=foundryvtt-premium-content#1721": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Example characters (Actors compendium) have incorrect spell preparation flags and attribution"
+  },
+  "21=foundryvtt-premium-content#1721": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Example characters (Actors compendium) have incorrect spell preparation flags and attribution"
+  },
+  "398=foundryvtt-premium-content#1722": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Arcane Trickster has no cantrip advancement, and cantrip scale identifiers are inconsistent"
+  },
+  "347=foundryvtt-premium-content#1772": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]:  Adjustments Identified for actors"
+  },
+  "220=foundryvtt-premium-content#1792": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Swallow feature's save DC calculations are swapped"
+  },
+  "99=foundryvtt/dnd5e#5350": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "Unarmed Strike for Monk not scaling with Dex"
+  },
+  "453=foundryvtt/dnd5e#5350": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "Unarmed Strike for Monk not scaling with Dex"
+  },
+  "459=foundryvtt/dnd5e#5350": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "Unarmed Strike for Monk not scaling with Dex"
+  },
+  "465=foundryvtt/dnd5e#5350": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "Unarmed Strike for Monk not scaling with Dex"
+  },
+  "327=foundryvtt/dnd5e#6110": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "Tarrasque token (Compendium Content)"
+  },
+  "636=foundryvtt/dnd5e#6407": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "Shillelagh + True Strike Causing Double Modifier Use"
+  },
+  "181=foundryvtt/dnd5e#5554": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "Add Forgotten Adventures tokens for new SRD 5.2 creatures"
+  },
+  "506=foundryvtt/dnd5e#5554": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "Add Forgotten Adventures tokens for new SRD 5.2 creatures"
+  },
+  "35=foundryvtt-premium-content#1434": {
+   "verdict": "same",
+   "on": "2026-10-01",
+   "title": "[Bug]: Barbarian Rage shouldn't be automatically applied; it causes negative duration."
+  },
+  "332=foundryvtt/dnd5e#7251": {
+   "verdict": "same",
+   "on": "2026-10-01",
+   "title": "Ghost ability missing recharge"
+  },
+  "712=foundryvtt-premium-content#1772": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]:  Adjustments Identified for actors"
+  },
+  "722=foundryvtt-premium-content#1692": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]:  Warrior Commander uses Warrior Veteran's token artwork"
+  },
+  "721=foundryvtt-premium-content#1696": {
+   "verdict": "different",
+   "on": "2026-10-01",
+   "title": "[Bug]: Warrior Commander's Maneuver should only be part of the greatsword, not its own action"
+  }
+ },
+ "seen": {
+  "foundryvtt/dnd5e#7016": {
+   "firstSeen": "2026-10-01",
+   "title": "[Compendium Content] [D&D 2024] Some Prototype Tokens have incorrect settings",
+   "package": "dnd5e",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7016"
+  },
+  "foundryvtt-premium-content#1709": {
+   "firstSeen": "2026-10-01",
+   "title": "[Bug]:  Mage Armor dissapears from Spell List when Undead Patron warlock levels to level 5",
+   "package": "dnd-ravenloft-horrors-within",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1709"
+  },
+  "foundryvtt-premium-content#1664": {
+   "firstSeen": "2026-10-01",
+   "title": "[Bug]: Error in enricher in har'akir adventure",
+   "package": "dnd-ravenloft-horrors-within",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1664"
+  },
+  "foundryvtt-premium-content#1662": {
+   "firstSeen": "2026-10-01",
+   "title": "[Bug]: Embedded stat block styling has low contrast text (using dark mode)",
+   "package": "dnd-ravenloft-horrors-within",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1662"
+  },
+  "foundryvtt-premium-content#927": {
+   "firstSeen": "2026-10-01",
+   "title": "[Bug]: One of the skellyboy tokens in the Dungeon Master's Guide has the wrong ring scale correction",
+   "package": "dnd-dungeon-masters-guide",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/927"
+  }
+ },
+ "cited": {
+  "foundryvtt-premium-content#1661": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Ravenloft: The Horrors Within broken links and missing images",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1661",
+   "package": "dnd-ravenloft-horrors-within",
+   "ours": [
+    727
+   ]
+  },
+  "foundryvtt-premium-content#1751": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Bodytaker Podling bio referencing wrong journal content",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1751",
+   "package": "dnd-ravenloft-horrors-within",
+   "ours": [
+    726
+   ]
+  },
+  "foundryvtt-premium-content#1732": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Necklace of Prayer Beads is priced like a consumable but shouldn't be",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1732",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    725
+   ]
+  },
+  "foundryvtt-premium-content#1697": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Archpriest's spellcasting has superfluous \"spellcasting\" in description",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1697",
+   "package": "dnd-monster-manual",
+   "ours": [
+    724,
+    723
+   ]
+  },
+  "foundryvtt-premium-content#1692": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]:  Warrior Commander uses Warrior Veteran's token artwork",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1692",
+   "package": "dnd-monster-manual",
+   "ours": [
+    724,
+    721
+   ]
+  },
+  "foundryvtt-premium-content#1696": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Warrior Commander's Maneuver should only be part of the greatsword, not its own action",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1696",
+   "package": "dnd-monster-manual",
+   "ours": [
+    724,
+    722
+   ]
+  },
+  "foundryvtt-premium-content#1684": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Martial Training doesn't have an Advancement",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1684",
+   "package": "dnd-players-handbook",
+   "ours": [
+    720
+   ]
+  },
+  "foundryvtt-premium-content#1576": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: light source use is inconsistent",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1576",
+   "package": "dnd-players-handbook",
+   "ours": [
+    719,
+    718
+   ]
+  },
+  "foundryvtt/dnd5e#6690": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "Hammer of Thunderbolts paired attunement results in wrong Strength scores",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/6690",
+   "package": "dnd5e",
+   "ours": [
+    717,
+    716
+   ]
+  },
+  "foundryvtt-premium-content#1528": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Hammer of Thunderbolts paired attunement results in wrong Strength scores",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1528",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    717,
+    716
+   ]
+  },
+  "foundryvtt/dnd5e#7251": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "Ghost ability missing recharge",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7251",
+   "package": "dnd5e",
+   "ours": [
+    332
+   ]
+  },
+  "foundryvtt-premium-content#1784": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Silvered Weapon enchantment should set \"magical\" on item",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1784",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    714
+   ]
+  },
+  "foundryvtt-premium-content#1650": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Silvered weapon enchantment does not set magical property",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1650",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    714
+   ]
+  },
+  "foundryvtt-premium-content#1792": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Swallow feature's save DC calculations are swapped",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1792",
+   "package": "dnd-monster-manual",
+   "ours": [
+    712,
+    713
+   ]
+  },
+  "foundryvtt-premium-content#1747": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Speed concatenating instead of increasing",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1747",
+   "package": "dnd-players-handbook",
+   "ours": [
+    709
+   ]
+  },
+  "foundryvtt-premium-content#1794": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: PhB Barbarian Fast Movement adds speed wrong",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1794",
+   "package": "dnd-players-handbook",
+   "ours": [
+    709
+   ]
+  },
+  "foundryvtt-premium-content#1721": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Example characters (Actors compendium) have incorrect spell preparation flags and attribution",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1721",
+   "package": "dnd-players-handbook",
+   "ours": [
+    701,
+    54
+   ]
+  },
+  "foundryvtt/dnd5e#7446": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "Pseudodragon 2024 Sting activity applies half damage on a successful save",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7446",
+   "package": "dnd5e",
+   "ours": [
+    691,
+    690
+   ]
+  },
+  "foundryvtt-premium-content#1109": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-08-21",
+   "title": "[Bug]: Pact of the chain set up to consume a spell slot",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1109",
+   "package": "dnd-players-handbook",
+   "ours": [
+    673
+   ]
+  },
+  "foundryvtt-premium-content#1497": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-06-29",
+   "title": "[Bug]: Damage activities don't allow for critical rolls. (Attack damage riders)",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1497",
+   "package": "dnd-players-handbook",
+   "ours": [
+    671,
+    649,
+    648,
+    633,
+    632,
+    432,
+    430,
+    427,
+    425,
+    422,
+    419,
+    417
+   ]
+  },
+  "foundryvtt-premium-content#1535": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-06-26",
+   "title": "[Bug]: Sorcerer's Font of Magic's activity `Regain Sorcery Points` is misconfigured",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1535",
+   "package": "dnd-players-handbook",
+   "ours": [
+    670
+   ]
+  },
+  "foundryvtt-premium-content#1698": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Some Eldritch Invocations are missing their item requirements configured",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1698",
+   "package": "dnd-players-handbook",
+   "ours": [
+    666
+   ]
+  },
+  "foundryvtt-premium-content#1407": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-07-01",
+   "title": "[Bug]: Investment of the Chain Master's summon activities don't include additional familiar options",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1407",
+   "package": "dnd-players-handbook",
+   "ours": [
+    658
+   ]
+  },
+  "foundryvtt-premium-content#1722": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Arcane Trickster has no cantrip advancement, and cantrip scale identifiers are inconsistent",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1722",
+   "package": "dnd-players-handbook",
+   "ours": [
+    653
+   ]
+  },
+  "foundryvtt-premium-content#1505": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-06-26",
+   "title": "[Bug]: Darkvison spell effect gives wrong darkvision range",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1505",
+   "package": "dnd-players-handbook",
+   "ours": [
+    631
+   ]
+  },
+  "foundryvtt/dnd5e#6407": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "Shillelagh + True Strike Causing Double Modifier Use",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/6407",
+   "package": "dnd5e",
+   "ours": [
+    628,
+    627
+   ]
+  },
+  "foundryvtt/dnd5e#6857": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-03-31",
+   "title": "Bestow Curse (2024)'s \"Curse Ability\" activity does not include the potential effects",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/6857",
+   "package": "dnd5e",
+   "ours": [
+    610
+   ]
+  },
+  "foundryvtt-premium-content#1140": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-09-15",
+   "title": "[Bug]: Several potions labeled as costing an Action",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1140",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    592
+   ]
+  },
+  "foundryvtt-premium-content#1379": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-10-13",
+   "title": "[Bug]: Octopus should not have Escape Check in Tentacles feature",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1379",
+   "package": "dnd-monster-manual",
+   "ours": [
+    590
+   ]
+  },
+  "foundryvtt-premium-content#1269": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-09-15",
+   "title": "[Bug]: Chuul's Paralyzing Tentacles has area of effect but shouldn't",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1269",
+   "package": "dnd-monster-manual",
+   "ours": [
+    588
+   ]
+  },
+  "foundryvtt-premium-content#1101": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-09-15",
+   "title": "[Bug]: Troll has incorrect regeneration text",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1101",
+   "package": "dnd-monster-manual",
+   "ours": [
+    587,
+    585
+   ]
+  },
+  "foundryvtt-premium-content#1093": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-10-13",
+   "title": "[Bug]: Priest and Priest Acolyte wrong spells",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1093",
+   "package": "dnd-monster-manual",
+   "ours": [
+    583
+   ]
+  },
+  "foundryvtt-premium-content#1300": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-10-13",
+   "title": "[Bug]: Gnoll warrior is missing rampage ability",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1300",
+   "package": "dnd-monster-manual",
+   "ours": [
+    581
+   ]
+  },
+  "foundryvtt-premium-content#1236": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-09-15",
+   "title": "[Bug]: Giant Venomous Snake's attack should have 10 ft. reach",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1236",
+   "package": "dnd-monster-manual",
+   "ours": [
+    580
+   ]
+  },
+  "foundryvtt-premium-content#1373": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-10-13",
+   "title": "[Bug]: Badger and Giant Badger are missing poison resistance.",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1373",
+   "package": "dnd-monster-manual",
+   "ours": [
+    574,
+    572
+   ]
+  },
+  "foundryvtt-premium-content#1049": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-09-15",
+   "title": "[Bug]: Ancient Gold Dragon incorrectly configured.",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1049",
+   "package": "dnd-monster-manual",
+   "ours": [
+    571,
+    569
+   ]
+  },
+  "foundryvtt-premium-content#1483": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Sentinel Shield Missing Automation",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1483",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    558,
+    556
+   ]
+  },
+  "foundryvtt-premium-content#1161": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-09-15",
+   "title": "[Bug]: Vicious Weapon enchantement not adding additional dice",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1161",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    555
+   ]
+  },
+  "foundryvtt-premium-content#1737": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Conjure Animals Save activity marked as half damage",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1737",
+   "package": "dnd-players-handbook",
+   "ours": [
+    550
+   ]
+  },
+  "foundryvtt-premium-content#1425": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Heward's Handy Haversack is not set up correctly",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1425",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    543
+   ]
+  },
+  "foundryvtt-premium-content#1660": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Robe of Stars is missing active effect for +1 to saving throws",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1660",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    542
+   ]
+  },
+  "foundryvtt-premium-content#1675": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-06-30",
+   "title": "[Bug]: Contagion spell has half damage on save configured, should be \"no damage\"",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1675",
+   "package": "dnd-players-handbook",
+   "ours": [
+    541
+   ]
+  },
+  "foundryvtt-premium-content#1385": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Ioun Stone of Fortitude has the bonus to str when it should be con",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1385",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    536
+   ]
+  },
+  "foundryvtt-premium-content#1113": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-08-21",
+   "title": "[Bug]: Phantasmal Killer does not have its Challenge Ability set",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1113",
+   "package": "dnd-players-handbook",
+   "ours": [
+    527
+   ]
+  },
+  "foundryvtt-premium-content#1247": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-08-20",
+   "title": "[Bug]: Some spells have incorrect durations",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1247",
+   "package": "dnd-players-handbook",
+   "ours": [
+    524
+   ]
+  },
+  "foundryvtt-premium-content#1243": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-09-15",
+   "title": "[Bug]: Boots of Speed is an Action instead of Bonus Action",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1243",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    510
+   ]
+  },
+  "foundryvtt-premium-content#1646": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Actors compendium still includes placeholder actors",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1646",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    508
+   ]
+  },
+  "foundryvtt-premium-content#1736": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Nimble Escape and Shadow Stealth apply a non-2024 \"hiding\" status, roll no check, and Nimble Escape has no Disengage",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1736",
+   "package": "dnd-monster-manual",
+   "ours": [
+    507
+   ]
+  },
+  "foundryvtt/dnd5e#7348": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "remove emanation area from the Bugbear Stalker's quick grapple feature",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7348",
+   "package": "dnd5e",
+   "ours": [
+    506
+   ]
+  },
+  "foundryvtt-premium-content#1772": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]:  Adjustments Identified for actors",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1772",
+   "package": "dnd-monster-manual",
+   "ours": [
+    506,
+    505,
+    481,
+    480,
+    479,
+    478,
+    477,
+    476,
+    475,
+    474,
+    473,
+    472,
+    471,
+    470,
+    469,
+    467,
+    466,
+    464,
+    463,
+    461,
+    460,
+    458,
+    457,
+    455,
+    454,
+    452,
+    451,
+    450,
+    448,
+    447,
+    445,
+    444,
+    442,
+    440,
+    436,
+    434,
+    433,
+    431,
+    429,
+    428,
+    426,
+    424,
+    423,
+    421,
+    420,
+    418,
+    416,
+    415,
+    413,
+    412,
+    410,
+    408,
+    407,
+    405,
+    404,
+    402,
+    400,
+    399,
+    397,
+    395,
+    394,
+    392,
+    390,
+    388,
+    387,
+    386,
+    384,
+    382,
+    381,
+    379,
+    378,
+    376,
+    374,
+    372,
+    371,
+    369,
+    368,
+    366,
+    365,
+    363,
+    361,
+    360,
+    358,
+    355,
+    354,
+    352,
+    350,
+    345,
+    343,
+    342,
+    340,
+    338,
+    330,
+    329,
+    327,
+    325,
+    324,
+    322,
+    321,
+    319,
+    317,
+    315,
+    314,
+    312,
+    310,
+    309,
+    308,
+    307,
+    306,
+    305,
+    303,
+    301,
+    298,
+    296,
+    293,
+    290,
+    288,
+    285,
+    283,
+    280,
+    278,
+    275,
+    273,
+    270,
+    268,
+    265,
+    263,
+    261,
+    258,
+    256,
+    253,
+    251,
+    248,
+    246,
+    243,
+    240,
+    238,
+    230,
+    227,
+    225,
+    222,
+    220,
+    217,
+    214,
+    212,
+    209,
+    207,
+    204,
+    201,
+    199,
+    196,
+    193,
+    191,
+    188,
+    186,
+    183,
+    176,
+    173,
+    171,
+    168,
+    166,
+    163,
+    160,
+    158,
+    155,
+    153,
+    152,
+    151,
+    150,
+    149,
+    148,
+    147,
+    146,
+    145,
+    144,
+    143,
+    142,
+    141,
+    140,
+    139,
+    138,
+    137,
+    136,
+    135,
+    134,
+    133,
+    132,
+    131,
+    130,
+    129,
+    128,
+    127,
+    126,
+    125,
+    124,
+    123,
+    122,
+    121,
+    120,
+    119,
+    118,
+    117,
+    116,
+    115,
+    114,
+    113,
+    112,
+    111,
+    110,
+    109,
+    108,
+    107,
+    106,
+    105,
+    104,
+    103
+   ]
+  },
+  "foundryvtt-premium-content#1352": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-10-13",
+   "title": "[Bug]: Two ErrataV1 are missing from the MM",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1352",
+   "package": "dnd-monster-manual",
+   "ours": [
+    486
+   ]
+  },
+  "foundryvtt-premium-content#1769": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Modron's missing immunity to charmed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1769",
+   "package": "dnd-monster-manual",
+   "ours": [
+    463,
+    461,
+    460,
+    458,
+    360
+   ]
+  },
+  "foundryvtt-premium-content#1116": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-08-21",
+   "title": "[Bug]: Update Champion's Survivor passive to make use of Advantage to death saving throws via an active effect",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1116",
+   "package": "dnd-players-handbook",
+   "ours": [
+    446
+   ]
+  },
+  "foundryvtt-premium-content#1771": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Animal Lord missing immunities",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1771",
+   "package": "dnd-monster-manual",
+   "ours": [
+    420
+   ]
+  },
+  "foundryvtt/dnd5e#7118": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "SRD 5.2 Reckless Attack effect has no associated activity, and is not applied to actor",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7118",
+   "package": "dnd5e",
+   "ours": [
+    411
+   ]
+  },
+  "foundryvtt-premium-content#1774": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Eldritch Knight has wrong number of prepared spells at level 16",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1774",
+   "package": "dnd-players-handbook",
+   "ours": [
+    398
+   ]
+  },
+  "foundryvtt-premium-content#1770": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Gorgon is missing its immunity to Exhaustion and Petrified",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1770",
+   "package": "dnd-monster-manual",
+   "ours": [
+    388,
+    387
+   ]
+  },
+  "foundryvtt-premium-content#1689": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Indomitable use activity does not consume item use",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1689",
+   "package": "dnd-players-handbook",
+   "ours": [
+    383
+   ]
+  },
+  "foundryvtt-premium-content#1791": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Monster Manual Statblock Discrepancies",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1791",
+   "package": "dnd-monster-manual",
+   "ours": [
+    368,
+    366,
+    360,
+    358,
+    356,
+    355,
+    354,
+    352,
+    350,
+    348,
+    347,
+    345,
+    343,
+    342,
+    340,
+    248
+   ]
+  },
+  "foundryvtt-premium-content#1717": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Dungeoneer's Pack has unlimited capacity — legacy capacity.value is stranded by a count: null stamp",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1717",
+   "package": "dnd-players-handbook",
+   "ours": [
+    357
+   ]
+  },
+  "foundryvtt/dnd5e#6669": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "SRD weapons with both range and reach have their attacks activity set to melee instead of default",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/6669",
+   "package": "dnd5e",
+   "ours": [
+    349,
+    346
+   ]
+  },
+  "foundryvtt-premium-content#1574": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-06-25",
+   "title": "[Bug]: Starting equipment of Backgrounds and Classes does not include gold for option A",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1574",
+   "package": "dnd-players-handbook",
+   "ours": [
+    344
+   ]
+  },
+  "foundryvtt-premium-content#1711": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Roper's Reel should be action, not bonus action",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1711",
+   "package": "dnd-monster-manual",
+   "ours": [
+    342,
+    340
+   ]
+  },
+  "foundryvtt-premium-content#1734": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Roper's tentacle Grappled effect should also apply Poisoned",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1734",
+   "package": "dnd-monster-manual",
+   "ours": [
+    342,
+    340
+   ]
+  },
+  "foundryvtt-premium-content#1383": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-10-13",
+   "title": "[Bug]: Several origin background features refer to items from SRD instead of PHB",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1383",
+   "package": "dnd-players-handbook",
+   "ours": [
+    339
+   ]
+  },
+  "foundryvtt-premium-content#1596": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-06-24",
+   "title": "[Bug]: Boon of Fate & Boon of Irresistible Offense don't have level prerequisite set",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1596",
+   "package": "dnd-players-handbook",
+   "ours": [
+    323
+   ]
+  },
+  "foundryvtt-premium-content#1790": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Ravenloft: The Horrors Within Statblock Discrepancies",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1790",
+   "package": "dnd-ravenloft-horrors-within",
+   "ours": [
+    237
+   ]
+  },
+  "foundryvtt-premium-content#1724": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: The Area Size formula within Team Tactics has references to missing data",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1724",
+   "package": "dnd-heroes-faerun",
+   "ours": [
+    202
+   ]
+  },
+  "foundryvtt/dnd5e#7551": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "Statblock mistake in modern content",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7551",
+   "package": "dnd5e",
+   "ours": [
+    146
+   ]
+  },
+  "foundryvtt/dnd5e#7185": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "Young Red Dragon - Fire Breath action incorrect",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7185",
+   "package": "dnd5e",
+   "ours": [
+    125
+   ]
+  },
+  "foundryvtt-premium-content#1742": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Adult Blue Dragon's lightning breath recharge should be 5-6",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1742",
+   "package": "dnd-monster-manual",
+   "ours": [
+    104,
+    103
+   ]
+  },
+  "foundryvtt/dnd5e#6283": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "Incomplete Active Effect links for certain items (spells)",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/6283",
+   "package": "dnd5e",
+   "ours": [
+    98,
+    97
+   ]
+  },
+  "foundryvtt/dnd5e#7217": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "5.2 SRD: Sorcerer class has no advancement to replace a Metamagic option on level up",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7217",
+   "package": "dnd5e",
+   "ours": [
+    96
+   ]
+  },
+  "foundryvtt-premium-content#1685": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Sorcerer class has no advancement to replace a Metamagic option on level up",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1685",
+   "package": "dnd-players-handbook",
+   "ours": [
+    95
+   ]
+  },
+  "foundryvtt-premium-content#1429": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-07-01",
+   "title": "[Bug]: Monk's Stunning Strike effects have wrong duration",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1429",
+   "package": "dnd-players-handbook",
+   "ours": [
+    85
+   ]
+  },
+  "foundryvtt-premium-content#1436": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: College of Dance Bard feature Dazzling Footwork Working with Shield Equiped",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1436",
+   "package": "dnd-players-handbook",
+   "ours": [
+    82
+   ]
+  },
+  "foundryvtt-premium-content#798": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-02-27",
+   "title": "[Bug]: Some effects, like that of Mind Sliver, have incorrect duration for \"before the end of your next turn\"",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/798",
+   "package": "dnd-players-handbook",
+   "ours": [
+    62
+   ]
+  },
+  "foundryvtt-premium-content#1420": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-07-02",
+   "title": "[Bug]: Multiple effects use incorrect durations",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1420",
+   "package": "dnd-players-handbook",
+   "ours": [
+    61,
+    60,
+    59
+   ]
+  },
+  "foundryvtt-premium-content#1344": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-10-13",
+   "title": "[Bug]: Items incorrectly set for apply half damage on a save when it should be no damage",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1344",
+   "package": "dnd-players-handbook",
+   "ours": [
+    41,
+    40
+   ]
+  },
+  "foundryvtt-premium-content#1694": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: PHB - Wildshape Transform Level Limit Incorrect",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1694",
+   "package": "dnd-players-handbook",
+   "ours": [
+    9
+   ]
+  },
+  "foundryvtt-premium-content#1690": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Epic Boon ASI wont allow increase above 20",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1690",
+   "package": "dnd-players-handbook",
+   "ours": [
+    8
+   ]
+  },
+  "foundryvtt-premium-content#1766": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Spell Mastery and Signature Spells enchantments use removed `system.preparation.mode` key",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1766",
+   "package": "dnd-players-handbook",
+   "ours": [
+    7,
+    6,
+    5,
+    4
+   ]
+  },
+  "foundryvtt/dnd5e#6132": {
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2025-09-09",
+   "title": "2024 Alchemist's Fire has \"Half Damage\" on save. Should be \"No Damage\"",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/6132",
+   "package": "dnd5e",
+   "ours": [
+    3
+   ]
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "fvtt-mod-errata5e",
+  "title": "Errata 5e",
+  "description": "Stopgap fixes for bugs in the content and packages we depend on — the premium dnd5e books first — held until the vendor ships its own and listed in the register; enabling the module turns every fix on. E-001, old effect keys reach their new fields: dnd5e 6.0 redirects an effect written against a moved key only one step, so a key that moved twice (the PHB's Roving: a 35-foot speed read 3510) lands on the wrong field; each redirect is followed to its end. E-002, Necrotic Shroud's clock: the PHB's Aasimar Necrotic Shroud frightens for a minute; the rule is until the end of the Aasimar's next turn. E-003, Pass without Trace's area: the PHB's Pass without Trace carries no area, so nothing can tell who stands in its aura; the spell is given its 30-foot Emanation.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Txpple"
+    }
+  ],
+  "esmodules": [
+    "scripts/errata5e.js"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0"
+        }
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "url": "https://github.com/Txpple/fvtt-mod-errata5e",
+  "manifest": "https://github.com/Txpple/fvtt-mod-errata5e/releases/latest/download/module.json",
+  "download": "https://github.com/Txpple/fvtt-mod-errata5e/releases/download/v1.0.0/fvtt-mod-errata5e.zip",
+  "readme": "https://github.com/Txpple/fvtt-mod-errata5e#readme",
+  "license": "MIT"
+}
