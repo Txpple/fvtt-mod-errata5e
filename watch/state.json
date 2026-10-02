@@ -164,6 +164,12 @@
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/7016"
   },
+  "foundryvtt-premium-content#1800": {
+   "firstSeen": "2026-10-02",
+   "title": "[Bug]: Iron Flask Table doesn't link to all possible actors",
+   "package": "dnd-dungeon-masters-guide",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1800"
+  },
   "foundryvtt-premium-content#1709": {
    "firstSeen": "2026-10-01",
    "title": "[Bug]:  Mage Armor dissapears from Spell List when Undead Patron warlock levels to level 5",
