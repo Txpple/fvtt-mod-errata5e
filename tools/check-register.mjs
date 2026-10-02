@@ -104,18 +104,6 @@ export function check() {
     if ( !live.some(r => (r.ID === `E-${m[1]}`) && (r.Issue === `#${m[2]}`)) ) errors.push(`tools/suites/${f} has no live register row E-${m[1]} on #${m[2]}`);
   }
 
-  // The module manifest describes every live fix and no retired one.
-  const manifest = read("module.json");
-  if ( manifest === null ) errors.push("module.json not found");
-  else {
-    const description = JSON.parse(manifest).description ?? "";
-    for ( const r of rows ) {
-      const named = new RegExp(`${r.ID}(?!\\d)`).test(description);
-      if ( (r.Status !== "retired") && !named ) errors.push(`module.json's description does not mention ${r.ID}`);
-      if ( (r.Status === "retired") && named ) errors.push(`module.json's description still mentions the retired ${r.ID}`);
-    }
-  }
-
   // VERSIONS.md tracks exactly the packages the watch does, in its order.
   try {
     const tracked = Object.keys(parseVersions(read("VERSIONS.md") ?? ""));

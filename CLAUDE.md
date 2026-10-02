@@ -72,7 +72,8 @@ straight from `scripts/`.
   named `e-NNN-<issue>-<name>.js` after the fix's register row and the issue it works around
   (`e-001-709-shim-chains.js`); the checker enforces the name. Each fix file registers its own
   hooks and no setting: the module is one switch, every fix on when it is enabled and nothing
-  touched when it is not. The fixes share nothing. Adding a fix file means editing `module.json`'s description, and the sandbox must be restarted.
+  touched when it is not. The fixes share nothing. The sandbox must be restarted after a fix
+  file is added.
 - A fix's live suite, when it has one, is `tools/suites/e-NNN-<issue>-<name>.mjs`, named like
   the fix file.
 - **Each fix file opens with a doc comment:** `E-NNN · NAME`, then **THE PROBLEM** (what is
@@ -94,13 +95,12 @@ straight from `scripts/`.
 `REGISTER.md` is the single, clean list of every vendor fix. It is **one Markdown table, one row
 per fix**, readable as-is by a person and parsed by `tools/check-register.mjs` (`parseRegister`
 is exported for any other tool, and `--json` emits the rows). **A fix is not done until its row
-is complete and lands in the same commit as the code,** with the fix named in `module.json`'s
-description. The README carries no per-fix table: it links to the register. The check fails on a
+is complete and lands in the same commit as the code.** The README carries no per-fix table and
+`module.json`'s description names no fix: both point at the register. The check fails on a
 row with no code behind it, a file in `scripts/patches/` or `tools/suites/` with no live row, a
 file not named after its row and issue, a fix file that does not open with its ID or that registers
-a setting, an entry point that does not import exactly the live files, a manifest description that
-misses a live fix or still names a retired one, and a VERSIONS.md that does not list the watch's
-packages.
+a setting, an entry point that does not import exactly the live files, and a VERSIONS.md that
+does not list the watch's packages.
 
 The table sits between `<!-- register:start -->` and `<!-- register:end -->`. The columns are
 fixed, in this order. Changing them means changing `COLUMNS` in the checker in the same commit.
