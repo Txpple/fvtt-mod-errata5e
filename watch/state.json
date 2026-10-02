@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-01",
+ "lastScan": "2026-10-02",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -306,17 +306,6 @@
     716
    ]
   },
-  "foundryvtt/dnd5e#7251": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
-   "title": "Ghost ability missing recharge",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/7251",
-   "package": "dnd5e",
-   "ours": [
-    332
-   ]
-  },
   "foundryvtt-premium-content#1784": {
    "state": "open",
    "reason": null,
@@ -347,8 +336,8 @@
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1792",
    "package": "dnd-monster-manual",
    "ours": [
-    712,
-    713
+    713,
+    712
    ]
   },
   "foundryvtt-premium-content#1747": {
@@ -1166,6 +1155,17 @@
    "package": "dnd-players-handbook",
    "ours": [
     339
+   ]
+  },
+  "foundryvtt/dnd5e#7251": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "Ghost ability missing recharge",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7251",
+   "package": "dnd5e",
+   "ours": [
+    332
    ]
   },
   "foundryvtt-premium-content#1596": {
