@@ -155,53 +155,87 @@
    "verdict": "different",
    "on": "2026-10-01",
    "title": "[Bug]: Warrior Commander's Maneuver should only be part of the greatsword, not its own action"
+  },
+  "145=foundryvtt-premium-content#1804": {
+   "verdict": "same",
+   "on": "2026-10-03",
+   "title": "[Bug]: Tyrannosaurus Rex Tail-attack reach"
+  },
+  "756=foundryvtt-premium-content#1805": {
+   "verdict": "same",
+   "on": "2026-10-03",
+   "title": "[Bug]: Wrong link on Deck of Illusions Roll table"
   }
  },
- "seen": {
+ "seen": {},
+ "cited": {
+  "foundryvtt-premium-content#1803": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Carrion Crawler's Paralyzing Tentacles has an emanation",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1803",
+   "package": "dnd-monster-manual",
+   "ours": [
+    763,
+    762
+   ]
+  },
   "foundryvtt/dnd5e#7016": {
-   "firstSeen": "2026-10-01",
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
    "title": "[Compendium Content] [D&D 2024] Some Prototype Tokens have incorrect settings",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7016",
    "package": "dnd5e",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/7016"
-  },
-  "foundryvtt-premium-content#1801": {
-   "firstSeen": "2026-10-03",
-   "title": "[Bug]: Dimension Door no Teleport Activity",
-   "package": "dnd-players-handbook",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1801"
-  },
-  "foundryvtt-premium-content#1800": {
-   "firstSeen": "2026-10-02",
-   "title": "[Bug]: Iron Flask Table doesn't link to all possible actors",
-   "package": "dnd-dungeon-masters-guide",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1800"
-  },
-  "foundryvtt-premium-content#1709": {
-   "firstSeen": "2026-10-01",
-   "title": "[Bug]:  Mage Armor dissapears from Spell List when Undead Patron warlock levels to level 5",
-   "package": "dnd-ravenloft-horrors-within",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1709"
-  },
-  "foundryvtt-premium-content#1664": {
-   "firstSeen": "2026-10-01",
-   "title": "[Bug]: Error in enricher in har'akir adventure",
-   "package": "dnd-ravenloft-horrors-within",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1664"
-  },
-  "foundryvtt-premium-content#1662": {
-   "firstSeen": "2026-10-01",
-   "title": "[Bug]: Embedded stat block styling has low contrast text (using dark mode)",
-   "package": "dnd-ravenloft-horrors-within",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1662"
+   "ours": [
+    758
+   ]
   },
   "foundryvtt-premium-content#927": {
-   "firstSeen": "2026-10-01",
+   "state": "open",
+   "reason": "reopened",
+   "closedAt": null,
    "title": "[Bug]: One of the skellyboy tokens in the Dungeon Master's Guide has the wrong ring scale correction",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/927",
    "package": "dnd-dungeon-masters-guide",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/927"
-  }
- },
- "cited": {
+   "ours": [
+    757
+   ]
+  },
+  "foundryvtt-premium-content#1800": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Iron Flask Table doesn't link to all possible actors",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1800",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    756
+   ]
+  },
+  "foundryvtt-premium-content#1805": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Wrong link on Deck of Illusions Roll table",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1805",
+   "package": "dnd-dungeon-masters-guide",
+   "ours": [
+    756
+   ]
+  },
+  "foundryvtt-premium-content#1801": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Dimension Door no Teleport Activity",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1801",
+   "package": "dnd-players-handbook",
+   "ours": [
+    755
+   ]
+  },
   "foundryvtt-premium-content#1661": {
    "state": "open",
    "reason": null,
@@ -269,17 +303,6 @@
    "ours": [
     724,
     722
-   ]
-  },
-  "foundryvtt-premium-content#1684": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
-   "title": "[Bug]: Martial Training doesn't have an Advancement",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1684",
-   "package": "dnd-players-handbook",
-   "ours": [
-    720
    ]
   },
   "foundryvtt-premium-content#1576": {
@@ -1222,6 +1245,17 @@
    "package": "dnd5e",
    "ours": [
     146
+   ]
+  },
+  "foundryvtt-premium-content#1804": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Tyrannosaurus Rex Tail-attack reach",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1804",
+   "package": "dnd-monster-manual",
+   "ours": [
+    145
    ]
   },
   "foundryvtt/dnd5e#7185": {

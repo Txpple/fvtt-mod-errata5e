@@ -5,4 +5,4 @@ One row per run of `node tools/upstream-watch.mjs`, oldest first; a rerun on the
 | Run | Versions newer than reviewed | To judge (same document + possible) | Cited reports newly closed | New to us today | Digest |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-02 | none | 0 + 0 | 0 | 1 | [yes](2026-10-02.md) |
-| 2026-10-03 | none | 0 + 0 | 0 | 1 | [yes](2026-10-03.md) |
+| 2026-10-03 | none | 0 + 0 | 0 | 0 | no |
