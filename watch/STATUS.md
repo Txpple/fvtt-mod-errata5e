@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-02. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-03. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | none |
 | **To judge** | 0 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 30 |
-| **New to us** | 6 open report(s), 1 first seen today |
+| **New to us** | 7 open report(s), 1 first seen today |
 
 ## To judge
 
@@ -66,6 +66,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-10-03 | `foundryvtt-premium-content#1801` [[Bug]: Dimension Door no Teleport Activity](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1801) | dnd-players-handbook |
 | 2026-10-02 | `foundryvtt-premium-content#1800` [[Bug]: Iron Flask Table doesn't link to all possible actors](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1800) | dnd-dungeon-masters-guide |
 | 2026-10-01 | `foundryvtt-premium-content#1662` [[Bug]: Embedded stat block styling has low contrast text (using dark mode)](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1662) | dnd-ravenloft-horrors-within |
 | 2026-10-01 | `foundryvtt-premium-content#1664` [[Bug]: Error in enricher in har'akir adventure](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1664) | dnd-ravenloft-horrors-within |
@@ -78,4 +79,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 22 | 13 | 0 | 8 | 1 |
-| foundryvtt/foundryvtt-premium-content | 76 | 70 | 0 | 21 | 5 |
+| foundryvtt/foundryvtt-premium-content | 77 | 70 | 0 | 21 | 6 |

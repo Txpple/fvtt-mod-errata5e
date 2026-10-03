@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-02",
+ "lastScan": "2026-10-03",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -163,6 +163,12 @@
    "title": "[Compendium Content] [D&D 2024] Some Prototype Tokens have incorrect settings",
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/7016"
+  },
+  "foundryvtt-premium-content#1801": {
+   "firstSeen": "2026-10-03",
+   "title": "[Bug]: Dimension Door no Teleport Activity",
+   "package": "dnd-players-handbook",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1801"
   },
   "foundryvtt-premium-content#1800": {
    "firstSeen": "2026-10-02",
