@@ -205,9 +205,9 @@ pending), and snapshot the new version after:
   `ERRATA_SNAPSHOT_DIR` overrides the location.
 - `node tools/vendor-review.mjs diff <package> <old> <new> --issues` lists every changed, added and
   removed document, and the open issues that cite one.
-- `node tools/vendor-review.mjs versions` lists the snapshots on disk. Baselines taken 2026-10-01:
-  dnd5e 6.0.5, PHB 2.2.0, MM 1.4.0, DMG 2.0.0, Heroes of Faerûn 1.1.0 and 2.0.0, Arcana Unleashed
-  1.0.1 and 1.0.2, Ravenloft 1.0.1 and 2.0.0.
+- `node tools/vendor-review.mjs versions` lists the snapshots on disk. Baselines taken 2026-10-03:
+  dnd5e 6.0.5, PHB 2.2.0, MM 1.4.0, DMG 2.0.0, Heroes of Faerûn 2.0.0, Arcana Unleashed 1.0.2 and
+  Ravenloft 2.0.0. No earlier version was kept, so a bug reported against one can't be re-run.
 
 **The review**, for each package that moved (steps 1 to 4, then 5):
 1. **Read what changed.** Run the diff, and read the package's own changelog: each book ships one
