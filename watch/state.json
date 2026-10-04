@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-03",
+ "lastScan": "2026-10-04",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -167,7 +167,20 @@
    "title": "[Bug]: Wrong link on Deck of Illusions Roll table"
   }
  },
- "seen": {},
+ "seen": {
+  "foundryvtt-premium-content#1807": {
+   "firstSeen": "2026-10-04",
+   "title": "[Bug]: Wrong Link on Ring of Resistance: Damage Type and Gemstone Roll Tabe",
+   "package": "dnd-dungeon-masters-guide",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1807"
+  },
+  "foundryvtt-premium-content#1806": {
+   "firstSeen": "2026-10-04",
+   "title": "[Bug]: Maps setup is inconsistent",
+   "package": "dnd-heroes-faerun",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1806"
+  }
+ },
  "cited": {
   "foundryvtt-premium-content#1803": {
    "state": "open",
