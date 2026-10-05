@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-04",
+ "lastScan": "2026-10-05",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -168,6 +168,12 @@
   }
  },
  "seen": {
+  "foundryvtt-premium-content#1808": {
+   "firstSeen": "2026-10-05",
+   "title": "[Bug]: No Spell-Links on Magic Item Staff of Woodlands",
+   "package": "dnd-dungeon-masters-guide",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1808"
+  },
   "foundryvtt-premium-content#1807": {
    "firstSeen": "2026-10-04",
    "title": "[Bug]: Wrong Link on Ring of Resistance: Damage Type and Gemstone Roll Tabe",
