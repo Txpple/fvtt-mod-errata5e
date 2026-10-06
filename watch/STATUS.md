@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-05. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-06. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | none |
 | **To judge** | 0 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 30 |
-| **New to us** | 3 open report(s), 1 first seen today |
+| **New to us** | 3 open report(s), 0 first seen today |
 
 ## To judge
 
@@ -75,4 +75,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 22 | 14 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 83 | 75 | 0 | 21 | 3 |
+| foundryvtt/foundryvtt-premium-content | 82 | 75 | 0 | 21 | 3 |
