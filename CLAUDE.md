@@ -266,8 +266,11 @@ stale header for a comment to explain.
   ours, in its Upstream row, and nowhere else: not in another issue's body, header or comment.
   Citations are code today, but they may be switched to links one day, and then every mention
   becomes a link; the data has to be clean before that switch. When one report covers several
-  documents (every modron, say), one tracking issue of ours cites it and lists the per-document
-  issues as sub-issues; each of those carries a "Tracked in #N" header row and cites nothing.
+  documents (every modron, say), one tracking issue of ours, labelled `tracking`, cites it and
+  lists the per-document issues as GitHub sub-issues; each of those carries a "Tracked in #N"
+  header row and cites nothing. A tracking issue has no test of its own (`check-issues` exempts
+  it), and at a version review a closed report cited on a tracking issue means re-checking its
+  sub-issues.
   When the same bug is filed once per book, the citation goes on the issue whose package the
   report is about (a premium-content report on the book copy, a dnd5e report on the SRD copy),
   and the twin's Other book row points at it. A closed `not a bug` issue is the one issue for

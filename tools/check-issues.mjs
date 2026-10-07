@@ -15,7 +15,10 @@
  *
  * A Live check row of "Not tested live" (record-live-check --result not-run) is a recorded
  * result, not a test: it is listed as a warning and does not fail the check. The watch's own
- * version-review trackers are not vendor issues and are skipped.
+ * version-review trackers are not vendor issues and are skipped. A `tracking` issue (one
+ * upstream report that covers several documents, with our per-document issues as sub-issues)
+ * has no test of its own: it is exempt from the per-issue rules, and counts for the
+ * one-issue-per-report rule like any other.
  */
 import { readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
@@ -25,6 +28,7 @@ import { issues, commentsByIssue } from "./lib/github.mjs";
 import { OURS, PACKAGES, parseVersions, mentions, refOf } from "./lib/upstream.mjs";
 
 const REVIEW_LABEL = "version review";
+const TRACKING_LABEL = "tracking";
 
 /** The cell of a header row (`| **Name** | cell |`), or null when the row is missing. */
 export function headerRow(body, name) {
@@ -105,7 +109,8 @@ async function main() {
   const versions = parseVersions(readFileSync(join(ROOT, "VERSIONS.md"), "utf8"));
   const [all, comments] = await Promise.all([issues(OURS, "state=all"), commentsByIssue(OURS)]);
   const vendor = all.filter(i => !i.labels.includes(REVIEW_LABEL)).sort((a, b) => a.number - b.number);
-  const findings = vendor.map(i => ({ number: i.number, state: i.state, title: i.title, ...checkIssue(i, comments[i.number] ?? [], versions) }));
+  const findings = vendor.map(i => ({ number: i.number, state: i.state, title: i.title,
+    ...(i.labels.includes(TRACKING_LABEL) ? { problems: [], warnings: [] } : checkIssue(i, comments[i.number] ?? [], versions)) }));
   const bad = findings.filter(f => f.problems.length);
   const warned = findings.filter(f => f.warnings.length);
 
