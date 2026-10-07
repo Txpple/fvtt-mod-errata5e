@@ -10,6 +10,9 @@
  *   node tools/check-issues.mjs          check, exit 1 on any problem
  *   node tools/check-issues.mjs --json   print every issue's findings as JSON (after checking)
  *
+ * It also holds the one-issue-per-upstream-report rule: a vendor report named (in any form) in the
+ * body or a comment of two issues of ours is a problem, listed by report with the issues.
+ *
  * A Live check row of "Not tested live" (record-live-check --result not-run) is a recorded
  * result, not a test: it is listed as a warning and does not fail the check. The watch's own
  * version-review trackers are not vendor issues and are skipped.
@@ -19,7 +22,7 @@ import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ROOT } from "./lib/workspace.mjs";
 import { issues, commentsByIssue } from "./lib/github.mjs";
-import { OURS, PACKAGES, parseVersions } from "./lib/upstream.mjs";
+import { OURS, PACKAGES, parseVersions, mentions, refOf } from "./lib/upstream.mjs";
 
 const REVIEW_LABEL = "version review";
 
@@ -78,6 +81,26 @@ export function checkIssue(issue, comments, versions) {
   return { problems, warnings };
 }
 
+/**
+ * Upstream reports named in more than one issue of ours (bodies and comments), as
+ * { report, issues } sorted by how many issues name them.
+ * @param {object[]} issues     shaped issues
+ * @param {object} comments     commentsByIssue()
+ */
+export function sharedReports(issues, comments) {
+  const by = new Map();
+  for ( const i of issues ) {
+    const texts = [i.body, ...(comments[i.number] ?? []).map(c => c.body)];
+    for ( const m of texts.flatMap(mentions) ) {
+      const r = refOf(m.repo, m.n);
+      if ( !by.has(r) ) by.set(r, new Set());
+      by.get(r).add(i.number);
+    }
+  }
+  return [...by].filter(([, s]) => s.size > 1).map(([report, s]) => ({ report, issues: [...s].sort((a, b) => a - b) }))
+    .sort((a, b) => (b.issues.length - a.issues.length) || a.report.localeCompare(b.report));
+}
+
 async function main() {
   const versions = parseVersions(readFileSync(join(ROOT, "VERSIONS.md"), "utf8"));
   const [all, comments] = await Promise.all([issues(OURS, "state=all"), commentsByIssue(OURS)]);
@@ -86,12 +109,15 @@ async function main() {
   const bad = findings.filter(f => f.problems.length);
   const warned = findings.filter(f => f.warnings.length);
 
-  if ( process.argv.includes("--json") ) console.log(JSON.stringify(findings, null, 1));
+  const shared = sharedReports(vendor, comments);
+
+  if ( process.argv.includes("--json") ) console.log(JSON.stringify({ issues: findings, shared }, null, 1));
   for ( const f of warned ) console.log(`#${f.number} [${f.state.toLowerCase()}] warning: ${f.warnings.join("; ")}`);
   for ( const f of bad ) console.error(`#${f.number} [${f.state.toLowerCase()}] ${f.title.slice(0, 70)}\n  - ${f.problems.join("\n  - ")}`);
+  for ( const s of shared ) console.error(`${s.report} is named in ${s.issues.length} issues: ${s.issues.slice(0, 20).map(n => `#${n}`).join(" ")}${s.issues.length > 20 ? " …" : ""}`);
   const open = vendor.filter(i => i.state === "OPEN").length;
-  console.log(`${vendor.length} issues (${open} open, ${vendor.length - open} closed): ${bad.length} without a test on the reviewed version, ${warned.length} not tested live`);
-  if ( bad.length ) process.exit(1);
+  console.log(`${vendor.length} issues (${open} open, ${vendor.length - open} closed): ${bad.length} without a test on the reviewed version, ${warned.length} not tested live, ${shared.length} upstream report(s) named in more than one issue`);
+  if ( bad.length || shared.length ) process.exit(1);
 }
 
 if ( resolve(process.argv[1] ?? "") === fileURLToPath(import.meta.url) ) main().catch(e => { console.error(e.message); process.exit(1); });

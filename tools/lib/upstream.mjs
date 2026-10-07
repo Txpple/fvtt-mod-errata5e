@@ -105,6 +105,25 @@ export function citations(body) {
   return [...out.values()];
 }
 
+/**
+ * Every upstream report named anywhere in a text (a body or a comment), as `{ repo, n }`: a link,
+ * a bare URL, an `owner/repo#n` autolink or the code form. Unlike `citations`, which reads the
+ * Upstream row to find the report an issue is about, this finds every mention, since each one
+ * would become a link to the vendor's tracker if citations were ever switched from code to links.
+ */
+export function mentions(text) {
+  const t = String(text ?? "");
+  const out = new Map();
+  const add = (repo, n) => out.set(`${repo}#${n}`, { repo, n: Number(n) });
+  const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  for ( const s of SOURCES ) {
+    for ( const m of t.matchAll(new RegExp(`${esc(s.repo)}(?:/issues/|#)(\\d+)`, "g")) ) add(s.repo, m[1]);
+    for ( const m of t.matchAll(new RegExp(`(?:^|[^-\\w/])${esc(s.short)}#(\\d+)`, "g")) ) add(s.repo, m[1]);
+    for ( const m of t.matchAll(new RegExp(`(?:^|[^-\\w/])${esc(refOf(s.repo, 0).slice(0, -2))}#(\\d+)`, "g")) ) add(s.repo, m[1]);
+  }
+  return [...out.values()];
+}
+
 /** Does our issue's Upstream row cite this upstream report? */
 export const cites = (body, repo, n) => citations(body).some(c => (c.repo === repo) && (c.n === Number(n)));
 

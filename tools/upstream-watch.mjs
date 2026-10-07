@@ -27,7 +27,8 @@
  * by the scan: whoever reads the digest judges each pair. --record writes the reference into our
  * issue's Upstream header row and, for an issue with an Errata 5e fix, the register's Upstream report
  * cell, as code (`foundryvtt-premium-content#1794`), so GitHub makes no link and nothing appears
- * upstream. --different remembers the pair so it is not shown again unless the upstream title
+ * upstream. One issue of ours names a given report: --record refuses when another issue already
+ * does (in its body or a comment), and says which. --different remembers the pair so it is not shown again unless the upstream title
  * changes. The watch never writes to any repo but ours. A GitHub token (GH_TOKEN, GITHUB_TOKEN,
  * or `gh auth token`) is needed to record and to notify; a scan works without one within GitHub's
  * unauthenticated limit, which the first scan exceeds.
@@ -35,8 +36,8 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT } from "./lib/workspace.mjs";
-import { TOKEN, api, shape, issues } from "./lib/github.mjs";
-import { OURS, PACKAGES, SOURCES, cmpVersion, subjectsOf, citations, isFeature, upstreamPackage, onOurData,
+import { TOKEN, api, shape, issues, commentsByIssue } from "./lib/github.mjs";
+import { OURS, PACKAGES, SOURCES, cmpVersion, subjectsOf, citations, mentions, isFeature, upstreamPackage, onOurData,
   matchUpstream, refOf, quietRef, withUpstreamRef, parseVersions, withLatest } from "./lib/upstream.mjs";
 
 const args = process.argv.slice(2);
@@ -156,6 +157,17 @@ async function editIssue(number, body) {
 async function judge(pairs, verdict) {
   const state = loadState();
   let registerChanged = false;
+  /** Which issue of ours already names a report, by `refOf`: the one-issue-per-report rule. */
+  const namedIn = verdict !== "same" ? null : await (async () => {
+    const [all, comments] = await Promise.all([issues(OURS, "state=all"), commentsByIssue(OURS)]);
+    const by = new Map();
+    for ( const i of all ) for ( const m of [i.body, ...(comments[i.number] ?? []).map(c => c.body)].flatMap(mentions) ) {
+      const r = refOf(m.repo, m.n);
+      if ( !by.has(r) ) by.set(r, new Set());
+      by.get(r).add(i.number);
+    }
+    return by;
+  })();
   for ( const pair of pairs ) {
     let p;
     try { p = parsePair(pair); } catch(err) { console.error(err.message); process.exitCode = 1; continue; }
@@ -163,6 +175,13 @@ async function judge(pairs, verdict) {
     const key = pairKey(p.ours, p.repo, p.n);
     if ( verdict === "same" ) {
       const ours = await getIssue(OURS, p.ours);
+      const elsewhere = [...(namedIn.get(refOf(p.repo, p.n)) ?? [])].filter(n => n !== p.ours);
+      if ( elsewhere.length ) {
+        const named = elsewhere.sort((a, b) => a - b).slice(0, 8).map(n => `#${n}`).join(", ") + (elsewhere.length > 8 ? ` and ${elsewhere.length - 8} more` : "");
+        console.error(`#${p.ours} / ${refOf(p.repo, p.n)}: already named in ${named}; one issue of ours per report, so cite it there (or make that the tracking issue); not recorded`);
+        process.exitCode = 1;
+        continue;
+      }
       if ( !citations(ours.body).some(c => (c.repo === p.repo) && (c.n === p.n)) ) {
         const body = withUpstreamRef(ours.body, up, p.repo, today);
         if ( !body ) { console.error(`#${p.ours}: no Upstream header row; not recorded`); process.exitCode = 1; continue; }

@@ -49,8 +49,8 @@ straight from `scripts/`.
 - `node tools/check-issues.mjs`: checks every issue on GitHub, open and closed, for a test on the
   version reviewed: the Package row at VERSIONS.md's Reviewed version, the Live check row with a
   result on it, and the test itself on record (a comment opening with a dated verdict, or on a
-  closed issue an Evidence section). Exit 1 on any gap; a "Not tested live" row is only a
-  warning. Run it at the end of a version review; CI runs it on every push. `--json` prints
+  closed issue an Evidence section), and that no upstream report is named in more than one
+  issue (bodies and comments). Exit 1 on any gap; a "Not tested live" row is only a warning. Run it at the end of a version review; CI runs it on every push. `--json` prints
   every issue's findings. `npm run check:issues` runs the same thing.
 - `node tools/suites/<suite>.mjs`: runs one fix's live suite against the local sandbox (see
   below). For example, `node tools/suites/e-001-709-shim-chains.mjs` tests E-001.
@@ -262,6 +262,17 @@ stale header for a comment to explain.
   `foundryvtt-premium-content#1452` or `foundryvtt/dnd5e#7251` (backticks matter), in every issue
   body, header row and comment; the watch reads the code form. References between our own issues
   are fine.
+- **One issue of ours per upstream report.** A vendor report is named in exactly one issue of
+  ours, in its Upstream row, and nowhere else: not in another issue's body, header or comment.
+  Citations are code today, but they may be switched to links one day, and then every mention
+  becomes a link; the data has to be clean before that switch. When one report covers several
+  documents (every modron, say), one tracking issue of ours cites it and lists the per-document
+  issues as sub-issues; each of those carries a "Tracked in #N" header row and cites nothing.
+  When the same bug is filed once per book, the citation goes on the issue whose package the
+  report is about (a premium-content report on the book copy, a dnd5e report on the SRD copy),
+  and the twin's Other book row points at it. A closed `not a bug` issue is the one issue for
+  the report it answers. `check-issues` fails on a report named in two issues, and the watch's
+  `--record` refuses to cite a report another issue already names.
 - **Commit messages never name an issue number.** GitHub links a commit into the timeline of every
   `#N` its message names. Describe the change in words instead.
 - **Any change to many issues is tried on one first,** and the user looks at that one before the
@@ -303,7 +314,8 @@ pair under **To judge** and **Possible** it reads both issues and records a verd
 is shown twice. `--record <ours>=<upstream>` is for the same bug (a dnd5e report is `<ours>=dnd5e#<n>`):
 it writes a quiet reference (code, no link, so nothing appears upstream) into our issue's Upstream
 row and, for an issue with an Errata 5e fix, the register. `--different <ours>=<upstream>` is for a
-different bug. A judged pair comes back only if the upstream title changes. A new-to-us report
+different bug. `--record` refuses when another issue of ours already names the report, and says
+which: cite it there, or make that issue the tracking issue. A judged pair comes back only if the upstream title changes. A new-to-us report
 that matches a closed issue of ours (one that didn't reproduce, say) is judged against it the
 same way, and then drops off the new-to-us list. The judge then
 appends `## Run notes` to the day's digest: a verdict per pair, anything that failed, and the

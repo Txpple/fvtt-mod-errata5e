@@ -116,7 +116,8 @@ There is no build step: the module is plain ES modules loaded straight from `scr
 - `node tools/check-register.mjs` (or `npm run check`) checks the register against the code,
   the manifest, the suites and VERSIONS.md. Run it before every commit; CI runs it on every push.
 - `node tools/check-issues.mjs` (or `npm run check:issues`) checks that every issue, open or
-  closed, names the reviewed version in its header and has its test on record. CI runs it too.
+  closed, names the reviewed version in its header and has its test on record, and that no
+  upstream report is named in more than one issue. CI runs it too.
 - `node tools/suites/<suite>.mjs` runs one fix's live suite against the local sandbox, a headless
   copy of the production world. The suites and the sandbox tools use the house MCP repo
   (`fvtt-mcp-dnd5e`, a `file:` dev dependency beside this one); run `npm install` once.
