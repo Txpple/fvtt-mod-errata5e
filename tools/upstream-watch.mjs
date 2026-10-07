@@ -28,7 +28,8 @@
  * issue's Upstream header row and, for an issue with an Errata 5e fix, the register's Upstream report
  * cell, as code (`foundryvtt-premium-content#1794`), so GitHub makes no link and nothing appears
  * upstream. One issue of ours names a given report: --record refuses when another issue already
- * does (in its body or a comment), and says which. --different remembers the pair so it is not shown again unless the upstream title
+ * does (in its body or a comment), and says which. A sub-issue of a tracking issue counts as
+ * citing what its parent cites, so the parent's report is never shown as a pair for its children. --different remembers the pair so it is not shown again unless the upstream title
  * changes. The watch never writes to any repo but ours. A GitHub token (GH_TOKEN, GITHUB_TOKEN,
  * or `gh auth token`) is needed to record and to notify; a scan works without one within GitHub's
  * unauthenticated limit, which the first scan exceeds.
@@ -52,6 +53,8 @@ const REVIEW_LABEL = "version review";
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const getIssue = async (repo, n) => shape(await api(`repos/${repo}/issues/${n}`));
+/** The tracking issues an issue's "Tracked in" header row names, as numbers. */
+const trackedIn = body => (String(body ?? "").match(/^\|\s*\*\*Tracked in\*\*\s*\|\s*(.*?)\s*\|\s*$/m)?.[1].match(/#(\d+)/g) ?? []).map(t => Number(t.slice(1)));
 
 function loadState() {
   try { return { lastScan: null, judged: {}, seen: {}, cited: {}, ...JSON.parse(readFileSync(STATE, "utf8")) }; }
@@ -251,6 +254,11 @@ async function scan() {
 
   // 2. Our open issues, with the documents each is about and the upstream reports it cites.
   const ours = (await issues(OURS, "state=open")).map(i => ({ ...i, subjects: subjectsOf(i.title, i.body), cites: citations(i.body) }));
+  // A sub-issue of a tracking issue cites what its parent cites: the citation lives on the parent alone.
+  for ( const o of ours ) for ( const p of trackedIn(o.body) ) {
+    const parent = ours.find(x => x.number === p);
+    for ( const c of parent?.cites ?? [] ) if ( !o.cites.some(x => (x.repo === c.repo) && (x.n === c.n)) ) o.cites.push(c);
+  }
   const citedBy = up => ours.filter(o => o.cites.some(c => (c.repo === up.repo) && (c.n === up.number)));
   // A closed issue of ours that cites a report (a "not a bug" verdict, say) has answered it too.
   const answered = new Set((await issues(OURS, "state=closed")).flatMap(i => citations(i.body).map(c => refOf(c.repo, c.n))));
