@@ -1,5 +1,8 @@
-# The register check on every push and pull request: REGISTER.md parses and agrees with the code,
-# the manifest, the suites and VERSIONS.md. Offline, no dependencies.
+# Two checks on every push and pull request. The register check: REGISTER.md parses and agrees
+# with the code, the manifest, the suites and VERSIONS.md (offline, no dependencies). The issue
+# check: every vendor issue carries a test on the version VERSIONS.md says was reviewed (read
+# through GitHub's API with the workflow's own token). The watch commits daily, so the issue check
+# runs at least daily too.
 name: check
 on:
   push:
@@ -13,3 +16,16 @@ jobs:
         with:
           node-version: 22
       - run: node tools/check-register.mjs
+  issues:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/check-issues.mjs

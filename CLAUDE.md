@@ -46,6 +46,12 @@ straight from `scripts/`.
   manifest, the suites and VERSIONS.md (offline, no dependencies). Add `--json` to print the
   register as JSON. Run it before every commit; CI runs it on every push. `npm run check` runs
   the same thing.
+- `node tools/check-issues.mjs`: checks every issue on GitHub, open and closed, for a test on the
+  version reviewed: the Package row at VERSIONS.md's Reviewed version, the Live check row with a
+  result on it, and the test itself on record (a comment opening with a dated verdict, or on a
+  closed issue an Evidence section). Exit 1 on any gap; a "Not tested live" row is only a
+  warning. Run it at the end of a version review; CI runs it on every push. `--json` prints
+  every issue's findings. `npm run check:issues` runs the same thing.
 - `node tools/suites/<suite>.mjs`: runs one fix's live suite against the local sandbox (see
   below). For example, `node tools/suites/e-001-709-shim-chains.mjs` tests E-001.
 - `node tools/vendor-review.mjs snapshot|versions|diff …`: snapshots a vendor package's packs

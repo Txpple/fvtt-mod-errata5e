@@ -78,7 +78,8 @@ on the package re-checked, and VERSIONS.md updated.
 
 Two GitHub Actions workflows, in `.github/workflows/`:
 
-- **check** runs `tools/check-register.mjs` on every push and pull request.
+- **check** runs `tools/check-register.mjs` and `tools/check-issues.mjs` on every push and pull
+  request: the register against the code, and every issue for a test on the reviewed version.
 - **upstream watch** runs the watch daily at 06:00 UTC, with the workflow's own token, and commits
   `watch/` and VERSIONS.md when they change. It can also be started by hand from the repo's
   Actions tab. It needs no machine of ours and no secret of ours. It never writes to a vendor's
@@ -94,6 +95,7 @@ scripts/
   patches/             one file per fix: e-NNN-<issue>-<name>.js
 tools/
   check-register.mjs   the offline check run before every commit and by CI
+  check-issues.mjs     every issue carries a test on the reviewed version; run by CI
   upstream-watch.mjs   the daily watch
   vendor-review.mjs    snapshot and diff a vendor package's packs for a version review
   recheck.mjs          sort a package's open issues by whether their documents changed
@@ -113,6 +115,8 @@ There is no build step: the module is plain ES modules loaded straight from `scr
 
 - `node tools/check-register.mjs` (or `npm run check`) checks the register against the code,
   the manifest, the suites and VERSIONS.md. Run it before every commit; CI runs it on every push.
+- `node tools/check-issues.mjs` (or `npm run check:issues`) checks that every issue, open or
+  closed, names the reviewed version in its header and has its test on record. CI runs it too.
 - `node tools/suites/<suite>.mjs` runs one fix's live suite against the local sandbox, a headless
   copy of the production world. The suites and the sandbox tools use the house MCP repo
   (`fvtt-mcp-dnd5e`, a `file:` dev dependency beside this one); run `npm install` once.

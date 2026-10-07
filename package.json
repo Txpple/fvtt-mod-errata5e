@@ -4,7 +4,8 @@
   "type": "module",
   "description": "Development tooling for Errata 5e. NOTHING HERE SHIPS — the module is plain ES modules loaded straight from scripts/, with no build step; this file declares what tools/ imports.",
   "scripts": {
-    "check": "node tools/check-register.mjs"
+    "check": "node tools/check-register.mjs",
+    "check:issues": "node tools/check-issues.mjs"
   },
   "devDependencies": {
     "fvtt-mcp-dnd5e": "file:../fvtt-mcp-dnd5e"

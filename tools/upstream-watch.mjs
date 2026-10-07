@@ -34,8 +34,8 @@
  */
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
-import { execFileSync } from "node:child_process";
 import { ROOT } from "./lib/workspace.mjs";
+import { TOKEN, api, shape, issues } from "./lib/github.mjs";
 import { OURS, PACKAGES, SOURCES, cmpVersion, subjectsOf, citations, isFeature, upstreamPackage, onOurData,
   matchUpstream, refOf, quietRef, withUpstreamRef, parseVersions, withLatest } from "./lib/upstream.mjs";
 
@@ -49,37 +49,6 @@ const STATUS = join(WATCH, "STATUS.md");
 const LOG = join(WATCH, "LOG.md");
 const REVIEW_LABEL = "version review";
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-/** A GitHub token if one is to hand. */
-const TOKEN = (() => {
-  if ( process.env.GH_TOKEN || process.env.GITHUB_TOKEN ) return process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
-  try { return execFileSync("gh", ["auth", "token"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim() || null; }
-  catch { return null; }
-})();
-
-/** One GitHub REST call; `path` is relative to the API root. */
-async function api(path, { method = "GET", body } = {}) {
-  const res = await fetch(`https://api.github.com/${path}`, { method,
-    headers: { "accept": "application/vnd.github+json", "user-agent": "fvtt-mod-errata5e upstream-watch",
-      ...(TOKEN ? { authorization: `Bearer ${TOKEN}` } : {}), ...(body ? { "content-type": "application/json" } : {}) },
-    body: body ? JSON.stringify(body) : undefined });
-  if ( !res.ok ) throw new Error(`GitHub ${method} ${path}: HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
-  return res.json();
-}
-
-const shape = i => ({ number: i.number, title: i.title, body: i.body ?? "", state: i.state.toUpperCase(),
-  stateReason: i.state_reason?.toUpperCase() ?? null, labels: i.labels.map(l => l.name ?? l), url: i.html_url,
-  updatedAt: i.updated_at, closedAt: i.closed_at ?? null });
-
-/** Every issue (not pull request) of a repo matching the query. */
-async function issues(repo, query) {
-  const out = [];
-  for ( let page = 1; ; page++ ) {
-    const batch = await api(`repos/${repo}/issues?per_page=100&page=${page}&${query}`);
-    for ( const i of batch ) if ( !i.pull_request ) out.push(shape(i));
-    if ( batch.length < 100 ) return out;
-  }
-}
 
 const getIssue = async (repo, n) => shape(await api(`repos/${repo}/issues/${n}`));
 
