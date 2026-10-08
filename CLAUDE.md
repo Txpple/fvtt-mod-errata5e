@@ -73,7 +73,7 @@ straight from `scripts/`.
 - `powershell -ExecutionPolicy Bypass -File tools/build-release.ps1`: builds the release zip in
   `dist/`.
 
-## Layout and conventions (shared with the sister modules)
+## Layout and conventions (shared across Open Roll 5e)
 
 - `module.json` has a single `esmodules` entry, `scripts/errata5e.js`. It only imports
   `core.js` (`MODULE_ID`, `TITLE`, nothing else) and one file per fix under `scripts/patches/`,
@@ -96,7 +96,7 @@ straight from `scripts/`.
 - Wrap `setup`/`ready` work in `try/catch` and log with the `TITLE` prefix, so one broken fix
   cannot stop the world loading.
 - Author `Txpple` (no personal name), MIT license. The Foundry compatibility (minimum 13 /
-  verified 14) matches the sisters' `module.json`. The dnd5e relationship does not: its minimum
+  verified 14) matches the other modules' `module.json`. The dnd5e relationship does not: its minimum
   is the oldest dnd5e the live fixes are measured on, since retiring a fix the system fixed
   leaves older versions broken (minimum and verified 6.0.6 since 1.2.1, when E-001 went).
 
@@ -141,7 +141,7 @@ fixed, in this order. Changing them means changing `COLUMNS` in the checker in t
 - Rows are never deleted. A retired fix keeps its row, with `Status` set to `retired` and
   `Retired` filled in.
 
-**Dependents are part of the contract.** When work in a sister repo turns out to rely on a
+**Dependents are part of the contract.** When work in another Open Roll 5e repo turns out to rely on a
 vendor fix, add that module to the row. Before changing or retiring a fix, read its Dependents
 and tell the user which modules are affected. When a vendor package updates, run a
 [version review](#vendor-updates-version-reviews), which includes each `active` row's Retire-when
@@ -209,8 +209,8 @@ together). Any update can fix one of our issues, change data a fix matches on, o
 Snapshot the sandbox's version before updating a package there (or as soon as you see an update
 pending), and snapshot the new version after:
 - `node tools/vendor-review.mjs snapshot <package> …` extracts the installed version's packs to
-  `vendor-snapshots/<package>/<version>/` two levels above the main checkout
-  (`D:\Workbench\FVTT\vendor-snapshots`), from any checkout including a worktree. That is outside
+  `vendor-snapshots/<package>/<version>/` three levels above the main checkout, the folder
+  above the suite (`D:\Workbench\FVTT\vendor-snapshots`), from any checkout including a worktree. That is outside
   every repo (the tools refuse a path inside one): premium pack data is never committed.
   `ERRATA_SNAPSHOT_DIR` overrides the location.
 - `node tools/vendor-review.mjs diff <package> <old> <new> --issues` lists every changed, added and
@@ -287,7 +287,9 @@ stale header for a comment to explain.
   creates an hour, shared by every session on the account) can drop a create without an error,
   so count a create only when gh prints its URL.
 - **Never file new issues in bulk.** Work the few reports a day the watch brings, one at a time.
-- **The repo is private.** Making it public is the user's call.
+- **The repo is public** (since 2026-10-07, v1.1.1), like the rest of Open Roll 5e: every issue,
+  comment and commit message is visible to the vendors, so the rules above are not optional.
+  Issues from outside are accepted; pull requests are not.
 
 ## Upstream watch
 

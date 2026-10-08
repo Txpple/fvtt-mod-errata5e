@@ -35,11 +35,11 @@ export const importMcp = name => import(pathToFileURL(join(mcpRoot(), "dist", `$
 export const localFoundry = () => join(mcpRoot(), "scripts", "local-foundry.mjs");
 
 /**
- * Vendor snapshots: ERRATA_SNAPSHOT_DIR, else `vendor-snapshots` two levels above the MAIN checkout
+ * Vendor snapshots: ERRATA_SNAPSHOT_DIR, else `vendor-snapshots` three levels above the MAIN checkout (the folder above the suite)
  * (D:\Workbench\FVTT\vendor-snapshots here). Never inside a repo: premium data is never committed.
  */
 export function snapshotDir() {
-  const dir = resolve(process.env.ERRATA_SNAPSHOT_DIR ?? join(mainRoot(), "..", "..", "vendor-snapshots"));
+  const dir = resolve(process.env.ERRATA_SNAPSHOT_DIR ?? join(mainRoot(), "..", "..", "..", "vendor-snapshots"));
   for ( const repo of new Set([ROOT, mainRoot()]) ) {
     const rel = relative(repo, dir);
     if ( !rel || (!rel.startsWith("..") && !isAbsolute(rel)) ) throw new Error(`snapshot dir ${dir} is inside ${repo}: premium data must never be committed`);

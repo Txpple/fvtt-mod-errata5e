@@ -8,7 +8,7 @@
  *   node tools/vendor-review.mjs diff <package> <old> <new> [--issues] [--full] [--json]
  *
  * <package> is a module or system id (`dnd-players-handbook`, `dnd5e`, …). Snapshots go to
- * ERRATA_SNAPSHOT_DIR, default `vendor-snapshots` two levels above the main checkout (worktrees
+ * ERRATA_SNAPSHOT_DIR, default `vendor-snapshots` three levels above the main checkout (worktrees
  * included): OUTSIDE every repo, because premium pack data must never be committed. Foundry's
  * update overwrites the old version, so snapshot the version you run BEFORE updating, and the new
  * one after. The diff itself is tools/lib/snapshots.mjs, shared with tools/recheck.mjs.
