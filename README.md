@@ -95,7 +95,7 @@ scripts/
   patches/             one file per fix: e-NNN-<issue>-<name>.js
 tools/
   check-register.mjs   the offline check run before every commit and by CI
-  check-issues.mjs     every issue carries a test on the reviewed version; run by CI
+  check-issues.mjs     every open issue carries a test on the reviewed version; run by CI
   upstream-watch.mjs   the daily watch
   vendor-review.mjs    snapshot and diff a vendor package's packs for a version review
   recheck.mjs          sort a package's open issues by whether their documents changed
@@ -115,8 +115,8 @@ There is no build step: the module is plain ES modules loaded straight from `scr
 
 - `node tools/check-register.mjs` (or `npm run check`) checks the register against the code,
   the manifest, the suites and VERSIONS.md. Run it before every commit; CI runs it on every push.
-- `node tools/check-issues.mjs` (or `npm run check:issues`) checks that every issue, open or
-  closed, names the reviewed version in its header and has its test on record, and that no
+- `node tools/check-issues.mjs` (or `npm run check:issues`) checks that every open issue names
+  the reviewed version in its header, that every issue has its test on record, and that no
   upstream report is named in more than one issue. CI runs it too.
 - `node tools/suites/<suite>.mjs` runs one fix's live suite against the local sandbox, a headless
   copy of the production world. The suites and the sandbox tools use the house MCP repo

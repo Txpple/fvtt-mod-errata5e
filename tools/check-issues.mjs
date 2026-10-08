@@ -1,9 +1,11 @@
 /**
- * Issue check: every vendor issue of ours carries a test on the version last reviewed. For each
- * issue, open or closed, the header's Package row names a tracked package at the version
- * VERSIONS.md says was reviewed, the Live check row records a result on that version, and the
- * test itself is on record: a comment opening with a dated verdict (what was built, run and seen)
- * or, on a closed issue, an Evidence section in the body. It reads the issues through GitHub's
+ * Issue check: every open vendor issue of ours carries a test on the version last reviewed, and
+ * every issue, open or closed, has its test on record. For an open issue, the header's Package
+ * row names a tracked package at the version VERSIONS.md says was reviewed, and the Live check row
+ * records a result on that version. A closed issue keeps the version it was judged on, since a
+ * version review re-checks open issues only; its rows must still name a tracked package and a
+ * result. The test itself is on record: a comment opening with a dated verdict (what was built,
+ * run and seen) or, on a closed issue, an Evidence section in the body. It reads the issues through GitHub's
  * API and nothing else: no sandbox, no snapshot. A token (GH_TOKEN, GITHUB_TOKEN, or
  * `gh auth token`) keeps it inside GitHub's rate limit.
  *
@@ -64,6 +66,7 @@ export function checkIssue(issue, comments, versions) {
     if ( !m ) problems.push(`Package row does not open with \`<package>\` <version>: "${pkgRow.slice(0, 60)}"`);
     else if ( !PACKAGES.some(p => p.id === m[1]) ) problems.push(`Package row names an untracked package: ${m[1]}`);
     else if ( !versions[m[1]]?.reviewed ) problems.push(`${m[1]} has no Reviewed version in VERSIONS.md`);
+    else if ( issue.state === "CLOSED" ) {}   // a closed issue keeps the version it was judged on
     else if ( m[2] !== versions[m[1]].reviewed ) problems.push(`Package row says ${m[1]} ${m[2]}; the version reviewed is ${versions[m[1]].reviewed}`);
     else reviewed = versions[m[1]].reviewed;
   }

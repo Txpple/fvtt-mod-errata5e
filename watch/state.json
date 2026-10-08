@@ -779,28 +779,6 @@
     712
    ]
   },
-  "foundryvtt-premium-content#1747": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
-   "title": "[Bug]: Speed concatenating instead of increasing",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1747",
-   "package": "dnd-players-handbook",
-   "ours": [
-    709
-   ]
-  },
-  "foundryvtt-premium-content#1794": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
-   "title": "[Bug]: PhB Barbarian Fast Movement adds speed wrong",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1794",
-   "package": "dnd-players-handbook",
-   "ours": [
-    709
-   ]
-  },
   "foundryvtt/dnd5e#7446": {
    "state": "open",
    "reason": null,
