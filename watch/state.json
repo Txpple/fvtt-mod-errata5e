@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-07",
+ "lastScan": "2026-10-08",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -165,9 +165,33 @@
    "verdict": "same",
    "on": "2026-10-03",
    "title": "[Bug]: Wrong link on Deck of Illusions Roll table"
+  },
+  "356=foundryvtt-premium-content#1814": {
+   "verdict": "same",
+   "on": "2026-10-08",
+   "title": "[Bug]: Ultroloth's Dispel Magic via Fiendish Guile should be Bonus Action"
   }
  },
- "seen": {},
+ "seen": {
+  "foundryvtt/dnd5e#7586": {
+   "firstSeen": "2026-10-08",
+   "title": "Sneak Attack activity does not consume or recover its use",
+   "package": "dnd5e",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7586"
+  },
+  "foundryvtt/dnd5e#7397": {
+   "firstSeen": "2026-10-08",
+   "title": "2024 Hide features apply a `hiding` status that has no basis in the 2024 rules, instead of the Invisible condition [Compendium Content]",
+   "package": "dnd5e",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7397"
+  },
+  "foundryvtt-premium-content#1813": {
+   "firstSeen": "2026-10-08",
+   "title": "[Bug]: Arcanaloth has 2x Mind Blank spell",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1813"
+  }
+ },
  "cited": {
   "foundryvtt-premium-content#1806": {
    "state": "open",
@@ -557,17 +581,6 @@
     59
    ]
   },
-  "foundryvtt/dnd5e#762": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-11-07",
-   "title": "Set Minimum Core Version to 0.7.6",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/762",
-   "package": "dnd5e",
-   "ours": [
-    763
-   ]
-  },
   "foundryvtt-premium-content#1803": {
    "state": "open",
    "reason": null,
@@ -722,17 +735,6 @@
     717
    ]
   },
-  "foundryvtt/dnd5e#716": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-10-28",
-   "title": "Broken PH-B link in Druid class",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/716",
-   "package": "dnd5e",
-   "ours": [
-    717
-   ]
-  },
   "foundryvtt-premium-content#1528": {
    "state": "open",
    "reason": null,
@@ -764,17 +766,6 @@
    "package": "dnd-dungeon-masters-guide",
    "ours": [
     714
-   ]
-  },
-  "foundryvtt/dnd5e#712": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-10-09",
-   "title": "CSS changes to the inventory list caused dropdown item details to be too light a font color.",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/712",
-   "package": "dnd5e",
-   "ours": [
-    713
    ]
   },
   "foundryvtt-premium-content#1792": {
@@ -942,17 +933,6 @@
     588
    ]
   },
-  "foundryvtt/dnd5e#585": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-07-21",
-   "title": "Add support for Vehicle as a primary Actor type with sheet support for basic vehicle mechanics.",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/585",
-   "package": "dnd5e",
-   "ours": [
-    587
-   ]
-  },
   "foundryvtt-premium-content#1101": {
    "state": "closed",
    "reason": "completed",
@@ -1008,29 +988,6 @@
     574
    ]
   },
-  "foundryvtt/dnd5e#574": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-07-21",
-   "title": "Unarmored Defense (monk) - SRD compendium incorrect",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/574",
-   "package": "dnd5e",
-   "ours": [
-    572
-   ]
-  },
-  "foundryvtt/dnd5e#569": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-07-21",
-   "title": "Bug: Action resource consumption with negative material quantity is inconsistently cleared",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/569",
-   "package": "dnd5e",
-   "ours": [
-    571,
-    112
-   ]
-  },
   "foundryvtt-premium-content#1049": {
    "state": "closed",
    "reason": "completed",
@@ -1040,17 +997,6 @@
    "package": "dnd-monster-manual",
    "ours": [
     569
-   ]
-  },
-  "foundryvtt/dnd5e#556": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-06-14",
-   "title": "Redesign the NPC sheet to keep primary combat attributes visible at all times in the header instead of below the fold of the Attributes tab.",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/556",
-   "package": "dnd5e",
-   "ours": [
-    558
    ]
   },
   "foundryvtt-premium-content#1483": {
@@ -1196,93 +1142,6 @@
     506
    ]
   },
-  "foundryvtt/dnd5e#771": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-11-08",
-   "title": "movement.walk should pull from speed.value when an actor is imported from a compendium",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/771",
-   "package": "dnd5e",
-   "ours": [
-    506,
-    479,
-    477,
-    475,
-    473,
-    471,
-    469,
-    466,
-    436,
-    433,
-    429,
-    423,
-    418,
-    415,
-    412,
-    405,
-    392,
-    388,
-    386,
-    382,
-    378,
-    374,
-    368,
-    355,
-    352,
-    345,
-    342,
-    327,
-    324,
-    321,
-    315,
-    312,
-    308,
-    306,
-    296,
-    290,
-    285,
-    280,
-    275,
-    270,
-    265,
-    246,
-    222,
-    217,
-    212,
-    207,
-    201,
-    196,
-    191,
-    186,
-    176,
-    171,
-    166,
-    160,
-    155,
-    152,
-    146,
-    144,
-    142,
-    140,
-    138,
-    136,
-    134,
-    132,
-    130,
-    127,
-    125,
-    123,
-    120,
-    118,
-    116,
-    114,
-    112,
-    110,
-    108,
-    106,
-    104
-   ]
-  },
   "foundryvtt-premium-content#1352": {
    "state": "closed",
    "reason": "completed",
@@ -1316,21 +1175,6 @@
     420
    ]
   },
-  "foundryvtt-premium-content#771": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2024-09-27",
-   "title": "[Bug]: Divine Smite should have \"Allow Critical\" set",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/771",
-   "package": "dnd-players-handbook",
-   "ours": [
-    420,
-    387,
-    340,
-    145,
-    103
-   ]
-  },
   "foundryvtt/dnd5e#7118": {
    "state": "open",
    "reason": null,
@@ -1351,17 +1195,6 @@
    "package": "dnd-players-handbook",
    "ours": [
     398
-   ]
-  },
-  "foundryvtt/dnd5e#387": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-03-28",
-   "title": "Fix syntax error with rolling an \"other formula\"",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/387",
-   "package": "dnd5e",
-   "ours": [
-    388
    ]
   },
   "foundryvtt-premium-content#1770": {
@@ -1386,22 +1219,6 @@
     383
    ]
   },
-  "foundryvtt/dnd5e#770": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-11-09",
-   "title": "Exclude flags and bonuses added by Active Effects from the configuration of the \"Special Traits\" app on the actor sheet. Diff changes to the special traits app against the underlying base data for the Actor rather than the derived data.",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/770",
-   "package": "dnd5e",
-   "ours": [
-    368,
-    355,
-    352,
-    348,
-    345,
-    342
-   ]
-  },
   "foundryvtt-premium-content#1717": {
    "state": "open",
    "reason": null,
@@ -1411,6 +1228,17 @@
    "package": "dnd-players-handbook",
    "ours": [
     357
+   ]
+  },
+  "foundryvtt-premium-content#1814": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Ultroloth's Dispel Magic via Fiendish Guile should be Bonus Action",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1814",
+   "package": "dnd-monster-manual",
+   "ours": [
+    356
    ]
   },
   "foundryvtt/dnd5e#6669": {
@@ -1435,17 +1263,6 @@
     344
    ]
   },
-  "foundryvtt/dnd5e#340": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2020-02-20",
-   "title": "Discrepancy with Item.weaponType: template.json vs in-game use",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/340",
-   "package": "dnd5e",
-   "ours": [
-    342
-   ]
-  },
   "foundryvtt-premium-content#1711": {
    "state": "open",
    "reason": null,
@@ -1464,17 +1281,6 @@
    "title": "[Bug]: Roper's tentacle Grappled effect should also apply Poisoned",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1734",
    "package": "dnd-monster-manual",
-   "ours": [
-    340
-   ]
-  },
-  "foundryvtt-premium-content#770": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2024-09-27",
-   "title": "[Bug]: Aasimar healing hands feature is consuming activity uses instead of item uses",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/770",
-   "package": "dnd-players-handbook",
    "ours": [
     340
    ]
@@ -1565,17 +1371,6 @@
    "package": "dnd5e",
    "ours": [
     125
-   ]
-  },
-  "foundryvtt/dnd5e#103": {
-   "state": "closed",
-   "reason": "completed",
-   "closedAt": "2019-11-07",
-   "title": "Add maximum and Dexterity modifier as a tracked data element for Equipment item types",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/103",
-   "package": "dnd5e",
-   "ours": [
-    104
    ]
   },
   "foundryvtt-premium-content#1742": {

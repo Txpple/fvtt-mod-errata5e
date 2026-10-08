@@ -17,6 +17,7 @@
  *   changed       a cited document differs: a live re-check, with the differences listed
  *   missing       a cited document is not in the new snapshot: a live re-check
  *   no document   the issue cites nothing the snapshot holds: a live re-check
+ * A `tracking` issue is skipped: it has no test of its own, and its sub-issues are sorted here.
  * An issue labelled `severity: high` or `worked-around` is always listed for a live re-check and
  * never written by --apply. --apply sets the header's Package row to the new version and appends
  * to the Live check row that the documents are unchanged and the issue was not re-tested on it:
@@ -107,6 +108,8 @@ async function main() {
   const A = indexById(loadSnapshot(id, oldV)), B = indexById(loadSnapshot(id, newV));
   let issues = JSON.parse(gh(["issue", "list", "--state", "open", "--label", pkg.label, "--limit", "2000", "--json", "number,title,body,labels"]));
   if ( only ) issues = issues.filter(i => String(i.number) === only);
+  // A tracking issue holds a citation and a list, no test: its sub-issues are what is re-checked.
+  issues = issues.filter(i => !i.labels.some(l => l.name === "tracking"));
   issues.sort((a, b) => a.number - b.number);
   const sorted = issues.map(i => ({ issue: i, live: i.labels.some(l => LIVE_ALWAYS.includes(l.name)), ...sortIssue(i, id, A, B) }));
   const group = k => sorted.filter(s => s.kind === k);

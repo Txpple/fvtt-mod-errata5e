@@ -85,8 +85,9 @@ export const upstreamRow = body => String(body ?? "").split("\n").find(l => /^\|
 
 /**
  * The upstream reports our issue's Upstream row cites, as `{ repo, n }`. Only that row counts:
- * issue bodies quote other reports as examples elsewhere. A bare `#n` counts when the row names
- * exactly one upstream repo.
+ * issue bodies quote other reports as examples elsewhere. A report is always written with its
+ * repo (`foundryvtt-premium-content#1730`, `foundryvtt/dnd5e#7251`); a bare `#n` in the row is one
+ * of our own issues (a tracking issue, a twin), never a vendor report.
  */
 export function citations(body) {
   const row = upstreamRow(body);
@@ -100,8 +101,6 @@ export function citations(body) {
     const ref = refOf(s.repo, 0).slice(0, -2).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     for ( const m of row.matchAll(new RegExp(`(?:^|[^-\\w/])${ref}#(\\d+)`, "g")) ) add(s.repo, m[1]);
   }
-  const named = SOURCES.filter(s => row.includes(s.short) || row.includes(s.repo));
-  if ( named.length === 1 ) for ( const m of row.matchAll(/(?:^|[^-\w#])#(\d+)(?!\d)/g) ) add(named[0].repo, m[1]);
   return [...out.values()];
 }
 
