@@ -95,8 +95,10 @@ straight from `scripts/`.
   retirement check can confirm the fix has gone quiet.
 - Wrap `setup`/`ready` work in `try/catch` and log with the `TITLE` prefix, so one broken fix
   cannot stop the world loading.
-- Author `Txpple` (no personal name), MIT license. The dnd5e system relationship and the
-  Foundry compatibility (minimum 13 / verified 14) match the sisters' `module.json`.
+- Author `Txpple` (no personal name), MIT license. The Foundry compatibility (minimum 13 /
+  verified 14) matches the sisters' `module.json`. The dnd5e relationship does not: its minimum
+  is the oldest dnd5e the live fixes are measured on, since retiring a fix the system fixed
+  leaves older versions broken (minimum and verified 6.0.6 since 1.2.1, when E-001 went).
 
 ## The register (`REGISTER.md`)
 

@@ -30,7 +30,7 @@ Paste the manifest URL into Foundry's *Install Module* dialog:
 https://github.com/Txpple/fvtt-mod-errata5e/releases/latest/download/module.json
 ```
 
-Requires Foundry VTT v13 or v14 and the dnd5e system 5.x or 6.x. The module has no other
+Requires Foundry VTT v13 or v14 and the dnd5e system 6.0.6 or later. The module has no other
 dependencies and adds nothing to the canvas or the sheets.
 
 ## The fixes

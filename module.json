@@ -2,7 +2,7 @@
   "id": "fvtt-mod-errata5e",
   "title": "Open Roll 5e: Errata",
   "description": "Corrects, in memory, bugs in the premium D&D 2024 books, the dnd5e system and Foundry itself, each fix a stopgap held until the vendor ships its own. One switch turns every fix on; nothing in a compendium or on a sheet is edited.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "authors": [
     {
       "name": "Txpple"
@@ -17,7 +17,8 @@
         "id": "dnd5e",
         "type": "system",
         "compatibility": {
-          "minimum": "5.0.0"
+          "minimum": "6.0.6",
+          "verified": "6.0.6"
         }
       }
     ]
@@ -28,7 +29,7 @@
   },
   "url": "https://github.com/Txpple/fvtt-mod-errata5e",
   "manifest": "https://github.com/Txpple/fvtt-mod-errata5e/releases/latest/download/module.json",
-  "download": "https://github.com/Txpple/fvtt-mod-errata5e/releases/download/v1.2.0/fvtt-mod-errata5e.zip",
+  "download": "https://github.com/Txpple/fvtt-mod-errata5e/releases/download/v1.2.1/fvtt-mod-errata5e.zip",
   "readme": "https://github.com/Txpple/fvtt-mod-errata5e#readme",
   "license": "MIT"
 }
