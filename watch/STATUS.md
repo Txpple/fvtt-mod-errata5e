@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | none |
 | **To judge** | 0 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 31 |
-| **New to us** | 3 open report(s), 3 first seen today |
+| **New to us** | 0 open report(s), 0 first seen today |
 
 ## To judge
 
@@ -67,13 +67,11 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
-| 2026-10-08 | `foundryvtt-premium-content#1813` [[Bug]: Arcanaloth has 2x Mind Blank spell](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1813) | dnd-monster-manual |
-| 2026-10-08 | `foundryvtt/dnd5e#7397` [2024 Hide features apply a `hiding` status that has no basis in the 2024 rules, instead of the Invisible condition [Compendium Content]](https://github.com/foundryvtt/dnd5e/issues/7397) | dnd5e |
-| 2026-10-08 | `foundryvtt/dnd5e#7586` [Sneak Attack activity does not consume or recover its use](https://github.com/foundryvtt/dnd5e/issues/7586) | dnd5e |
+| none | | |
 
 ## Sources
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 24 | 15 | 0 | 8 | 2 |
-| foundryvtt/foundryvtt-premium-content | 85 | 77 | 0 | 21 | 1 |
+| foundryvtt/dnd5e | 24 | 17 | 0 | 8 | 0 |
+| foundryvtt/foundryvtt-premium-content | 85 | 78 | 0 | 21 | 0 |

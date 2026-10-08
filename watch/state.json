@@ -172,27 +172,52 @@
    "title": "[Bug]: Ultroloth's Dispel Magic via Fiendish Guile should be Bonus Action"
   }
  },
- "seen": {
+ "seen": {},
+ "cited": {
   "foundryvtt/dnd5e#7586": {
-   "firstSeen": "2026-10-08",
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
    "title": "Sneak Attack activity does not consume or recover its use",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7586",
    "package": "dnd5e",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/7586"
+   "ours": [
+    784
+   ]
+  },
+  "foundryvtt-premium-content#1736": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Nimble Escape and Shadow Stealth apply a non-2024 \"hiding\" status, roll no check, and Nimble Escape has no Disengage",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1736",
+   "package": "dnd-monster-manual",
+   "ours": [
+    782
+   ]
   },
   "foundryvtt/dnd5e#7397": {
-   "firstSeen": "2026-10-08",
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
    "title": "2024 Hide features apply a `hiding` status that has no basis in the 2024 rules, instead of the Invisible condition [Compendium Content]",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7397",
    "package": "dnd5e",
-   "url": "https://github.com/foundryvtt/dnd5e/issues/7397"
+   "ours": [
+    781
+   ]
   },
   "foundryvtt-premium-content#1813": {
-   "firstSeen": "2026-10-08",
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
    "title": "[Bug]: Arcanaloth has 2x Mind Blank spell",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1813",
    "package": "dnd-monster-manual",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1813"
-  }
- },
- "cited": {
+   "ours": [
+    780
+   ]
+  },
   "foundryvtt-premium-content#1806": {
    "state": "open",
    "reason": null,
@@ -1096,17 +1121,6 @@
    "package": "dnd-dungeon-masters-guide",
    "ours": [
     508
-   ]
-  },
-  "foundryvtt-premium-content#1736": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
-   "title": "[Bug]: Nimble Escape and Shadow Stealth apply a non-2024 \"hiding\" status, roll no check, and Nimble Escape has no Disengage",
-   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1736",
-   "package": "dnd-monster-manual",
-   "ours": [
-    507
    ]
   },
   "foundryvtt/dnd5e#7348": {
