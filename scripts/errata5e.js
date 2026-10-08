@@ -7,7 +7,6 @@
  * names the fixes share are in core.js.
  */
 import "./core.js";
-import "./patches/e-001-709-shim-chains.js";
 import "./patches/e-002-710-necrotic-shroud-clock.js";
 import "./patches/e-003-711-pass-without-trace-area.js";
 import "./patches/e-004-754-sword-of-sharpness-crit.js";

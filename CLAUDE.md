@@ -53,7 +53,7 @@ straight from `scripts/`.
   issue (bodies and comments). Exit 1 on any gap; a "Not tested live" row is only a warning. Run it at the end of a version review; CI runs it on every push. `--json` prints
   every issue's findings. `npm run check:issues` runs the same thing.
 - `node tools/suites/<suite>.mjs`: runs one fix's live suite against the local sandbox (see
-  below). For example, `node tools/suites/e-001-709-shim-chains.mjs` tests E-001.
+  below). For example, `node tools/suites/e-004-754-sword-of-sharpness-crit.mjs` tests E-004.
 - `node tools/vendor-review.mjs snapshot|versions|diff …`: snapshots a vendor package's packs
   (outside the repo) and diffs two versions against the open issues, for a
   [version review](#vendor-updates-version-reviews). Run it with no arguments for usage.
@@ -76,7 +76,7 @@ straight from `scripts/`.
 - `module.json` has a single `esmodules` entry, `scripts/errata5e.js`. It only imports
   `core.js` (`MODULE_ID`, `TITLE`, nothing else) and one file per fix under `scripts/patches/`,
   named `e-NNN-<issue>-<name>.js` after the fix's register row and the issue it works around
-  (`e-001-709-shim-chains.js`); the checker enforces the name. Each fix file registers its own
+  (`e-004-754-sword-of-sharpness-crit.js`); the checker enforces the name. Each fix file registers its own
   hooks and no setting: the module is one switch, every fix on when it is enabled and nothing
   touched when it is not. The fixes share nothing. The sandbox must be restarted after a fix
   file is added.
@@ -85,7 +85,7 @@ straight from `scripts/`.
 - **Each fix file opens with a doc comment:** `E-NNN · NAME`, then **THE PROBLEM** (what is
   broken, in which book/package and document, how it was measured, with dates and versions) and
   **THE FIX**. That comment holds the full write-up; the register row is its summary. Keep the
-  pure logic exported (e.g. `resolveShimChains(table)`) so a suite can test it without a world.
+  pure logic exported (e.g. `sharpnessCritValue(change, effect)`) so a suite can test it without a world.
 - **Correct at runtime; never edit the vendor's pack.** Fix the data as it loads or prepares
   (hooks, or the system's tables at `setup`). That way every copy is fixed, including items
   already on actors.
