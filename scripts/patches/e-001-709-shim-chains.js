@@ -18,6 +18,10 @@
  * and deprecation `warning` stay the first hop's), a single-hop entry is untouched, and a cycle
  * stops where it closes. The pack's data is never edited — every copy of every item with an
  * old key is fixed at once, including the next ranger's Roving.
+ *
+ * UPSTREAM-FIXED in dnd5e 6.0.6 (measured 2026-10-08): the system now points
+ * `movement.speed` straight at `movement.speeds.walk`, so its table has no chain and this fix
+ * rewrites nothing. It stays for worlds still on 6.0.5, where it rewrites the one chain.
  */
 import { TITLE } from "../core.js";
 
