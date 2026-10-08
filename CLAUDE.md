@@ -210,7 +210,7 @@ Snapshot the sandbox's version before updating a package there (or as soon as yo
 pending), and snapshot the new version after:
 - `node tools/vendor-review.mjs snapshot <package> …` extracts the installed version's packs to
   `vendor-snapshots/<package>/<version>/` three levels above the main checkout, the folder
-  above the suite (`D:\Workbench\FVTT\vendor-snapshots`), from any checkout including a worktree. That is outside
+  above the suite (`<repo parent>\..\vendor-snapshots`), from any checkout including a worktree. That is outside
   every repo (the tools refuse a path inside one): premium pack data is never committed.
   `ERRATA_SNAPSHOT_DIR` overrides the location.
 - `node tools/vendor-review.mjs diff <package> <old> <new> --issues` lists every changed, added and
