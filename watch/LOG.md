@@ -11,4 +11,4 @@ One row per run of `node tools/upstream-watch.mjs`, oldest first; a rerun on the
 | 2026-10-06 | none | 0 + 0 | 0 | 0 | no |
 | 2026-10-07 | dnd5e system 6.0.6 | 0 + 0 | 1 | 0 | [yes](2026-10-07.md) |
 | 2026-10-08 | none | 0 + 0 | 0 | 0 | no |
-| 2026-10-10 | Foundry VTT 14.369 | 2 + 0 | 0 | 3 | [yes](2026-10-10.md) |
+| 2026-10-10 | none | 2 + 0 | 0 | 3 | [yes](2026-10-10.md) |
