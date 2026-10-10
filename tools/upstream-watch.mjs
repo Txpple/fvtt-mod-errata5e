@@ -207,7 +207,10 @@ async function judge(pairs, verdict) {
 /*  Notify                                      */
 /* -------------------------------------------- */
 
-/** One open issue of ours per version review due; closed once VERSIONS.md says the review is done. */
+/**
+ * One open issue of ours per version review due; closed once VERSIONS.md says the review is done.
+ * It reports on stderr: under --json, stdout is the summary the Action parses.
+ */
 async function notify(vrows) {
   if ( !TOKEN ) throw new Error("--notify needs a token: set GH_TOKEN or GITHUB_TOKEN, or log in with gh");
   const labels = await api(`repos/${OURS}/labels?per_page=100`);
@@ -227,12 +230,12 @@ async function notify(vrows) {
       if ( mine.length ) await api(`repos/${OURS}/issues/${mine[0].number}`, { method: "PATCH", body: { title, body } });
       else await api(`repos/${OURS}/issues`, { method: "POST", body: { title, body, labels: [REVIEW_LABEL] } });
       await sleep(4000);
-      console.log(`[notify] ${title}`);
+      console.error(`[notify] ${title}`);
     } else for ( const i of mine ) {
       await api(`repos/${OURS}/issues/${i.number}/comments`, { method: "POST", body: { body: `Reviewed: VERSIONS.md now says ${r.reviewed} (${today}).` } });
       await api(`repos/${OURS}/issues/${i.number}`, { method: "PATCH", body: { state: "closed", state_reason: "completed" } });
       await sleep(4000);
-      console.log(`[notify] closed #${i.number}: ${r.name} reviewed at ${r.reviewed}`);
+      console.error(`[notify] closed #${i.number}: ${r.name} reviewed at ${r.reviewed}`);
     }
   }
 }
