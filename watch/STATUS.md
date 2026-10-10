@@ -1,22 +1,27 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-08. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-10. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
-| **Version reviews due** | none |
-| **To judge** | 0 same-document pair(s), 0 possible |
+| **Version reviews due** | Foundry VTT 14.368 → **14.369** (first seen 2026-10-10) |
+| **To judge** | 2 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 31 |
-| **New to us** | 0 open report(s), 0 first seen today |
+| **New to us** | 3 open report(s), 3 first seen today |
 
 ## To judge
 
 Each upstream report names a document one of our open issues is about. The same document is not necessarily the same bug:
 record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstream>`, dismiss one that isn't with `--different`.
 
-None.
+- `foundryvtt-premium-content#1816` [open] [Bug]: Barbarian's Brutal Strike should not target self (dnd-players-handbook) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1816
+  → our #435 Player's Handbook (2024) — Brutal Strike (phbbrbBrutalStri): Hamstring Blow's 15-foot Speed reduction hits walking speed only
+  (matched on "Brutal Strike" in the title)
+- `foundryvtt-premium-content#1817` [open] [Bug]: Ancient Green Dragon's breath should recharge on 5-6 (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1817
+  → our #119 Monster Manual (2024) — Ancient Green Dragon (mmAncientGreenDr): Poison Breath is a 15-ft Cone (rule: 90 ft) on Recharge 6 (rule: 5–6); Rend has 5-ft reach (rule: 15 ft)
+  (matched on "Ancient Green Dragon" in the title)
 
 ### Possible (a name in the body only)
 
@@ -67,11 +72,13 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
-| none | | |
+| 2026-10-10 | `foundryvtt-premium-content#1818` [[Bug]:  Council of Zulkirs token issues](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1818) | dnd-arcana-unleashed |
+| 2026-10-10 | `foundryvtt/dnd5e#7597` [D&D Modern Content Polymorph Spell No Transform Activity](https://github.com/foundryvtt/dnd5e/issues/7597) | dnd5e |
+| 2026-10-10 | `foundryvtt/dnd5e#7601` [SRD 5.1: Typo on Pass without Trace effect.](https://github.com/foundryvtt/dnd5e/issues/7601) | dnd5e |
 
 ## Sources
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 24 | 17 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 85 | 78 | 0 | 21 | 0 |
+| foundryvtt/dnd5e | 26 | 17 | 0 | 8 | 2 |
+| foundryvtt/foundryvtt-premium-content | 88 | 78 | 2 | 21 | 1 |

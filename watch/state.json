@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-08",
+ "lastScan": "2026-10-10",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -172,7 +172,26 @@
    "title": "[Bug]: Ultroloth's Dispel Magic via Fiendish Guile should be Bonus Action"
   }
  },
- "seen": {},
+ "seen": {
+  "foundryvtt/dnd5e#7601": {
+   "firstSeen": "2026-10-10",
+   "title": "SRD 5.1: Typo on Pass without Trace effect.",
+   "package": "dnd5e",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7601"
+  },
+  "foundryvtt/dnd5e#7597": {
+   "firstSeen": "2026-10-10",
+   "title": "D&D Modern Content Polymorph Spell No Transform Activity",
+   "package": "dnd5e",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7597"
+  },
+  "foundryvtt-premium-content#1818": {
+   "firstSeen": "2026-10-10",
+   "title": "[Bug]:  Council of Zulkirs token issues",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1818"
+  }
+ },
  "cited": {
   "foundryvtt/dnd5e#7586": {
    "state": "open",
