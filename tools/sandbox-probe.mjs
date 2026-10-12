@@ -2,7 +2,7 @@
  * Run a sandbox test (a "probe") with the house rules built in: it refuses while another session
  * is connected to the sandbox, runs the probe's page function as the suite user, then deletes the
  * run's leftovers: `Errata Live …` actors, items, scenes and journals, combats created during the run,
- * and the chat messages the run posted (modules post some in reaction, e.g. Battle Flow's
+ * and the chat messages the run posted (modules post some in reaction, e.g. By the Books'
  * combat-start card). LOCAL sandbox only; see CLAUDE.md § Verifying issues on the sandbox.
  *
  *   node tools/sandbox-probe.mjs <probe.mjs> [--arg <file.json>] [--timeout <seconds>] [--allow-busy]

@@ -22,7 +22,7 @@ fix is retired.
 - **Here:** a bug in something we did not write and cannot fix at the source. That means a
   premium book's data (a broken effect key, a bad activity, a wrong formula, a bad item or
   monster), the dnd5e system, Foundry itself, or a third-party module.
-- **`../fvtt-mod-battleflow`:** rules of the game. Never put rules here, and never use a vendor
+- **`../fvtt-mod-bythebooks`** (By the Books, Battle Flow until 3.0.0): rules of the game. Never put rules here, and never use a vendor
   fix as a crutch for a house module's own gaps.
 
 **Only game-breaking bugs get a fix.** Every vendor bug we find is filed as an issue, but there

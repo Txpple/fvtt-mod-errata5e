@@ -15,7 +15,7 @@
  * either: the activity's own duration is also the transformation's 1 minute. So a frightened
  * creature stays Frightened ten rounds instead of about one.
  *
- * THE FIX: when a COPY of that effect is created on a creature (the damage tray, Battle Flow's
+ * THE FIX: when a COPY of that effect is created on a creature (the damage tray, By the Books'
  * saves machine, anything that applies it), its clock is set to the system's own pseudo-expiry
  * `sourceEnd` — "End of Source's Next Turn", judged by dnd5e against the Aasimar's turn and
  * skipping the turn it was applied on (ActiveEffect5e#isExpiryEvent), exactly the rule. dnd5e's
