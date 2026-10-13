@@ -10,3 +10,5 @@ import "./core.js";
 import "./patches/e-002-710-necrotic-shroud-clock.js";
 import "./patches/e-003-711-pass-without-trace-area.js";
 import "./patches/e-004-754-sword-of-sharpness-crit.js";
+import "./patches/e-005-684-phb-creature-dex-attacks.js";
+import "./patches/e-006-169-celestial-vestige.js";
