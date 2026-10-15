@@ -17,6 +17,16 @@ until the vendor ships a real fix, and every vendor update gets a
 [version review](#vendor-updates-version-reviews) to find out. When upstream fixes the bug, the
 fix is retired.
 
+**State (2026-10-15).** At **1.2.2**, released and on prod: six register rows, E-001 retired and
+E-002 to E-006 active. Every package in VERSIONS.md is reviewed at its latest published version
+(Foundry 14.369, dnd5e 6.0.6, the six books), and the watch has no review due and nothing to judge;
+31 cited upstream reports are closed upstream, for the next version review of their package to
+re-check (`watch/STATUS.md`). The vendor snapshots on disk start at the baselines of 2026-10-03:
+dnd5e 6.0.5, PHB 2.2.0, MM 1.4.0, DMG 2.0.0, Heroes of Faerûn 2.0.0, Arcana Unleashed 1.0.2 and
+Ravenloft 2.0.0 (`vendor-review.mjs versions` lists what is there now); no earlier version was
+kept, so a bug reported against one can't be re-run. The dated journal is `docs/log/YYYY-MM.md`;
+the watch's own record is `watch/LOG.md`.
+
 ### Where a fix belongs
 
 - **Here:** a bug in something we did not write and cannot fix at the source. That means a
@@ -200,9 +210,8 @@ prepared spell copy keeps. A claim about what dnd5e *does* is confirmed only onc
 ## Vendor updates (version reviews)
 
 Vendors ship often: the dnd5e system, Foundry and the premium books all release several times a
-year, and one "Update All" on the setup screen can move several packages at once (2026-10-01:
-Heroes of Faerûn 1.1.0 → 2.0.0, Arcana Unleashed 1.0.1 → 1.0.2 and Ravenloft 1.0.1 → 2.0.0
-together). Any update can fix one of our issues, change data a fix matches on, or bring new bugs.
+year, and one "Update All" on the setup screen can move several packages at once (three books
+once moved together; `docs/log/` has the day). Any update can fix one of our issues, change data a fix matches on, or bring new bugs.
 **Every vendor update gets a version review**, as routine work, not a one-off.
 
 **Snapshot before updating.** Foundry's update overwrites the old version, and a review needs both.
@@ -215,9 +224,8 @@ pending), and snapshot the new version after:
   `ERRATA_SNAPSHOT_DIR` overrides the location.
 - `node tools/vendor-review.mjs diff <package> <old> <new> --issues` lists every changed, added and
   removed document, and the open issues that cite one.
-- `node tools/vendor-review.mjs versions` lists the snapshots on disk. Baselines taken 2026-10-03:
-  dnd5e 6.0.5, PHB 2.2.0, MM 1.4.0, DMG 2.0.0, Heroes of Faerûn 2.0.0, Arcana Unleashed 1.0.2 and
-  Ravenloft 2.0.0. No earlier version was kept, so a bug reported against one can't be re-run.
+- `node tools/vendor-review.mjs versions` lists the snapshots on disk (the baselines are in the
+  State block above).
 
 **The review**, for each package that moved (steps 1 to 4, then 5):
 1. **Read what changed.** Run the diff, and read the package's own changelog: each book ships one
@@ -253,7 +261,7 @@ stale header for a comment to explain.
   For example: `` `dnd-arcana-unleashed` 1.0.2 (premium module). Filed against 1.0.1; still present in 1.0.2. ``
 - **Live check:** the result on that version (confirmed, doesn't reproduce, or not tested live and
   why), with the date and the Foundry, dnd5e and book versions.
-  For example: `Confirmed on 2026-10-01 (Foundry 14.368, dnd5e 6.0.5, Arcana Unleashed 1.0.2).`
+  For example: `Confirmed on YYYY-MM-DD (Foundry 14.368, dnd5e 6.0.5, Arcana Unleashed 1.0.2).`
 - **Upstream:** whether that release's notes mention it, and whether that version still has it.
 
 ## Writing to GitHub
@@ -287,7 +295,7 @@ stale header for a comment to explain.
   creates an hour, shared by every session on the account) can drop a create without an error,
   so count a create only when gh prints its URL.
 - **Never file new issues in bulk.** Work the few reports a day the watch brings, one at a time.
-- **The repo is public** (since 2026-10-07, v1.1.1), like the rest of Open Roll 5e: every issue,
+- **The repo is public**, like the rest of Open Roll 5e: every issue,
   comment and commit message is visible to the vendors, so the rules above are not optional.
   Issues from outside are accepted; pull requests are not.
 
