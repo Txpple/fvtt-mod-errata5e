@@ -18,3 +18,4 @@ One row per run of `node tools/upstream-watch.mjs`, oldest first; a rerun on the
 | 2026-10-14 | none | 0 + 0 | 0 | 0 | no |
 | 2026-10-15 | none | 0 + 0 | 0 | 0 | no |
 | 2026-10-16 | none | 0 + 0 | 0 | 0 | no |
+| 2026-10-17 | none | 0 + 0 | 0 | 0 | no |
