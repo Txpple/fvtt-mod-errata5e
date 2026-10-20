@@ -1,13 +1,13 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-19. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-20. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | none |
-| **To judge** | 1 same-document pair(s), 0 possible |
+| **To judge** | 2 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 31 |
 | **New to us** | 0 open report(s), 0 first seen today |
 
@@ -19,6 +19,9 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1822` [open] [Bug]: Greater Star Spawn Emissary's force damage resistance is in "special" text field (dnd-ravenloft-horrors-within) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1822
   → our #281 Ravenloft: The Horrors Within — Greater and Lesser Star Spawn Emissary (rhwGreaterStarSp): Force resistance is only free text, so Force damage is never halved
   (matched on "Greater" in the title)
+- `foundryvtt-premium-content#1823` [open] [Bug]: Death Cultist has text error in multiattack: 2x Dread Scythe (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1823
+  → our #209 Monster Manual (2024) — Cultist (mmCultist0000000): Ritual Sickle's base damage has no type (rule: Slashing)
+  (matched on "Cultist" in the title)
 
 ### Possible (a name in the body only)
 
@@ -76,4 +79,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 26 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 90 | 79 | 1 | 22 | 0 |
+| foundryvtt/foundryvtt-premium-content | 91 | 79 | 2 | 22 | 0 |
