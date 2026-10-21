@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-20",
+ "lastScan": "2026-10-21",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -182,7 +182,14 @@
    "title": "[Bug]: Ancient Green Dragon's breath should recharge on 5-6"
   }
  },
- "seen": {},
+ "seen": {
+  "foundryvtt-premium-content#1824": {
+   "firstSeen": "2026-10-21",
+   "title": "[Bug]: Troll's regeneration text has hardcoded names",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1824"
+  }
+ },
  "cited": {
   "foundryvtt/dnd5e#7597": {
    "state": "open",
