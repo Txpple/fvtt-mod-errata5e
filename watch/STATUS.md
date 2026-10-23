@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-22. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-23. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -8,8 +8,8 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | --- | --- |
 | **Version reviews due** | none |
 | **To judge** | 2 same-document pair(s), 0 possible |
-| **Cited upstream reports now closed** | 31 |
-| **New to us** | 2 open report(s), 1 first seen today |
+| **Cited upstream reports now closed** | 32 |
+| **New to us** | 2 open report(s), 0 first seen today |
 
 ## To judge
 
@@ -64,6 +64,7 @@ Our open issues cite these, and the vendor has closed them: re-check each at the
 | `foundryvtt/dnd5e#5772` D&D 5.04 Hex and Hunters Mark Damage Activities don't allow critical damage | 2025-06-20 (completed) | #766, #432, #430, #427, #425 |
 | `foundryvtt/dnd5e#6132` 2024 Alchemist's Fire has "Half Damage" on save. Should be "No Damage" | 2025-09-09 (completed) | #3 |
 | `foundryvtt/dnd5e#6857` Bestow Curse (2024)'s "Curse Ability" activity does not include the potential effects | 2026-03-31 (completed) | #610 |
+| `foundryvtt/dnd5e#7586` Sneak Attack activity does not consume or recover its use | 2026-10-22 (completed) | #784 |
 
 ## New to us
 
@@ -79,5 +80,5 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 27 | 18 | 0 | 8 | 1 |
+| foundryvtt/dnd5e | 26 | 18 | 0 | 8 | 1 |
 | foundryvtt/foundryvtt-premium-content | 92 | 79 | 2 | 22 | 1 |

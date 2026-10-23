@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-22",
+ "lastScan": "2026-10-23",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -209,9 +209,9 @@
    ]
   },
   "foundryvtt/dnd5e#7586": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-10-22",
    "title": "Sneak Attack activity does not consume or recover its use",
    "url": "https://github.com/foundryvtt/dnd5e/issues/7586",
    "package": "dnd5e",
