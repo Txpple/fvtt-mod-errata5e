@@ -1,13 +1,13 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-25. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-26. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | none |
-| **To judge** | 2 same-document pair(s), 0 possible |
+| **To judge** | 3 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
 | **New to us** | 2 open report(s), 0 first seen today |
 
@@ -22,6 +22,9 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1823` [open] [Bug]: Death Cultist has text error in multiattack: 2x Dread Scythe (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1823
   → our #209 Monster Manual (2024) — Cultist (mmCultist0000000): Ritual Sickle's base damage has no type (rule: Slashing)
   (matched on "Cultist" in the title)
+- `foundryvtt-premium-content#1828` [open] [Bug]: Pit Fiend's Hellfire spellcasting has extra period (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1828
+  → our #141 Monster Manual (2024) — Pit Fiend (mmPitFiend000000): Bite has 5-ft reach (rule: 10 ft); its poison save has no saving-throw ability
+  (matched on "Pit Fiend" in the title)
 
 ### Possible (a name in the body only)
 
@@ -81,4 +84,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 26 | 18 | 0 | 8 | 1 |
-| foundryvtt/foundryvtt-premium-content | 92 | 79 | 2 | 22 | 1 |
+| foundryvtt/foundryvtt-premium-content | 93 | 79 | 3 | 22 | 1 |
