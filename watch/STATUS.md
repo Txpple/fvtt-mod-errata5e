@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-26. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-27. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | none |
-| **To judge** | 3 same-document pair(s), 0 possible |
+| **To judge** | 5 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
-| **New to us** | 2 open report(s), 0 first seen today |
+| **New to us** | 1 open report(s), 0 first seen today |
 
 ## To judge
 
@@ -25,6 +25,12 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1828` [open] [Bug]: Pit Fiend's Hellfire spellcasting has extra period (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1828
   → our #141 Monster Manual (2024) — Pit Fiend (mmPitFiend000000): Bite has 5-ft reach (rule: 10 ft); its poison save has no saving-throw ability
   (matched on "Pit Fiend" in the title)
+- `foundryvtt-premium-content#1829` [open] [Bug]: Effect on Brazen Gorgon's Smelting Charge action incorrect (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1829
+  → our #387 Monster Manual (2024) — Gorgon (mmGorgon00000000): No immunity to Exhaustion, Petrified
+  (matched on "Gorgon" in the title)
+- `foundryvtt-premium-content#1830` [open] [Bug]: Spirit Naga – Incorrectly Merged Habitat Entries (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1830
+  → our #137 Monster Manual (2024) — Spirit Naga (mmSpiritNaga0000): Bite has 5-ft reach (rule: 10 ft); Necrotic Ray is +7 to hit (rule: +6)
+  (matched on "Spirit Naga" in the title)
 
 ### Possible (a name in the body only)
 
@@ -76,12 +82,11 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
-| 2026-10-22 | `foundryvtt/dnd5e#7643` [Wand of Wonder missing Expend activity referenced in its Foundry Note](https://github.com/foundryvtt/dnd5e/issues/7643) | dnd5e |
 | 2026-10-21 | `foundryvtt-premium-content#1824` [[Bug]: Troll's regeneration text has hardcoded names](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1824) | dnd-monster-manual |
 
 ## Sources
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 26 | 18 | 0 | 8 | 1 |
-| foundryvtt/foundryvtt-premium-content | 93 | 79 | 3 | 22 | 1 |
+| foundryvtt/dnd5e | 25 | 18 | 0 | 8 | 0 |
+| foundryvtt/foundryvtt-premium-content | 95 | 79 | 5 | 22 | 1 |
