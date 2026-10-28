@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-27. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-28. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
-| **Version reviews due** | none |
+| **Version reviews due** | Forgotten Realms: Heroes of Faerûn 2.0.0 → **2.0.1** (first seen 2026-10-28) |
 | **To judge** | 5 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
-| **New to us** | 1 open report(s), 0 first seen today |
+| **New to us** | 5 open report(s), 4 first seen today |
 
 ## To judge
 
@@ -82,11 +82,15 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-10-28 | `foundryvtt-premium-content#1831` [[Bug]: Maps missing background images](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1831) | dnd-heroes-faerun |
+| 2026-10-28 | `foundryvtt-premium-content#1833` [[Bug]: Dragon Turtle token missing.](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1833) | dnd-arcana-unleashed |
+| 2026-10-28 | `foundryvtt-premium-content#1834` [[Bug]: Death Knight Aspirant portrait and token missing.](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1834) | dnd-arcana-unleashed |
+| 2026-10-28 | `foundryvtt-premium-content#1835` [[Bug]: Flameshield portrait and token missing.](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1835) | dnd-arcana-unleashed |
 | 2026-10-21 | `foundryvtt-premium-content#1824` [[Bug]: Troll's regeneration text has hardcoded names](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1824) | dnd-monster-manual |
 
 ## Sources
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 25 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 95 | 79 | 5 | 22 | 1 |
+| foundryvtt/dnd5e | 24 | 18 | 0 | 8 | 0 |
+| foundryvtt/foundryvtt-premium-content | 99 | 79 | 5 | 22 | 5 |

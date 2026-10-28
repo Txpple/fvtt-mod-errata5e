@@ -18,7 +18,7 @@ When **Latest published** is newer than **Reviewed**, the package needs a versio
 | dnd-players-handbook | Player's Handbook (2024) | 2.2.0 | 2026-10-01 | 2.2.0 | 2026-10-01 |
 | dnd-dungeon-masters-guide | Dungeon Master's Guide (2024) | 2.0.0 | 2026-10-01 | 2.0.0 | 2026-10-01 |
 | dnd-monster-manual | Monster Manual (2024) | 1.4.0 | 2026-10-01 | 1.4.0 | 2026-10-01 |
-| dnd-heroes-faerun | Forgotten Realms: Heroes of Faerûn | 2.0.0 | 2026-10-01 | 2.0.0 | 2026-10-01 |
+| dnd-heroes-faerun | Forgotten Realms: Heroes of Faerûn | 2.0.0 | 2026-10-01 | 2.0.1 | 2026-10-28 |
 | dnd-arcana-unleashed | Arcana Unleashed | 1.0.2 | 2026-10-01 | 1.0.2 | 2026-10-01 |
 | dnd-ravenloft-horrors-within | Ravenloft: The Horrors Within | 2.0.0 | 2026-10-01 | 2.0.0 | 2026-10-01 |
 <!-- versions:end -->

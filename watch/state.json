@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-27",
+ "lastScan": "2026-10-28",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -183,6 +183,30 @@
   }
  },
  "seen": {
+  "foundryvtt-premium-content#1835": {
+   "firstSeen": "2026-10-28",
+   "title": "[Bug]: Flameshield portrait and token missing.",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1835"
+  },
+  "foundryvtt-premium-content#1834": {
+   "firstSeen": "2026-10-28",
+   "title": "[Bug]: Death Knight Aspirant portrait and token missing.",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1834"
+  },
+  "foundryvtt-premium-content#1833": {
+   "firstSeen": "2026-10-28",
+   "title": "[Bug]: Dragon Turtle token missing.",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1833"
+  },
+  "foundryvtt-premium-content#1831": {
+   "firstSeen": "2026-10-28",
+   "title": "[Bug]: Maps missing background images",
+   "package": "dnd-heroes-faerun",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1831"
+  },
   "foundryvtt-premium-content#1824": {
    "firstSeen": "2026-10-21",
    "title": "[Bug]: Troll's regeneration text has hardcoded names",
