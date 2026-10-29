@@ -30,3 +30,4 @@ One row per run of `node tools/upstream-watch.mjs`, oldest first; a rerun on the
 | 2026-10-26 | none | 3 + 0 | 0 | 0 | [yes](2026-10-26.md) |
 | 2026-10-27 | none | 5 + 0 | 0 | 0 | [yes](2026-10-27.md) |
 | 2026-10-28 | Forgotten Realms: Heroes of Faerûn 2.0.1 | 5 + 0 | 0 | 4 | [yes](2026-10-28.md) |
+| 2026-10-29 | Forgotten Realms: Heroes of Faerûn 2.0.1 | 5 + 0 | 0 | 1 | [yes](2026-10-29.md) |
