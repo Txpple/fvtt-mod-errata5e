@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-29. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-30. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | Forgotten Realms: Heroes of Faerûn 2.0.0 → **2.0.1** (first seen 2026-10-28) |
 | **To judge** | 5 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
-| **New to us** | 6 open report(s), 1 first seen today |
+| **New to us** | 7 open report(s), 1 first seen today |
 
 ## To judge
 
@@ -82,6 +82,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-10-30 | `foundryvtt-premium-content#1841` [[Bug]: Hindsight (and maybe other spells) don't state that their component is consumed](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1841) | dnd-arcana-unleashed |
 | 2026-10-29 | `foundryvtt-premium-content#1837` [[Bug]: Damaging emanation spells are not consistent](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1837) | dnd-players-handbook |
 | 2026-10-28 | `foundryvtt-premium-content#1831` [[Bug]: Maps missing background images](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1831) | dnd-heroes-faerun |
 | 2026-10-28 | `foundryvtt-premium-content#1833` [[Bug]: Dragon Turtle token missing.](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1833) | dnd-arcana-unleashed |
@@ -94,4 +95,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 24 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 100 | 79 | 5 | 22 | 6 |
+| foundryvtt/foundryvtt-premium-content | 101 | 79 | 5 | 22 | 7 |

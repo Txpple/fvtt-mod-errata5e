@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-10-29",
+ "lastScan": "2026-10-30",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -183,6 +183,12 @@
   }
  },
  "seen": {
+  "foundryvtt-premium-content#1841": {
+   "firstSeen": "2026-10-30",
+   "title": "[Bug]: Hindsight (and maybe other spells) don't state that their component is consumed",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1841"
+  },
   "foundryvtt-premium-content#1837": {
    "firstSeen": "2026-10-29",
    "title": "[Bug]: Damaging emanation spells are not consistent",
