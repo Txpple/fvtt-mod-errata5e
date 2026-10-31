@@ -101,7 +101,6 @@ tools/
   recheck.mjs          sort a package's open issues by whether their documents changed
   record-live-check.mjs record a sandbox test on an issue
   sandbox-probe.mjs    run a sandbox test with the house rules built in
-  build-release.ps1    build the release zip
   lib/                 shared helpers: paths, the package list and matching, snapshots
   suites/              one live suite per fix that has one: e-NNN-<issue>-<name>.mjs
 watch/                 the upstream watch's status page, log, state and digests
@@ -122,7 +121,8 @@ There is no build step: the module is plain ES modules loaded straight from `scr
   copy of the production world. The suites and the sandbox tools use the house MCP repo
   (`fvtt-mcp-dnd5e`, a `file:` dev dependency beside this one); run `npm install` once.
 - Releases: bump `version` and the `download` URL in `module.json` together, build the zip with
-  `tools/build-release.ps1`, tag `vX.Y.Z`, and publish the zip and manifest as a GitHub release.
+  the suite's builder (`node ../tools/build-module-zip.mjs . --tag vX.Y.Z` from a clone in
+  [fvtt-suite-openroll5e](https://github.com/Txpple/fvtt-suite-openroll5e)), tag `vX.Y.Z`, and publish the zip and manifest as a GitHub release.
 
 <!-- openroll5e:family -->
 ## Part of Open Roll 5e

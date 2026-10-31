@@ -80,8 +80,8 @@ straight from `scripts/`.
 - `node tools/upstream-watch.mjs`: the daily upstream watch, run by a GitHub Action; see
   [Upstream watch](#upstream-watch). `--record <ours>=<upstream>` cites a confirmed pair,
   `--different <ours>=<upstream>` dismisses one.
-- `powershell -ExecutionPolicy Bypass -File tools/build-release.ps1`: builds the release zip in
-  `dist/`.
+- `node ../tools/build-module-zip.mjs . --tag vX.Y.Z`: builds the release zip in `dist/` with the suite's
+  builder (this clone sits in the suite folder) and reads it back.
 
 ## Layout and conventions (shared across Open Roll 5e)
 
@@ -368,7 +368,7 @@ upstream repo, and never files, closes or relabels a vendor issue.
 
 ## Release ritual
 
-Bump `version` and the `download` URL in `module.json` together; `build-release.ps1` refuses a
-mismatch. Make one `release:` commit, tag `vX.Y.Z`, and push with tags. Then run
+Bump `version` and the `download` URL in `module.json` together; the suite's
+`tools/build-module-zip.mjs` refuses a mismatch (`node ../tools/build-module-zip.mjs . --tag vX.Y.Z`). Make one `release:` commit, tag `vX.Y.Z`, and push with tags. Then run
 `gh release create vX.Y.Z --notes-file dist/RELEASE-NOTES.md dist/fvtt-mod-errata5e.zip module.json`.
-The zip entries must use forward slashes; the script writes them that way and verifies it.
+The builder writes forward-slash entries, refuses CRLF files and reads the archive back against the tree.
