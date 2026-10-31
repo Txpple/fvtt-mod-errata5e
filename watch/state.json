@@ -180,6 +180,31 @@
    "verdict": "same",
    "on": "2026-10-13",
    "title": "[Bug]: Ancient Green Dragon's breath should recharge on 5-6"
+  },
+  "281=foundryvtt-premium-content#1822": {
+   "verdict": "same",
+   "on": "2026-10-31",
+   "title": "[Bug]: Greater Star Spawn Emissary's force damage resistance is in \"special\" text field"
+  },
+  "209=foundryvtt-premium-content#1823": {
+   "verdict": "different",
+   "on": "2026-10-31",
+   "title": "[Bug]: Death Cultist has text error in multiattack: 2x Dread Scythe"
+  },
+  "141=foundryvtt-premium-content#1828": {
+   "verdict": "different",
+   "on": "2026-10-31",
+   "title": "[Bug]: Pit Fiend's Hellfire spellcasting has extra period"
+  },
+  "387=foundryvtt-premium-content#1829": {
+   "verdict": "different",
+   "on": "2026-10-31",
+   "title": "[Bug]: Effect on Brazen Gorgon's Smelting Charge action incorrect"
+  },
+  "137=foundryvtt-premium-content#1830": {
+   "verdict": "different",
+   "on": "2026-10-31",
+   "title": "[Bug]: Spirit Naga – Incorrectly Merged Habitat Entries"
   }
  },
  "seen": {
@@ -1603,6 +1628,17 @@
    "package": "dnd-players-handbook",
    "ours": [
     323
+   ]
+  },
+  "foundryvtt-premium-content#1822": {
+   "state": "open",
+   "reason": null,
+   "closedAt": null,
+   "title": "[Bug]: Greater Star Spawn Emissary's force damage resistance is in \"special\" text field",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1822",
+   "package": "dnd-ravenloft-horrors-within",
+   "ours": [
+    281
    ]
   },
   "foundryvtt-premium-content#1790": {

@@ -6,8 +6,8 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 
 | | |
 | --- | --- |
-| **Version reviews due** | Forgotten Realms: Heroes of Faerûn 2.0.0 → **2.0.1** (first seen 2026-10-28) |
-| **To judge** | 5 same-document pair(s), 0 possible |
+| **Version reviews due** | none |
+| **To judge** | 0 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
 | **New to us** | 7 open report(s), 0 first seen today |
 
@@ -16,21 +16,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 Each upstream report names a document one of our open issues is about. The same document is not necessarily the same bug:
 record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstream>`, dismiss one that isn't with `--different`.
 
-- `foundryvtt-premium-content#1822` [open] [Bug]: Greater Star Spawn Emissary's force damage resistance is in "special" text field (dnd-ravenloft-horrors-within) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1822
-  → our #281 Ravenloft: The Horrors Within — Greater and Lesser Star Spawn Emissary (rhwGreaterStarSp): Force resistance is only free text, so Force damage is never halved
-  (matched on "Greater" in the title)
-- `foundryvtt-premium-content#1823` [open] [Bug]: Death Cultist has text error in multiattack: 2x Dread Scythe (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1823
-  → our #209 Monster Manual (2024) — Cultist (mmCultist0000000): Ritual Sickle's base damage has no type (rule: Slashing)
-  (matched on "Cultist" in the title)
-- `foundryvtt-premium-content#1828` [open] [Bug]: Pit Fiend's Hellfire spellcasting has extra period (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1828
-  → our #141 Monster Manual (2024) — Pit Fiend (mmPitFiend000000): Bite has 5-ft reach (rule: 10 ft); its poison save has no saving-throw ability
-  (matched on "Pit Fiend" in the title)
-- `foundryvtt-premium-content#1829` [open] [Bug]: Effect on Brazen Gorgon's Smelting Charge action incorrect (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1829
-  → our #387 Monster Manual (2024) — Gorgon (mmGorgon00000000): No immunity to Exhaustion, Petrified
-  (matched on "Gorgon" in the title)
-- `foundryvtt-premium-content#1830` [open] [Bug]: Spirit Naga – Incorrectly Merged Habitat Entries (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1830
-  → our #137 Monster Manual (2024) — Spirit Naga (mmSpiritNaga0000): Bite has 5-ft reach (rule: 10 ft); Necrotic Ray is +7 to hit (rule: +6)
-  (matched on "Spirit Naga" in the title)
+None.
 
 ### Possible (a name in the body only)
 
@@ -95,4 +81,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 24 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 101 | 79 | 5 | 22 | 7 |
+| foundryvtt/foundryvtt-premium-content | 101 | 80 | 0 | 26 | 7 |

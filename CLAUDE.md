@@ -17,15 +17,17 @@ until the vendor ships a real fix, and every vendor update gets a
 [version review](#vendor-updates-version-reviews) to find out. When upstream fixes the bug, the
 fix is retired.
 
-**State (2026-10-15).** At **1.2.2**, released and on prod: six register rows, E-001 retired and
+**State (2026-10-31).** At **1.2.2**, released and on prod: six register rows, E-001 retired and
 E-002 to E-006 active. Every package in VERSIONS.md is reviewed at its latest published version
-(Foundry 14.369, dnd5e 6.0.6, the six books), and the watch has no review due and nothing to judge;
-31 cited upstream reports are closed upstream, for the next version review of their package to
-re-check (`watch/STATUS.md`). The vendor snapshots on disk start at the baselines of 2026-10-03:
-dnd5e 6.0.5, PHB 2.2.0, MM 1.4.0, DMG 2.0.0, Heroes of Faerûn 2.0.0, Arcana Unleashed 1.0.2 and
-Ravenloft 2.0.0 (`vendor-review.mjs versions` lists what is there now); no earlier version was
-kept, so a bug reported against one can't be re-run. The dated journal is `docs/log/YYYY-MM.md`;
-the watch's own record is `watch/LOG.md`.
+(Foundry 14.369, dnd5e 6.0.6, the six books, Heroes of Faerûn at 2.0.1, a release that changed no
+document), and the watch has no review due and nothing to judge; 32 cited upstream reports are
+closed upstream, for the next version review of their package to re-check (`watch/STATUS.md`).
+Issue #793 (Arcana Unleashed's Battle Familiars) has no header or test on record, so
+`check-issues` fails on it. The vendor snapshots on the development machine hold only Heroes of
+Faerûn 2.0.0 and 2.0.1 (`vendor-review.mjs versions` lists them); the baselines of the other
+packages (dnd5e 6.0.5, PHB 2.2.0, MM 1.4.0, DMG 2.0.0, Arcana Unleashed 1.0.2, Ravenloft 2.0.0)
+are not on it, so each needs its installed version snapshotted before it next moves. The dated
+journal is `docs/log/YYYY-MM.md`; the watch's own record is `watch/LOG.md`.
 
 ### Where a fix belongs
 
