@@ -22,8 +22,7 @@ E-002 to E-006 active. Every package in VERSIONS.md is reviewed at its latest pu
 (Foundry 14.369, dnd5e 6.0.6, the six books, Heroes of Faerûn at 2.0.1, a release that changed no
 document), and the watch has no review due and nothing to judge; 32 cited upstream reports are
 closed upstream, for the next version review of their package to re-check (`watch/STATUS.md`).
-Issue #793 (Arcana Unleashed's Battle Familiars) has no header or test on record, so
-`check-issues` fails on it. The vendor snapshots on the development machine hold only Heroes of
+The vendor snapshots on the development machine hold only Heroes of
 Faerûn 2.0.0 and 2.0.1 (`vendor-review.mjs versions` lists them); the baselines of the other
 packages (dnd5e 6.0.5, PHB 2.2.0, MM 1.4.0, DMG 2.0.0, Arcana Unleashed 1.0.2, Ravenloft 2.0.0)
 are not on it, so each needs its installed version snapshotted before it next moves. The dated
