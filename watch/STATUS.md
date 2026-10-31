@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-30. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-10-31. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | Forgotten Realms: Heroes of Faerûn 2.0.0 → **2.0.1** (first seen 2026-10-28) |
 | **To judge** | 5 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
-| **New to us** | 7 open report(s), 1 first seen today |
+| **New to us** | 7 open report(s), 0 first seen today |
 
 ## To judge
 
