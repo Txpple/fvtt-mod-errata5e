@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-01. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-02. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | none |
 | **To judge** | 1 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
-| **New to us** | 8 open report(s), 1 first seen today |
+| **New to us** | 8 open report(s), 0 first seen today |
 
 ## To judge
 
