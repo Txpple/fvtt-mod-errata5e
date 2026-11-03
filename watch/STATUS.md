@@ -1,13 +1,13 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-02. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-03. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | none |
-| **To judge** | 1 same-document pair(s), 0 possible |
+| **To judge** | 2 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
 | **New to us** | 8 open report(s), 0 first seen today |
 
@@ -19,6 +19,9 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1842` [open] [Bug]: Terrifying Presence Description incorrect (feature & Dracolich activity) (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1842
   → our #128 Monster Manual (2024) — Dracolich (mmDracolich00000): Rend has 5-ft reach (rule: 10 ft)
   (matched on "Dracolich" in the title)
+- `foundryvtt-premium-content#1844` [open] [Bug]: Swarm of Venomous Snakes' Bites is missing period at end of text (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1844
+  → our #428 Monster Manual (2024) — Swarm of Venomous Snakes (mmSwarmOfVenomou): No Bludgeoning/Piercing/Slashing resistance and no swarm condition immunities
+  (matched on "Swarm of Venomous Snakes" in the title)
 
 ### Possible (a name in the body only)
 
@@ -84,4 +87,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 24 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 103 | 80 | 1 | 26 | 8 |
+| foundryvtt/foundryvtt-premium-content | 104 | 80 | 2 | 26 | 8 |
