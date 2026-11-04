@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-03",
+ "lastScan": "2026-11-04",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -208,6 +208,12 @@
   }
  },
  "seen": {
+  "foundryvtt-premium-content#1845": {
+   "firstSeen": "2026-11-04",
+   "title": "[Bug]: Euphoria Breath effect on Faerie Dragon Youth",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1845"
+  },
   "foundryvtt-premium-content#1843": {
    "firstSeen": "2026-11-01",
    "title": "[Bug]: Typo in rollable table name: \"Pirate Flag- Acesosry\"",

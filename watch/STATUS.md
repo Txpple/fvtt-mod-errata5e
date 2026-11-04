@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-03. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-04. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
-| **Version reviews due** | none |
+| **Version reviews due** | Foundry VTT 14.369 → **14.370** (first seen 2026-11-04) |
 | **To judge** | 2 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
-| **New to us** | 8 open report(s), 0 first seen today |
+| **New to us** | 9 open report(s), 1 first seen today |
 
 ## To judge
 
@@ -73,6 +73,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-04 | `foundryvtt-premium-content#1845` [[Bug]: Euphoria Breath effect on Faerie Dragon Youth](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1845) | dnd-monster-manual |
 | 2026-11-01 | `foundryvtt-premium-content#1843` [[Bug]: Typo in rollable table name: "Pirate Flag- Acesosry"](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1843) | dnd-monster-manual |
 | 2026-10-30 | `foundryvtt-premium-content#1841` [[Bug]: Hindsight (and maybe other spells) don't state that their component is consumed](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1841) | dnd-arcana-unleashed |
 | 2026-10-29 | `foundryvtt-premium-content#1837` [[Bug]: Damaging emanation spells are not consistent](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1837) | dnd-players-handbook |
@@ -87,4 +88,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 24 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 104 | 80 | 2 | 26 | 8 |
+| foundryvtt/foundryvtt-premium-content | 105 | 80 | 2 | 26 | 9 |
