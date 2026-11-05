@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-04. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-05. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | Foundry VTT 14.369 → **14.370** (first seen 2026-11-04) |
-| **To judge** | 2 same-document pair(s), 0 possible |
+| **To judge** | 3 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
-| **New to us** | 9 open report(s), 1 first seen today |
+| **New to us** | 9 open report(s), 0 first seen today |
 
 ## To judge
 
@@ -20,6 +20,9 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
   → our #128 Monster Manual (2024) — Dracolich (mmDracolich00000): Rend has 5-ft reach (rule: 10 ft)
   (matched on "Dracolich" in the title)
 - `foundryvtt-premium-content#1844` [open] [Bug]: Swarm of Venomous Snakes' Bites is missing period at end of text (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1844
+  → our #428 Monster Manual (2024) — Swarm of Venomous Snakes (mmSwarmOfVenomou): No Bludgeoning/Piercing/Slashing resistance and no swarm condition immunities
+  (matched on "Swarm of Venomous Snakes" in the title)
+- `foundryvtt-premium-content#1847` [open] [Bug]: Swarm of Venomous Snakes is missing resistances (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1847
   → our #428 Monster Manual (2024) — Swarm of Venomous Snakes (mmSwarmOfVenomou): No Bludgeoning/Piercing/Slashing resistance and no swarm condition immunities
   (matched on "Swarm of Venomous Snakes" in the title)
 
@@ -88,4 +91,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 24 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 105 | 80 | 2 | 26 | 9 |
+| foundryvtt/foundryvtt-premium-content | 106 | 80 | 3 | 26 | 9 |
