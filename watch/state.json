@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-05",
+ "lastScan": "2026-11-06",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -208,6 +208,18 @@
   }
  },
  "seen": {
+  "foundryvtt-premium-content#1849": {
+   "firstSeen": "2026-11-06",
+   "title": "[Bug]: Effect of Weakening Breath incorrect for Gold Dragons (except Wyrmling)",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1849"
+  },
+  "foundryvtt-premium-content#1848": {
+   "firstSeen": "2026-11-06",
+   "title": "[Bug]: Githyanki mentioned in Githzerai-specific ability Psi-Powered Leap",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1848"
+  },
   "foundryvtt-premium-content#1845": {
    "firstSeen": "2026-11-04",
    "title": "[Bug]: Euphoria Breath effect on Faerie Dragon Youth",
