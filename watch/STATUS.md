@@ -6,7 +6,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 
 | | |
 | --- | --- |
-| **Version reviews due** | Foundry VTT 14.369 → **14.370** (first seen 2026-11-04) |
+| **Version reviews due** | none |
 | **To judge** | 3 same-document pair(s), 0 possible |
 | **Cited upstream reports now closed** | 32 |
 | **New to us** | 11 open report(s), 2 first seen today |

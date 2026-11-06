@@ -17,10 +17,10 @@ until the vendor ships a real fix, and every vendor update gets a
 [version review](#vendor-updates-version-reviews) to find out. When upstream fixes the bug, the
 fix is retired.
 
-**State (2026-10-31).** At **1.2.2**, released and on prod: six register rows, E-001 retired and
+**State (2026-11-06).** At **1.2.2**, released and on prod: six register rows, E-001 retired and
 E-002 to E-006 active. Every package in VERSIONS.md is reviewed at its latest published version
-(Foundry 14.369, dnd5e 6.0.6, the six books, Heroes of Faerûn at 2.0.1, a release that changed no
-document), and the watch has no review due and nothing to judge; 32 cited upstream reports are
+(Foundry 14.370, its review on the sandbox re-measuring E-002 to E-006, dnd5e 6.0.6, the six books, Heroes of Faerûn at 2.0.1, a release that changed no
+document), and the watch has no review due; three same-document pairs wait to be judged; 32 cited upstream reports are
 closed upstream, for the next version review of their package to re-check (`watch/STATUS.md`).
 The vendor snapshots on the development machine hold only Heroes of
 Faerûn 2.0.0 and 2.0.1 (`vendor-review.mjs versions` lists them); the baselines of the other
