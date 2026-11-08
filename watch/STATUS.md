@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-07. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-08. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | none |
 | **To judge** | 5 same-document pair(s), 1 possible |
 | **Cited upstream reports now closed** | 32 |
-| **New to us** | 11 open report(s), 0 first seen today |
+| **New to us** | 12 open report(s), 1 first seen today |
 
 ## To judge
 
@@ -84,6 +84,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-08 | `foundryvtt-premium-content#1854` [[Bug]: Stench ability from Hezrou](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1854) | dnd-monster-manual |
 | 2026-11-06 | `foundryvtt-premium-content#1848` [[Bug]: Githyanki mentioned in Githzerai-specific ability Psi-Powered Leap](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1848) | dnd-monster-manual |
 | 2026-11-06 | `foundryvtt-premium-content#1849` [[Bug]: Effect of Weakening Breath incorrect for Gold Dragons (except Wyrmling)](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1849) | dnd-monster-manual |
 | 2026-11-04 | `foundryvtt-premium-content#1845` [[Bug]: Euphoria Breath effect on Faerie Dragon Youth](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1845) | dnd-monster-manual |
@@ -101,4 +102,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 24 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 110 | 80 | 6 | 26 | 11 |
+| foundryvtt/foundryvtt-premium-content | 111 | 80 | 6 | 26 | 12 |

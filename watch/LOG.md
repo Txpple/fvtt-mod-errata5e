@@ -40,3 +40,4 @@ One row per run of `node tools/upstream-watch.mjs`, oldest first; a rerun on the
 | 2026-11-05 | Foundry VTT 14.370 | 3 + 0 | 0 | 0 | [yes](2026-11-05.md) |
 | 2026-11-06 | none | 3 + 0 | 0 | 2 | [yes](2026-11-06.md) |
 | 2026-11-07 | none | 5 + 1 | 0 | 0 | [yes](2026-11-07.md) |
+| 2026-11-08 | none | 5 + 1 | 0 | 1 | [yes](2026-11-08.md) |
