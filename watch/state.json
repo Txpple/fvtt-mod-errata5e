@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-09",
+ "lastScan": "2026-11-10",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -208,6 +208,18 @@
   }
  },
  "seen": {
+  "foundryvtt/dnd5e#7712": {
+   "firstSeen": "2026-11-10",
+   "title": "Icon update suggestions for Crowbar, Sling, Iron Flask",
+   "package": "dnd5e",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/7712"
+  },
+  "foundryvtt-premium-content#1856": {
+   "firstSeen": "2026-11-10",
+   "title": "[Bug]: Prismatic Rune Implementation",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1856"
+  },
   "foundryvtt-premium-content#1854": {
    "firstSeen": "2026-11-08",
    "title": "[Bug]: Stench ability from Hezrou",
@@ -1551,9 +1563,9 @@
    ]
   },
   "foundryvtt-premium-content#1689": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-09",
    "title": "[Bug]: Indomitable use activity does not consume item use",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1689",
    "package": "dnd-players-handbook",
@@ -1760,9 +1772,9 @@
    ]
   },
   "foundryvtt-premium-content#1685": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-09",
    "title": "[Bug]: Sorcerer class has no advancement to replace a Metamagic option on level up",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1685",
    "package": "dnd-players-handbook",

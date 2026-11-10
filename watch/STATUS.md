@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-09. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-10. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -8,8 +8,8 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | --- | --- |
 | **Version reviews due** | none |
 | **To judge** | 5 same-document pair(s), 1 possible |
-| **Cited upstream reports now closed** | 32 |
-| **New to us** | 12 open report(s), 0 first seen today |
+| **Cited upstream reports now closed** | 34 |
+| **New to us** | 14 open report(s), 2 first seen today |
 
 ## To judge
 
@@ -71,6 +71,8 @@ Our open issues cite these, and the vendor has closed them: re-check each at the
 | `foundryvtt-premium-content#1574` [Bug]: Starting equipment of Backgrounds and Classes does not include gold for option A | 2026-06-25 (completed) | #344 |
 | `foundryvtt-premium-content#1596` [Bug]: Boon of Fate & Boon of Irresistible Offense don't have level prerequisite set | 2026-06-24 (completed) | #323 |
 | `foundryvtt-premium-content#1675` [Bug]: Contagion spell has half damage on save configured, should be "no damage" | 2026-06-30 (completed) | #541 |
+| `foundryvtt-premium-content#1685` [Bug]: Sorcerer class has no advancement to replace a Metamagic option on level up | 2026-11-09 (completed) | #95 |
+| `foundryvtt-premium-content#1689` [Bug]: Indomitable use activity does not consume item use | 2026-11-09 (completed) | #383 |
 | `foundryvtt-premium-content#798` [Bug]: Some effects, like that of Mind Sliver, have incorrect duration for "before the end of your next turn" | 2025-02-27 (completed) | #62 |
 | `foundryvtt/dnd5e#5772` D&D 5.04 Hex and Hunters Mark Damage Activities don't allow critical damage | 2025-06-20 (completed) | #766, #432, #430, #427, #425 |
 | `foundryvtt/dnd5e#6132` 2024 Alchemist's Fire has "Half Damage" on save. Should be "No Damage" | 2025-09-09 (completed) | #3 |
@@ -84,6 +86,8 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-10 | `foundryvtt-premium-content#1856` [[Bug]: Prismatic Rune Implementation](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1856) | dnd-arcana-unleashed |
+| 2026-11-10 | `foundryvtt/dnd5e#7712` [Icon update suggestions for Crowbar, Sling, Iron Flask](https://github.com/foundryvtt/dnd5e/issues/7712) | dnd5e |
 | 2026-11-08 | `foundryvtt-premium-content#1854` [[Bug]: Stench ability from Hezrou](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1854) | dnd-monster-manual |
 | 2026-11-06 | `foundryvtt-premium-content#1848` [[Bug]: Githyanki mentioned in Githzerai-specific ability Psi-Powered Leap](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1848) | dnd-monster-manual |
 | 2026-11-06 | `foundryvtt-premium-content#1849` [[Bug]: Effect of Weakening Breath incorrect for Gold Dragons (except Wyrmling)](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1849) | dnd-monster-manual |
@@ -101,5 +105,5 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 24 | 18 | 0 | 8 | 0 |
-| foundryvtt/foundryvtt-premium-content | 111 | 80 | 6 | 26 | 12 |
+| foundryvtt/dnd5e | 25 | 18 | 0 | 8 | 1 |
+| foundryvtt/foundryvtt-premium-content | 109 | 80 | 6 | 26 | 13 |
