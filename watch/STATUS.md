@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-10. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-11. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | none |
-| **To judge** | 5 same-document pair(s), 1 possible |
-| **Cited upstream reports now closed** | 34 |
-| **New to us** | 14 open report(s), 2 first seen today |
+| **To judge** | 5 same-document pair(s), 2 possible |
+| **Cited upstream reports now closed** | 38 |
+| **New to us** | 15 open report(s), 1 first seen today |
 
 ## To judge
 
@@ -37,6 +37,9 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1853` [open] [Bug]: Ancient Green Dragon's Mind Invasion casting level incorrect (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1853
   → our #113 Monster Manual (2024) — Adult Green Dragon (mmAdultGreenDrag): Rend has 5-ft reach (rule: 10 ft)
   (matched on "Adult Green Dragon" in the body)
+- `foundryvtt-premium-content#1859` [open] [Bug]: UUID links to SRD instead of PHB (dnd-arcana-unleashed) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1859
+  → our #157 Arcana Unleashed — Undead Thralls (aunUndeadThralls): the Animate Dead upgrade's broken JSON leaves Animate Dead with one blank summon profile, so it can't summon (and the count is one short)
+  (matched on "Undead Thralls" in the body)
 
 ## Cited upstream reports now closed
 
@@ -73,6 +76,10 @@ Our open issues cite these, and the vendor has closed them: re-check each at the
 | `foundryvtt-premium-content#1675` [Bug]: Contagion spell has half damage on save configured, should be "no damage" | 2026-06-30 (completed) | #541 |
 | `foundryvtt-premium-content#1685` [Bug]: Sorcerer class has no advancement to replace a Metamagic option on level up | 2026-11-09 (completed) | #95 |
 | `foundryvtt-premium-content#1689` [Bug]: Indomitable use activity does not consume item use | 2026-11-09 (completed) | #383 |
+| `foundryvtt-premium-content#1694` [Bug]: PHB - Wildshape Transform Level Limit Incorrect | 2026-11-10 (completed) | #9 |
+| `foundryvtt-premium-content#1698` [Bug]: Some Eldritch Invocations are missing their item requirements configured | 2026-11-10 (completed) | #666 |
+| `foundryvtt-premium-content#1722` [Bug]: Arcane Trickster has no cantrip advancement, and cantrip scale identifiers are inconsistent | 2026-11-10 (completed) | #653 |
+| `foundryvtt-premium-content#1766` [Bug]: Spell Mastery and Signature Spells enchantments use removed `system.preparation.mode` key | 2026-11-10 (completed) | #767, #7, #6, #5, #4 |
 | `foundryvtt-premium-content#798` [Bug]: Some effects, like that of Mind Sliver, have incorrect duration for "before the end of your next turn" | 2025-02-27 (completed) | #62 |
 | `foundryvtt/dnd5e#5772` D&D 5.04 Hex and Hunters Mark Damage Activities don't allow critical damage | 2025-06-20 (completed) | #766, #432, #430, #427, #425 |
 | `foundryvtt/dnd5e#6132` 2024 Alchemist's Fire has "Half Damage" on save. Should be "No Damage" | 2025-09-09 (completed) | #3 |
@@ -86,6 +93,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-11 | `foundryvtt-premium-content#1857` [[Bug]:  Abveku subject scaling issue](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1857) | dnd-arcana-unleashed |
 | 2026-11-10 | `foundryvtt-premium-content#1856` [[Bug]: Prismatic Rune Implementation](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1856) | dnd-arcana-unleashed |
 | 2026-11-10 | `foundryvtt/dnd5e#7712` [Icon update suggestions for Crowbar, Sling, Iron Flask](https://github.com/foundryvtt/dnd5e/issues/7712) | dnd5e |
 | 2026-11-08 | `foundryvtt-premium-content#1854` [[Bug]: Stench ability from Hezrou](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1854) | dnd-monster-manual |
@@ -94,7 +102,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | 2026-11-04 | `foundryvtt-premium-content#1845` [[Bug]: Euphoria Breath effect on Faerie Dragon Youth](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1845) | dnd-monster-manual |
 | 2026-11-01 | `foundryvtt-premium-content#1843` [[Bug]: Typo in rollable table name: "Pirate Flag- Acesosry"](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1843) | dnd-monster-manual |
 | 2026-10-30 | `foundryvtt-premium-content#1841` [[Bug]: Hindsight (and maybe other spells) don't state that their component is consumed](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1841) | dnd-arcana-unleashed |
-| 2026-10-29 | `foundryvtt-premium-content#1837` [[Bug]: Damaging emanation spells are not consistent](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1837) | dnd-players-handbook |
+| 2026-10-29 | `foundryvtt-premium-content#1837` [[Enhancement]: Damaging emanation spells are not consistent](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1837) | dnd-players-handbook |
 | 2026-10-28 | `foundryvtt-premium-content#1831` [[Bug]: Maps missing background images](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1831) | dnd-heroes-faerun |
 | 2026-10-28 | `foundryvtt-premium-content#1833` [[Bug]: Dragon Turtle token missing.](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1833) | dnd-arcana-unleashed |
 | 2026-10-28 | `foundryvtt-premium-content#1834` [[Bug]: Death Knight Aspirant portrait and token missing.](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1834) | dnd-arcana-unleashed |
@@ -106,4 +114,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 25 | 18 | 0 | 8 | 1 |
-| foundryvtt/foundryvtt-premium-content | 109 | 80 | 6 | 26 | 13 |
+| foundryvtt/foundryvtt-premium-content | 105 | 80 | 7 | 26 | 14 |

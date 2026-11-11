@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-10",
+ "lastScan": "2026-11-11",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -214,6 +214,12 @@
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/7712"
   },
+  "foundryvtt-premium-content#1857": {
+   "firstSeen": "2026-11-11",
+   "title": "[Bug]:  Abveku subject scaling issue",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1857"
+  },
   "foundryvtt-premium-content#1856": {
    "firstSeen": "2026-11-10",
    "title": "[Bug]: Prismatic Rune Implementation",
@@ -258,7 +264,7 @@
   },
   "foundryvtt-premium-content#1837": {
    "firstSeen": "2026-10-29",
-   "title": "[Bug]: Damaging emanation spells are not consistent",
+   "title": "[Enhancement]: Damaging emanation spells are not consistent",
    "package": "dnd-players-handbook",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1837"
   },
@@ -911,9 +917,9 @@
    ]
   },
   "foundryvtt-premium-content#1766": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-10",
    "title": "[Bug]: Spell Mastery and Signature Spells enchantments use removed `system.preparation.mode` key",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1766",
    "package": "dnd-players-handbook",
@@ -1200,9 +1206,9 @@
    ]
   },
   "foundryvtt-premium-content#1698": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-10",
    "title": "[Bug]: Some Eldritch Invocations are missing their item requirements configured",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1698",
    "package": "dnd-players-handbook",
@@ -1222,9 +1228,9 @@
    ]
   },
   "foundryvtt-premium-content#1722": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-10",
    "title": "[Bug]: Arcane Trickster has no cantrip advancement, and cantrip scale identifiers are inconsistent",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1722",
    "package": "dnd-players-handbook",
@@ -1827,9 +1833,9 @@
    ]
   },
   "foundryvtt-premium-content#1694": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-10",
    "title": "[Bug]: PHB - Wildshape Transform Level Limit Incorrect",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1694",
    "package": "dnd-players-handbook",
