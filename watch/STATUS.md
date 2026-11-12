@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-11. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-12. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
-| **Version reviews due** | none |
+| **Version reviews due** | dnd5e system 6.0.6 → **6.1.0** (first seen 2026-11-12) |
 | **To judge** | 5 same-document pair(s), 2 possible |
 | **Cited upstream reports now closed** | 38 |
-| **New to us** | 15 open report(s), 1 first seen today |
+| **New to us** | 16 open report(s), 1 first seen today |
 
 ## To judge
 
@@ -93,6 +93,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-12 | `foundryvtt/dnd5e#2293` [Add system-specific compendium banner images](https://github.com/foundryvtt/dnd5e/issues/2293) | dnd5e |
 | 2026-11-11 | `foundryvtt-premium-content#1857` [[Bug]:  Abveku subject scaling issue](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1857) | dnd-arcana-unleashed |
 | 2026-11-10 | `foundryvtt-premium-content#1856` [[Bug]: Prismatic Rune Implementation](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1856) | dnd-arcana-unleashed |
 | 2026-11-10 | `foundryvtt/dnd5e#7712` [Icon update suggestions for Crowbar, Sling, Iron Flask](https://github.com/foundryvtt/dnd5e/issues/7712) | dnd5e |
@@ -113,5 +114,5 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 25 | 18 | 0 | 8 | 1 |
+| foundryvtt/dnd5e | 26 | 18 | 0 | 8 | 2 |
 | foundryvtt/foundryvtt-premium-content | 105 | 80 | 7 | 26 | 14 |
