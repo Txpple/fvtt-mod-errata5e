@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-12. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-13. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -8,8 +8,8 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | --- | --- |
 | **Version reviews due** | dnd5e system 6.0.6 → **6.1.0** (first seen 2026-11-12) |
 | **To judge** | 5 same-document pair(s), 2 possible |
-| **Cited upstream reports now closed** | 38 |
-| **New to us** | 16 open report(s), 1 first seen today |
+| **Cited upstream reports now closed** | 52 |
+| **New to us** | 18 open report(s), 2 first seen today |
 
 ## To judge
 
@@ -65,22 +65,36 @@ Our open issues cite these, and the vendor has closed them: re-check each at the
 | `foundryvtt-premium-content#1373` [Bug]: Badger and Giant Badger are missing poison resistance. | 2025-10-13 (completed) | #574 |
 | `foundryvtt-premium-content#1379` [Bug]: Octopus should not have Escape Check in Tentacles feature | 2025-10-13 (completed) | #590 |
 | `foundryvtt-premium-content#1383` [Bug]: Several origin background features refer to items from SRD instead of PHB | 2025-10-13 (completed) | #339 |
+| `foundryvtt-premium-content#1385` [Bug]: Ioun Stone of Fortitude has the bonus to str when it should be con | 2026-11-12 (completed) | #536 |
 | `foundryvtt-premium-content#1407` [Bug]: Investment of the Chain Master's summon activities don't include additional familiar options | 2026-07-01 (completed) | #658 |
 | `foundryvtt-premium-content#1420` [Bug]: Multiple effects use incorrect durations | 2026-07-02 (completed) | #764, #61, #60, #59 |
+| `foundryvtt-premium-content#1425` [Bug]: Heward's Handy Haversack is not set up correctly | 2026-11-12 (completed) | #543 |
 | `foundryvtt-premium-content#1429` [Bug]: Monk's Stunning Strike effects have wrong duration | 2026-07-01 (completed) | #85 |
+| `foundryvtt-premium-content#1483` [Bug]: Sentinel Shield Missing Automation | 2026-11-12 (completed) | #556 |
 | `foundryvtt-premium-content#1497` [Bug]: Damage activities don't allow for critical rolls. (Attack damage riders) | 2026-06-29 (completed) | #769, #671, #649, #648, #633, #632, #432, #430, #427, #425, #422, #419, #417 |
 | `foundryvtt-premium-content#1505` [Bug]: Darkvison spell effect gives wrong darkvision range | 2026-06-26 (completed) | #631 |
+| `foundryvtt-premium-content#1528` [Bug]: Hammer of Thunderbolts paired attunement results in wrong Strength scores | 2026-11-12 (completed) | #716 |
 | `foundryvtt-premium-content#1535` [Bug]: Sorcerer's Font of Magic's activity `Regain Sorcery Points` is misconfigured | 2026-06-26 (completed) | #670 |
 | `foundryvtt-premium-content#1574` [Bug]: Starting equipment of Backgrounds and Classes does not include gold for option A | 2026-06-25 (completed) | #344 |
 | `foundryvtt-premium-content#1596` [Bug]: Boon of Fate & Boon of Irresistible Offense don't have level prerequisite set | 2026-06-24 (completed) | #323 |
+| `foundryvtt-premium-content#1646` [Bug]: Actors compendium still includes placeholder actors | 2026-11-12 (completed) | #508 |
+| `foundryvtt-premium-content#1650` [Bug]: Silvered weapon enchantment does not set magical property | 2026-11-12 (completed) | #714 |
+| `foundryvtt-premium-content#1660` [Bug]: Robe of Stars is missing active effect for +1 to saving throws | 2026-11-12 (completed) | #542 |
 | `foundryvtt-premium-content#1675` [Bug]: Contagion spell has half damage on save configured, should be "no damage" | 2026-06-30 (completed) | #541 |
 | `foundryvtt-premium-content#1685` [Bug]: Sorcerer class has no advancement to replace a Metamagic option on level up | 2026-11-09 (completed) | #95 |
 | `foundryvtt-premium-content#1689` [Bug]: Indomitable use activity does not consume item use | 2026-11-09 (completed) | #383 |
 | `foundryvtt-premium-content#1694` [Bug]: PHB - Wildshape Transform Level Limit Incorrect | 2026-11-10 (completed) | #9 |
 | `foundryvtt-premium-content#1698` [Bug]: Some Eldritch Invocations are missing their item requirements configured | 2026-11-10 (completed) | #666 |
 | `foundryvtt-premium-content#1722` [Bug]: Arcane Trickster has no cantrip advancement, and cantrip scale identifiers are inconsistent | 2026-11-10 (completed) | #653 |
+| `foundryvtt-premium-content#1732` [Bug]: Necklace of Prayer Beads is priced like a consumable but shouldn't be | 2026-11-12 (completed) | #725 |
 | `foundryvtt-premium-content#1766` [Bug]: Spell Mastery and Signature Spells enchantments use removed `system.preparation.mode` key | 2026-11-10 (completed) | #767, #7, #6, #5, #4 |
+| `foundryvtt-premium-content#1784` [Bug]: Silvered Weapon enchantment should set "magical" on item | 2026-11-12 (completed) | #714 |
+| `foundryvtt-premium-content#1800` [Bug]: Iron Flask Table doesn't link to all possible actors | 2026-11-12 (completed) | #756 |
+| `foundryvtt-premium-content#1805` [Bug]: Wrong link on Deck of Illusions Roll table | 2026-11-12 (completed) | #756 |
+| `foundryvtt-premium-content#1807` [Bug]: Wrong Link on Ring of Resistance: Damage Type and Gemstone Roll Tabe | 2026-11-12 (completed) | #775 |
+| `foundryvtt-premium-content#1808` [Bug]: No Spell-Links on Magic Item Staff of Woodlands | 2026-11-12 (completed) | #776 |
 | `foundryvtt-premium-content#798` [Bug]: Some effects, like that of Mind Sliver, have incorrect duration for "before the end of your next turn" | 2025-02-27 (completed) | #62 |
+| `foundryvtt-premium-content#927` [Bug]: One of the skellyboy tokens in the Dungeon Master's Guide has the wrong ring scale correction | 2026-11-12 (completed) | #757 |
 | `foundryvtt/dnd5e#5772` D&D 5.04 Hex and Hunters Mark Damage Activities don't allow critical damage | 2025-06-20 (completed) | #766, #432, #430, #427, #425 |
 | `foundryvtt/dnd5e#6132` 2024 Alchemist's Fire has "Half Damage" on save. Should be "No Damage" | 2025-09-09 (completed) | #3 |
 | `foundryvtt/dnd5e#6857` Bestow Curse (2024)'s "Curse Ability" activity does not include the potential effects | 2026-03-31 (completed) | #610 |
@@ -93,6 +107,8 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-13 | `foundryvtt-premium-content#1863` [[Bug]: Evocation Adept / Necromancy Adept / Ring of Dedicated Focus Formula](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1863) | dnd-arcana-unleashed |
+| 2026-11-13 | `foundryvtt/dnd5e#1338` [Periodically/regularly update embedded items in SRD actors to keep up with updated "canonical" versions](https://github.com/foundryvtt/dnd5e/issues/1338) | dnd5e |
 | 2026-11-12 | `foundryvtt/dnd5e#2293` [Add system-specific compendium banner images](https://github.com/foundryvtt/dnd5e/issues/2293) | dnd5e |
 | 2026-11-11 | `foundryvtt-premium-content#1857` [[Bug]:  Abveku subject scaling issue](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1857) | dnd-arcana-unleashed |
 | 2026-11-10 | `foundryvtt-premium-content#1856` [[Bug]: Prismatic Rune Implementation](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1856) | dnd-arcana-unleashed |
@@ -114,5 +130,5 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 26 | 18 | 0 | 8 | 2 |
-| foundryvtt/foundryvtt-premium-content | 105 | 80 | 7 | 26 | 14 |
+| foundryvtt/dnd5e | 27 | 18 | 0 | 8 | 3 |
+| foundryvtt/foundryvtt-premium-content | 90 | 80 | 7 | 26 | 15 |

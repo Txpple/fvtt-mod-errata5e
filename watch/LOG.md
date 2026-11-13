@@ -45,3 +45,4 @@ One row per run of `node tools/upstream-watch.mjs`, oldest first; a rerun on the
 | 2026-11-10 | none | 5 + 1 | 2 | 2 | [yes](2026-11-10.md) |
 | 2026-11-11 | none | 5 + 2 | 4 | 1 | [yes](2026-11-11.md) |
 | 2026-11-12 | dnd5e system 6.1.0 | 5 + 2 | 0 | 1 | [yes](2026-11-12.md) |
+| 2026-11-13 | dnd5e system 6.1.0 | 5 + 2 | 14 | 2 | [yes](2026-11-13.md) |

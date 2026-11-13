@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-12",
+ "lastScan": "2026-11-13",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -220,6 +220,18 @@
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/2293"
   },
+  "foundryvtt/dnd5e#1338": {
+   "firstSeen": "2026-11-13",
+   "title": "Periodically/regularly update embedded items in SRD actors to keep up with updated \"canonical\" versions",
+   "package": "dnd5e",
+   "url": "https://github.com/foundryvtt/dnd5e/issues/1338"
+  },
+  "foundryvtt-premium-content#1863": {
+   "firstSeen": "2026-11-13",
+   "title": "[Bug]: Evocation Adept / Necromancy Adept / Ring of Dedicated Focus Formula",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1863"
+  },
   "foundryvtt-premium-content#1857": {
    "firstSeen": "2026-11-11",
    "title": "[Bug]:  Abveku subject scaling issue",
@@ -373,9 +385,9 @@
    ]
   },
   "foundryvtt-premium-content#1808": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: No Spell-Links on Magic Item Staff of Woodlands",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1808",
    "package": "dnd-dungeon-masters-guide",
@@ -384,9 +396,9 @@
    ]
   },
   "foundryvtt-premium-content#1807": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Wrong Link on Ring of Resistance: Damage Type and Gemstone Roll Tabe",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1807",
    "package": "dnd-dungeon-masters-guide",
@@ -1003,9 +1015,9 @@
    ]
   },
   "foundryvtt-premium-content#927": {
-   "state": "open",
-   "reason": "reopened",
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: One of the skellyboy tokens in the Dungeon Master's Guide has the wrong ring scale correction",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/927",
    "package": "dnd-dungeon-masters-guide",
@@ -1014,9 +1026,9 @@
    ]
   },
   "foundryvtt-premium-content#1800": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Iron Flask Table doesn't link to all possible actors",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1800",
    "package": "dnd-dungeon-masters-guide",
@@ -1025,9 +1037,9 @@
    ]
   },
   "foundryvtt-premium-content#1805": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Wrong link on Deck of Illusions Roll table",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1805",
    "package": "dnd-dungeon-masters-guide",
@@ -1069,9 +1081,9 @@
    ]
   },
   "foundryvtt-premium-content#1732": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Necklace of Prayer Beads is priced like a consumable but shouldn't be",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1732",
    "package": "dnd-dungeon-masters-guide",
@@ -1135,9 +1147,9 @@
    ]
   },
   "foundryvtt-premium-content#1528": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Hammer of Thunderbolts paired attunement results in wrong Strength scores",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1528",
    "package": "dnd-dungeon-masters-guide",
@@ -1146,9 +1158,9 @@
    ]
   },
   "foundryvtt-premium-content#1784": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Silvered Weapon enchantment should set \"magical\" on item",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1784",
    "package": "dnd-dungeon-masters-guide",
@@ -1157,9 +1169,9 @@
    ]
   },
   "foundryvtt-premium-content#1650": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Silvered weapon enchantment does not set magical property",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1650",
    "package": "dnd-dungeon-masters-guide",
@@ -1377,9 +1389,9 @@
    ]
   },
   "foundryvtt-premium-content#1483": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Sentinel Shield Missing Automation",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1483",
    "package": "dnd-dungeon-masters-guide",
@@ -1410,9 +1422,9 @@
    ]
   },
   "foundryvtt-premium-content#1425": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Heward's Handy Haversack is not set up correctly",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1425",
    "package": "dnd-dungeon-masters-guide",
@@ -1421,9 +1433,9 @@
    ]
   },
   "foundryvtt-premium-content#1660": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Robe of Stars is missing active effect for +1 to saving throws",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1660",
    "package": "dnd-dungeon-masters-guide",
@@ -1443,9 +1455,9 @@
    ]
   },
   "foundryvtt-premium-content#1385": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Ioun Stone of Fortitude has the bonus to str when it should be con",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1385",
    "package": "dnd-dungeon-masters-guide",
@@ -1487,9 +1499,9 @@
    ]
   },
   "foundryvtt-premium-content#1646": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-12",
    "title": "[Bug]: Actors compendium still includes placeholder actors",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1646",
    "package": "dnd-dungeon-masters-guide",
