@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-13",
+ "lastScan": "2026-11-14",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -225,6 +225,18 @@
    "title": "Periodically/regularly update embedded items in SRD actors to keep up with updated \"canonical\" versions",
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/1338"
+  },
+  "foundryvtt-premium-content#1867": {
+   "firstSeen": "2026-11-14",
+   "title": "[Bug]: Invisible-effect description on Vanish-activity (template and creatures) has specific creature mention",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1867"
+  },
+  "foundryvtt-premium-content#1866": {
+   "firstSeen": "2026-11-14",
+   "title": "[Bug]:  Elemental Smite looking for old consumption item",
+   "package": "dnd-heroes-faerun",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1866"
   },
   "foundryvtt-premium-content#1863": {
    "firstSeen": "2026-11-13",

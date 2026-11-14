@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-13. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-14. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
-| **Version reviews due** | dnd5e system 6.0.6 → **6.1.0** (first seen 2026-11-12) |
-| **To judge** | 5 same-document pair(s), 2 possible |
+| **Version reviews due** | dnd5e system 6.0.6 → **6.1.0** (first seen 2026-11-12); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14) |
+| **To judge** | 6 same-document pair(s), 2 possible |
 | **Cited upstream reports now closed** | 52 |
-| **New to us** | 18 open report(s), 2 first seen today |
+| **New to us** | 20 open report(s), 2 first seen today |
 
 ## To judge
 
@@ -31,6 +31,9 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1853` [open] [Bug]: Ancient Green Dragon's Mind Invasion casting level incorrect (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1853
   → our #119 Monster Manual (2024) — Ancient Green Dragon (mmAncientGreenDr): Poison Breath is a 15-ft Cone (rule: 90 ft) on Recharge 6 (rule: 5–6); Rend has 5-ft reach (rule: 15 ft)
   (matched on "Ancient Green Dragon" in the title)
+- `foundryvtt-premium-content#1864` [open] [Bug]: Adult Bronze Dragon and Adult Green Dragon use another age's portrait (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1864
+  → our #113 Monster Manual (2024) — Adult Green Dragon (mmAdultGreenDrag): Rend has 5-ft reach (rule: 10 ft)
+  (matched on id mmAdultGreenDrag)
 
 ### Possible (a name in the body only)
 
@@ -107,6 +110,8 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-14 | `foundryvtt-premium-content#1866` [[Bug]:  Elemental Smite looking for old consumption item](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1866) | dnd-heroes-faerun |
+| 2026-11-14 | `foundryvtt-premium-content#1867` [[Bug]: Invisible-effect description on Vanish-activity (template and creatures) has specific creature mention](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1867) | dnd-monster-manual |
 | 2026-11-13 | `foundryvtt-premium-content#1863` [[Bug]: Evocation Adept / Necromancy Adept / Ring of Dedicated Focus Formula](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1863) | dnd-arcana-unleashed |
 | 2026-11-13 | `foundryvtt/dnd5e#1338` [Periodically/regularly update embedded items in SRD actors to keep up with updated "canonical" versions](https://github.com/foundryvtt/dnd5e/issues/1338) | dnd5e |
 | 2026-11-12 | `foundryvtt/dnd5e#2293` [Add system-specific compendium banner images](https://github.com/foundryvtt/dnd5e/issues/2293) | dnd5e |
@@ -131,4 +136,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 27 | 18 | 0 | 8 | 3 |
-| foundryvtt/foundryvtt-premium-content | 90 | 80 | 7 | 26 | 15 |
+| foundryvtt/foundryvtt-premium-content | 93 | 80 | 8 | 26 | 17 |
