@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-14",
+ "lastScan": "2026-11-15",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -225,6 +225,18 @@
    "title": "Periodically/regularly update embedded items in SRD actors to keep up with updated \"canonical\" versions",
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/1338"
+  },
+  "foundryvtt-premium-content#1869": {
+   "firstSeen": "2026-11-15",
+   "title": "[Bug]: Deer's Ram Attack incorrectly gives prone condition",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1869"
+  },
+  "foundryvtt-premium-content#1868": {
+   "firstSeen": "2026-11-15",
+   "title": "[Bug]: Boar's Gore attack damage",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1868"
   },
   "foundryvtt-premium-content#1867": {
    "firstSeen": "2026-11-14",

@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-14. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-15. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | dnd5e system 6.0.6 → **6.1.0** (first seen 2026-11-12); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14) |
-| **To judge** | 6 same-document pair(s), 2 possible |
+| **To judge** | 8 same-document pair(s), 2 possible |
 | **Cited upstream reports now closed** | 52 |
-| **New to us** | 20 open report(s), 2 first seen today |
+| **New to us** | 22 open report(s), 2 first seen today |
 
 ## To judge
 
@@ -34,6 +34,12 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1864` [open] [Bug]: Adult Bronze Dragon and Adult Green Dragon use another age's portrait (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1864
   → our #113 Monster Manual (2024) — Adult Green Dragon (mmAdultGreenDrag): Rend has 5-ft reach (rule: 10 ft)
   (matched on id mmAdultGreenDrag)
+- `foundryvtt-premium-content#1870` [open] [Bug]: Giant Elk's Ram extra damage incorrect. (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1870
+  → our #474 Monster Manual (2024) — Giant Elk (mmGiantElk000000): No Necrotic/Radiant resistance; Initiative +4 (rule: +6)
+  (matched on "Giant Elk" in the title)
+- `foundryvtt-premium-content#1872` [open] [Bug]: Medium Armor Master has a wrongly configured AE (dnd-players-handbook) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1872
+  → our #20 Player's Handbook (2024) — Medium Armor Master (phbftMediumArmor): the +1 AC its own Foundry note promises never applies (field doesn't exist)
+  (matched on "Medium Armor Master" in the title)
 
 ### Possible (a name in the body only)
 
@@ -110,6 +116,8 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-15 | `foundryvtt-premium-content#1868` [[Bug]: Boar's Gore attack damage](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1868) | dnd-monster-manual |
+| 2026-11-15 | `foundryvtt-premium-content#1869` [[Bug]: Deer's Ram Attack incorrectly gives prone condition](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1869) | dnd-monster-manual |
 | 2026-11-14 | `foundryvtt-premium-content#1866` [[Bug]:  Elemental Smite looking for old consumption item](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1866) | dnd-heroes-faerun |
 | 2026-11-14 | `foundryvtt-premium-content#1867` [[Bug]: Invisible-effect description on Vanish-activity (template and creatures) has specific creature mention](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1867) | dnd-monster-manual |
 | 2026-11-13 | `foundryvtt-premium-content#1863` [[Bug]: Evocation Adept / Necromancy Adept / Ring of Dedicated Focus Formula](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1863) | dnd-arcana-unleashed |
@@ -136,4 +144,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 27 | 18 | 0 | 8 | 3 |
-| foundryvtt/foundryvtt-premium-content | 93 | 80 | 8 | 26 | 17 |
+| foundryvtt/foundryvtt-premium-content | 97 | 80 | 10 | 26 | 19 |
