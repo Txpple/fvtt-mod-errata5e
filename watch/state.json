@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-15",
+ "lastScan": "2026-11-16",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -225,6 +225,12 @@
    "title": "Periodically/regularly update embedded items in SRD actors to keep up with updated \"canonical\" versions",
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/1338"
+  },
+  "foundryvtt-premium-content#1874": {
+   "firstSeen": "2026-11-16",
+   "title": "[Bug]: Bladesong foundry note is outdated",
+   "package": "dnd-heroes-faerun",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1874"
   },
   "foundryvtt-premium-content#1869": {
    "firstSeen": "2026-11-15",

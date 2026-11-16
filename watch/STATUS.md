@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-15. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-16. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | dnd5e system 6.0.6 → **6.1.0** (first seen 2026-11-12); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14) |
-| **To judge** | 8 same-document pair(s), 2 possible |
+| **To judge** | 9 same-document pair(s), 2 possible |
 | **Cited upstream reports now closed** | 52 |
-| **New to us** | 22 open report(s), 2 first seen today |
+| **New to us** | 23 open report(s), 1 first seen today |
 
 ## To judge
 
@@ -40,6 +40,9 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1872` [open] [Bug]: Medium Armor Master has a wrongly configured AE (dnd-players-handbook) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1872
   → our #20 Player's Handbook (2024) — Medium Armor Master (phbftMediumArmor): the +1 AC its own Foundry note promises never applies (field doesn't exist)
   (matched on "Medium Armor Master" in the title)
+- `foundryvtt-premium-content#1873` [open] [Bug]: Hammer of Thunderbolts is missing damage on the Hurl Hammer activity (dnd-dungeon-masters-guide) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1873
+  → our #716 Dungeon Master's Guide (2024) — Hammer of Thunderbolts (dmgHammerOfThund): Might of Giants adds its +4 before a Giant Strength belt sets Strength, so the +4 is lost (25, rule: 29)
+  (matched on "Hammer of Thunderbolts" in the title)
 
 ### Possible (a name in the body only)
 
@@ -116,6 +119,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-16 | `foundryvtt-premium-content#1874` [[Bug]: Bladesong foundry note is outdated](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1874) | dnd-heroes-faerun |
 | 2026-11-15 | `foundryvtt-premium-content#1868` [[Bug]: Boar's Gore attack damage](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1868) | dnd-monster-manual |
 | 2026-11-15 | `foundryvtt-premium-content#1869` [[Bug]: Deer's Ram Attack incorrectly gives prone condition](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1869) | dnd-monster-manual |
 | 2026-11-14 | `foundryvtt-premium-content#1866` [[Bug]:  Elemental Smite looking for old consumption item](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1866) | dnd-heroes-faerun |
@@ -144,4 +148,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 27 | 18 | 0 | 8 | 3 |
-| foundryvtt/foundryvtt-premium-content | 97 | 80 | 10 | 26 | 19 |
+| foundryvtt/foundryvtt-premium-content | 99 | 80 | 11 | 26 | 20 |
