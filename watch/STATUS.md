@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-16. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-17. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
-| **Version reviews due** | dnd5e system 6.0.6 → **6.1.0** (first seen 2026-11-12); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14) |
-| **To judge** | 9 same-document pair(s), 2 possible |
+| **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14) |
+| **To judge** | 11 same-document pair(s), 2 possible |
 | **Cited upstream reports now closed** | 52 |
-| **New to us** | 23 open report(s), 1 first seen today |
+| **New to us** | 22 open report(s), 0 first seen today |
 
 ## To judge
 
@@ -43,6 +43,12 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1873` [open] [Bug]: Hammer of Thunderbolts is missing damage on the Hurl Hammer activity (dnd-dungeon-masters-guide) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1873
   → our #716 Dungeon Master's Guide (2024) — Hammer of Thunderbolts (dmgHammerOfThund): Might of Giants adds its +4 before a Giant Strength belt sets Strength, so the +4 is lost (25, rule: 29)
   (matched on "Hammer of Thunderbolts" in the title)
+- `foundryvtt-premium-content#1875` [open] [Bug]: Vampire Umbral Lord: Grave Strike additional damage should be Necrotic (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1875
+  → our #227 Monster Manual (2024) — Vampire Umbral Lord (mmVampireUmbralL): Grave Strike's extra 3d8 rolls Slashing (rule: Necrotic)
+  (matched on "Vampire Umbral Lord" in the title)
+- `foundryvtt/dnd5e#7751` [open] Persistent Rage feature does not recover rages (dnd5e) https://github.com/foundryvtt/dnd5e/issues/7751
+  → our #28 SRD 2024 (dnd5e system) — Persistent Rage (phbbrbPersistent): restores Rage by a scale value that doesn't exist (`rage`; the scale is `rages`)
+  (matched on "Persistent Rage" in the title)
 
 ### Possible (a name in the body only)
 
@@ -129,7 +135,6 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | 2026-11-12 | `foundryvtt/dnd5e#2293` [Add system-specific compendium banner images](https://github.com/foundryvtt/dnd5e/issues/2293) | dnd5e |
 | 2026-11-11 | `foundryvtt-premium-content#1857` [[Bug]:  Abveku subject scaling issue](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1857) | dnd-arcana-unleashed |
 | 2026-11-10 | `foundryvtt-premium-content#1856` [[Bug]: Prismatic Rune Implementation](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1856) | dnd-arcana-unleashed |
-| 2026-11-10 | `foundryvtt/dnd5e#7712` [Icon update suggestions for Crowbar, Sling, Iron Flask](https://github.com/foundryvtt/dnd5e/issues/7712) | dnd5e |
 | 2026-11-08 | `foundryvtt-premium-content#1854` [[Bug]: Stench ability from Hezrou](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1854) | dnd-monster-manual |
 | 2026-11-06 | `foundryvtt-premium-content#1848` [[Bug]: Githyanki mentioned in Githzerai-specific ability Psi-Powered Leap](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1848) | dnd-monster-manual |
 | 2026-11-06 | `foundryvtt-premium-content#1849` [[Bug]: Effect of Weakening Breath incorrect for Gold Dragons (except Wyrmling)](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1849) | dnd-monster-manual |
@@ -147,5 +152,5 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 27 | 18 | 0 | 8 | 3 |
-| foundryvtt/foundryvtt-premium-content | 99 | 80 | 11 | 26 | 20 |
+| foundryvtt/dnd5e | 27 | 18 | 1 | 8 | 2 |
+| foundryvtt/foundryvtt-premium-content | 100 | 80 | 12 | 26 | 20 |
