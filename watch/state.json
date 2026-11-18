@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-17",
+ "lastScan": "2026-11-18",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -365,9 +365,9 @@
    ]
   },
   "foundryvtt-premium-content#1736": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-17",
    "title": "[Bug]: Nimble Escape and Shadow Stealth apply a non-2024 \"hiding\" status, roll no check, and Nimble Escape has no Disengage",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1736",
    "package": "dnd-monster-manual",
@@ -1017,9 +1017,9 @@
    ]
   },
   "foundryvtt-premium-content#1803": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-17",
    "title": "[Bug]: Carrion Crawler's Paralyzing Tentacles has an emanation",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1803",
    "package": "dnd-monster-manual",

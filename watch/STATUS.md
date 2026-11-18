@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-17. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-18. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -8,7 +8,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | --- | --- |
 | **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14) |
 | **To judge** | 11 same-document pair(s), 2 possible |
-| **Cited upstream reports now closed** | 52 |
+| **Cited upstream reports now closed** | 54 |
 | **New to us** | 22 open report(s), 0 first seen today |
 
 ## To judge
@@ -25,7 +25,7 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1847` [open] [Bug]: Swarm of Venomous Snakes is missing resistances (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1847
   → our #428 Monster Manual (2024) — Swarm of Venomous Snakes (mmSwarmOfVenomou): No Bludgeoning/Piercing/Slashing resistance and no swarm condition immunities
   (matched on "Swarm of Venomous Snakes" in the title)
-- `foundryvtt-premium-content#1850` [open] [Bug]: Ancient Gold Dragon Multiattack-Action wrong line in descripition (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1850
+- `foundryvtt-premium-content#1850` [closed, completed] [Bug]: Ancient Gold Dragon Multiattack-Action wrong line in descripition (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1850
   → our #121 Monster Manual (2024) — Ancient Gold Dragon (mmAncientGoldDra): Word of Recall is 2/Day (rule: 1/Day)
   (matched on "Ancient Gold Dragon" in the title)
 - `foundryvtt-premium-content#1853` [open] [Bug]: Ancient Green Dragon's Mind Invasion casting level incorrect (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1853
@@ -105,9 +105,11 @@ Our open issues cite these, and the vendor has closed them: re-check each at the
 | `foundryvtt-premium-content#1698` [Bug]: Some Eldritch Invocations are missing their item requirements configured | 2026-11-10 (completed) | #666 |
 | `foundryvtt-premium-content#1722` [Bug]: Arcane Trickster has no cantrip advancement, and cantrip scale identifiers are inconsistent | 2026-11-10 (completed) | #653 |
 | `foundryvtt-premium-content#1732` [Bug]: Necklace of Prayer Beads is priced like a consumable but shouldn't be | 2026-11-12 (completed) | #725 |
+| `foundryvtt-premium-content#1736` [Bug]: Nimble Escape and Shadow Stealth apply a non-2024 "hiding" status, roll no check, and Nimble Escape has no Disengage | 2026-11-17 (completed) | #782 |
 | `foundryvtt-premium-content#1766` [Bug]: Spell Mastery and Signature Spells enchantments use removed `system.preparation.mode` key | 2026-11-10 (completed) | #767, #7, #6, #5, #4 |
 | `foundryvtt-premium-content#1784` [Bug]: Silvered Weapon enchantment should set "magical" on item | 2026-11-12 (completed) | #714 |
 | `foundryvtt-premium-content#1800` [Bug]: Iron Flask Table doesn't link to all possible actors | 2026-11-12 (completed) | #756 |
+| `foundryvtt-premium-content#1803` [Bug]: Carrion Crawler's Paralyzing Tentacles has an emanation | 2026-11-17 (completed) | #762 |
 | `foundryvtt-premium-content#1805` [Bug]: Wrong link on Deck of Illusions Roll table | 2026-11-12 (completed) | #756 |
 | `foundryvtt-premium-content#1807` [Bug]: Wrong Link on Ring of Resistance: Damage Type and Gemstone Roll Tabe | 2026-11-12 (completed) | #775 |
 | `foundryvtt-premium-content#1808` [Bug]: No Spell-Links on Magic Item Staff of Woodlands | 2026-11-12 (completed) | #776 |
@@ -153,4 +155,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 27 | 18 | 1 | 8 | 2 |
-| foundryvtt/foundryvtt-premium-content | 100 | 80 | 12 | 26 | 20 |
+| foundryvtt/foundryvtt-premium-content | 97 | 80 | 12 | 26 | 20 |
