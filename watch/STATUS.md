@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-19. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-20. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
-| **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14) |
-| **To judge** | 11 same-document pair(s), 2 possible |
+| **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14); Dungeon Master's Guide (2024) 2.0.0 → **3.0.0** (first seen 2026-11-20) |
+| **To judge** | 8 same-document pair(s), 1 possible |
 | **Cited upstream reports now closed** | 53 |
-| **New to us** | 23 open report(s), 1 first seen today |
+| **New to us** | 23 open report(s), 0 first seen today |
 
 ## To judge
 
@@ -25,15 +25,6 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1847` [open] [Bug]: Swarm of Venomous Snakes is missing resistances (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1847
   → our #428 Monster Manual (2024) — Swarm of Venomous Snakes (mmSwarmOfVenomou): No Bludgeoning/Piercing/Slashing resistance and no swarm condition immunities
   (matched on "Swarm of Venomous Snakes" in the title)
-- `foundryvtt-premium-content#1850` [closed, completed] [Bug]: Ancient Gold Dragon Multiattack-Action wrong line in descripition (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1850
-  → our #121 Monster Manual (2024) — Ancient Gold Dragon (mmAncientGoldDra): Word of Recall is 2/Day (rule: 1/Day)
-  (matched on "Ancient Gold Dragon" in the title)
-- `foundryvtt-premium-content#1853` [closed, completed] [Bug]: Ancient Green Dragon's Mind Invasion casting level incorrect (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1853
-  → our #119 Monster Manual (2024) — Ancient Green Dragon (mmAncientGreenDr): Poison Breath is a 15-ft Cone (rule: 90 ft) on Recharge 6 (rule: 5–6); Rend has 5-ft reach (rule: 15 ft)
-  (matched on "Ancient Green Dragon" in the title)
-- `foundryvtt-premium-content#1864` [closed, completed] [Bug]: Adult Bronze Dragon and Adult Green Dragon use another age's portrait (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1864
-  → our #113 Monster Manual (2024) — Adult Green Dragon (mmAdultGreenDrag): Rend has 5-ft reach (rule: 10 ft)
-  (matched on id mmAdultGreenDrag)
 - `foundryvtt-premium-content#1870` [open] [Bug]: Giant Elk's Ram extra damage incorrect. (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1870
   → our #474 Monster Manual (2024) — Giant Elk (mmGiantElk000000): No Necrotic/Radiant resistance; Initiative +4 (rule: +6)
   (matched on "Giant Elk" in the title)
@@ -52,9 +43,6 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 
 ### Possible (a name in the body only)
 
-- `foundryvtt-premium-content#1853` [closed, completed] [Bug]: Ancient Green Dragon's Mind Invasion casting level incorrect (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1853
-  → our #113 Monster Manual (2024) — Adult Green Dragon (mmAdultGreenDrag): Rend has 5-ft reach (rule: 10 ft)
-  (matched on "Adult Green Dragon" in the body)
 - `foundryvtt-premium-content#1859` [open] [Bug]: UUID links to SRD instead of PHB (dnd-arcana-unleashed) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1859
   → our #157 Arcana Unleashed — Undead Thralls (aunUndeadThralls): the Animate Dead upgrade's broken JSON leaves Animate Dead with one blank summon profile, so it can't summon (and the count is one short)
   (matched on "Undead Thralls" in the body)
@@ -155,4 +143,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 27 | 18 | 1 | 8 | 2 |
-| foundryvtt/foundryvtt-premium-content | 97 | 80 | 12 | 26 | 21 |
+| foundryvtt/foundryvtt-premium-content | 97 | 80 | 8 | 26 | 21 |
