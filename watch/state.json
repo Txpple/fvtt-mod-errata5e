@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-20",
+ "lastScan": "2026-11-21",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -219,6 +219,18 @@
    "title": "Periodically/regularly update embedded items in SRD actors to keep up with updated \"canonical\" versions",
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/1338"
+  },
+  "foundryvtt-premium-content#1892": {
+   "firstSeen": "2026-11-21",
+   "title": "[Bug]: Abominable Yeti's Chilling Gaze description",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1892"
+  },
+  "foundryvtt-premium-content#1891": {
+   "firstSeen": "2026-11-21",
+   "title": "[Bug]: Xorn: range on Charge ability",
+   "package": "dnd-monster-manual",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1891"
   },
   "foundryvtt-premium-content#1883": {
    "firstSeen": "2026-11-19",
@@ -668,9 +680,9 @@
    ]
   },
   "foundryvtt-premium-content#1817": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-20",
    "title": "[Bug]: Ancient Green Dragon's breath should recharge on 5-6",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1817",
    "package": "dnd-monster-manual",
@@ -1210,9 +1222,9 @@
    ]
   },
   "foundryvtt-premium-content#1792": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-20",
    "title": "[Bug]: Swallow feature's save DC calculations are swapped",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1792",
    "package": "dnd-monster-manual",
@@ -1639,9 +1651,9 @@
    ]
   },
   "foundryvtt-premium-content#1814": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-20",
    "title": "[Bug]: Ultroloth's Dispel Magic via Fiendish Guile should be Bonus Action",
    "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1814",
    "package": "dnd-monster-manual",

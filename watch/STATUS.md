@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-20. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-21. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14); Dungeon Master's Guide (2024) 2.0.0 → **3.0.0** (first seen 2026-11-20) |
-| **To judge** | 8 same-document pair(s), 1 possible |
-| **Cited upstream reports now closed** | 53 |
-| **New to us** | 23 open report(s), 0 first seen today |
+| **To judge** | 10 same-document pair(s), 3 possible |
+| **Cited upstream reports now closed** | 56 |
+| **New to us** | 25 open report(s), 2 first seen today |
 
 ## To judge
 
@@ -37,6 +37,12 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1875` [open] [Bug]: Vampire Umbral Lord: Grave Strike additional damage should be Necrotic (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1875
   → our #227 Monster Manual (2024) — Vampire Umbral Lord (mmVampireUmbralL): Grave Strike's extra 3d8 rolls Slashing (rule: Necrotic)
   (matched on "Vampire Umbral Lord" in the title)
+- `foundryvtt-premium-content#1894` [open] [Bug]: Beholder Zombie Fear Ray (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1894
+  → our #261 Monster Manual (2024) — Beholder Zombie (mmBeholderZombie): Enervation Ray deals Poison (rule: Necrotic)
+  (matched on "Beholder Zombie" in the title)
+- `foundryvtt-premium-content#1894` [open] [Bug]: Beholder Zombie Fear Ray (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1894
+  → our #369 Monster Manual (2024) — Beholder (mmBeholder000000): Petrification Ray petrifies on the first failure; no immunity to Prone
+  (matched on "Beholder" in the title)
 - `foundryvtt/dnd5e#7751` [open] Persistent Rage feature does not recover rages (dnd5e) https://github.com/foundryvtt/dnd5e/issues/7751
   → our #28 SRD 2024 (dnd5e system) — Persistent Rage (phbbrbPersistent): restores Rage by a scale value that doesn't exist (`rage`; the scale is `rages`)
   (matched on "Persistent Rage" in the title)
@@ -46,6 +52,12 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1859` [open] [Bug]: UUID links to SRD instead of PHB (dnd-arcana-unleashed) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1859
   → our #157 Arcana Unleashed — Undead Thralls (aunUndeadThralls): the Animate Dead upgrade's broken JSON leaves Animate Dead with one blank summon profile, so it can't summon (and the count is one short)
   (matched on "Undead Thralls" in the body)
+- `foundryvtt-premium-content#1893` [open] [Bug]: 3 actors and a spell discrepancy (dnd-arcana-unleashed) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1893
+  → our #165 Arcana Unleashed — Inflict Doubt (aunInflictDoubTp): a Concentration spell with no Concentration flag
+  (matched on "Inflict Doubt" in the body)
+- `foundryvtt-premium-content#1893` [open] [Bug]: 3 actors and a spell discrepancy (dnd-arcana-unleashed) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1893
+  → our #169 Arcana Unleashed — Celestial Vestige Companion (aunCelestialVest): built unlike its Fiend and Undead siblings: Medium, typeless, no Radiant resistance, no Pact Bond effect
+  (matched on "Celestial Vestige Companion" in the body)
 
 ## Cited upstream reports now closed
 
@@ -95,11 +107,14 @@ Our open issues cite these, and the vendor has closed them: re-check each at the
 | `foundryvtt-premium-content#1732` [Bug]: Necklace of Prayer Beads is priced like a consumable but shouldn't be | 2026-11-12 (completed) | #725 |
 | `foundryvtt-premium-content#1766` [Bug]: Spell Mastery and Signature Spells enchantments use removed `system.preparation.mode` key | 2026-11-10 (completed) | #767, #7, #6, #5, #4 |
 | `foundryvtt-premium-content#1784` [Bug]: Silvered Weapon enchantment should set "magical" on item | 2026-11-12 (completed) | #714 |
+| `foundryvtt-premium-content#1792` [Bug]: Swallow feature's save DC calculations are swapped | 2026-11-20 (completed) | #712 |
 | `foundryvtt-premium-content#1800` [Bug]: Iron Flask Table doesn't link to all possible actors | 2026-11-12 (completed) | #756 |
 | `foundryvtt-premium-content#1803` [Bug]: Carrion Crawler's Paralyzing Tentacles has an emanation | 2026-11-17 (completed) | #762 |
 | `foundryvtt-premium-content#1805` [Bug]: Wrong link on Deck of Illusions Roll table | 2026-11-12 (completed) | #756 |
 | `foundryvtt-premium-content#1807` [Bug]: Wrong Link on Ring of Resistance: Damage Type and Gemstone Roll Tabe | 2026-11-12 (completed) | #775 |
 | `foundryvtt-premium-content#1808` [Bug]: No Spell-Links on Magic Item Staff of Woodlands | 2026-11-12 (completed) | #776 |
+| `foundryvtt-premium-content#1814` [Bug]: Ultroloth's Dispel Magic via Fiendish Guile should be Bonus Action | 2026-11-20 (completed) | #356 |
+| `foundryvtt-premium-content#1817` [Bug]: Ancient Green Dragon's breath should recharge on 5-6 | 2026-11-20 (completed) | #774, #773, #772, #771, #506, #505, #481, #480, #479, #478, #477, #476, #475, #474, #473, #472, #471, #470, #469, #467, #466, #464, #463, #461, #460, #458, #457, #455, #454, #452, #451, #450, #448, #447, #445, #444, #442, #440, #436, #434, #433, #431, #429, #428, #426, #424, #423, #421, #420, #418, #416, #415, #413, #412, #410, #408, #407, #405, #404, #402, #400, #399, #397, #395, #394, #392, #390, #388, #387, #386, #384, #382, #381, #379, #378, #376, #374, #372, #371, #369, #368, #366, #365, #363, #361, #360, #358, #356, #355, #354, #352, #350, #345, #343, #342, #340, #338, #330, #329, #327, #325, #324, #322, #321, #319, #317, #315, #314, #312, #310, #309, #308, #307, #306, #305, #303, #301, #298, #296, #293, #290, #288, #285, #283, #280, #278, #275, #273, #270, #268, #265, #263, #261, #258, #256, #253, #251, #248, #246, #243, #240, #238, #230, #227, #225, #222, #220, #217, #214, #212, #209, #207, #204, #201, #199, #196, #193, #191, #188, #186, #183, #176, #173, #171, #168, #166, #163, #160, #158, #155, #153, #152, #151, #150, #149, #148, #147, #146, #145, #144, #143, #142, #141, #140, #139, #138, #137, #136, #135, #134, #133, #132, #131, #130, #129, #128, #127, #126, #125, #124, #123, #122, #121, #120, #119, #118, #117, #116, #115, #114, #113, #112, #111, #110, #109, #108, #107, #106, #105, #104, #103 |
 | `foundryvtt-premium-content#798` [Bug]: Some effects, like that of Mind Sliver, have incorrect duration for "before the end of your next turn" | 2025-02-27 (completed) | #62 |
 | `foundryvtt-premium-content#927` [Bug]: One of the skellyboy tokens in the Dungeon Master's Guide has the wrong ring scale correction | 2026-11-12 (completed) | #757 |
 | `foundryvtt/dnd5e#5772` D&D 5.04 Hex and Hunters Mark Damage Activities don't allow critical damage | 2025-06-20 (completed) | #766, #432, #430, #427, #425 |
@@ -114,6 +129,8 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-21 | `foundryvtt-premium-content#1891` [[Bug]: Xorn: range on Charge ability](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1891) | dnd-monster-manual |
+| 2026-11-21 | `foundryvtt-premium-content#1892` [[Bug]: Abominable Yeti's Chilling Gaze description](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1892) | dnd-monster-manual |
 | 2026-11-19 | `foundryvtt-premium-content#1883` [[Bug] Regression - Lineages Active Effects](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1883) | dnd-players-handbook |
 | 2026-11-16 | `foundryvtt-premium-content#1874` [[Bug]: Bladesong foundry note is outdated](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1874) | dnd-heroes-faerun |
 | 2026-11-15 | `foundryvtt-premium-content#1868` [[Bug]: Boar's Gore attack damage](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1868) | dnd-monster-manual |
@@ -143,4 +160,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 27 | 18 | 1 | 8 | 2 |
-| foundryvtt/foundryvtt-premium-content | 97 | 80 | 8 | 26 | 21 |
+| foundryvtt/foundryvtt-premium-content | 98 | 80 | 12 | 26 | 23 |
