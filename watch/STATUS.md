@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-21. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-22. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14); Dungeon Master's Guide (2024) 2.0.0 → **3.0.0** (first seen 2026-11-20) |
 | **To judge** | 10 same-document pair(s), 3 possible |
 | **Cited upstream reports now closed** | 56 |
-| **New to us** | 25 open report(s), 2 first seen today |
+| **New to us** | 26 open report(s), 1 first seen today |
 
 ## To judge
 
@@ -129,6 +129,7 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-22 | `foundryvtt-premium-content#1899` [[Bug]: Trail to the Temple - Mystery Man icon](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1899) | dnd-arcana-unleashed |
 | 2026-11-21 | `foundryvtt-premium-content#1891` [[Bug]: Xorn: range on Charge ability](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1891) | dnd-monster-manual |
 | 2026-11-21 | `foundryvtt-premium-content#1892` [[Bug]: Abominable Yeti's Chilling Gaze description](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1892) | dnd-monster-manual |
 | 2026-11-19 | `foundryvtt-premium-content#1883` [[Bug] Regression - Lineages Active Effects](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1883) | dnd-players-handbook |
@@ -160,4 +161,4 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
 | foundryvtt/dnd5e | 27 | 18 | 1 | 8 | 2 |
-| foundryvtt/foundryvtt-premium-content | 98 | 80 | 12 | 26 | 23 |
+| foundryvtt/foundryvtt-premium-content | 99 | 80 | 12 | 26 | 24 |
