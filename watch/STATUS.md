@@ -1,15 +1,15 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-22. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-23. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
 | **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14); Dungeon Master's Guide (2024) 2.0.0 → **3.0.0** (first seen 2026-11-20) |
-| **To judge** | 10 same-document pair(s), 3 possible |
+| **To judge** | 11 same-document pair(s), 3 possible |
 | **Cited upstream reports now closed** | 56 |
-| **New to us** | 26 open report(s), 1 first seen today |
+| **New to us** | 29 open report(s), 3 first seen today |
 
 ## To judge
 
@@ -46,6 +46,9 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt/dnd5e#7751` [open] Persistent Rage feature does not recover rages (dnd5e) https://github.com/foundryvtt/dnd5e/issues/7751
   → our #28 SRD 2024 (dnd5e system) — Persistent Rage (phbbrbPersistent): restores Rage by a scale value that doesn't exist (`rage`; the scale is `rages`)
   (matched on "Persistent Rage" in the title)
+- `foundryvtt/dnd5e#7770` [open] Bestow Curse: "Cursed Wisdom" effect has the save key twice, Wisdom checks get no Disadvantage (dnd5e) https://github.com/foundryvtt/dnd5e/issues/7770
+  → our #612 SRD 2024 (dnd5e system) — Bestow Curse (phbsplBestowCurs): Cursed Wisdom imposes Disadvantage on Wisdom saves twice and never on Wisdom checks
+  (matched on id phbsplBestowCurs)
 
 ### Possible (a name in the body only)
 
@@ -129,6 +132,9 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | First seen | Report | Package |
 | --- | --- | --- |
+| 2026-11-23 | `foundryvtt-premium-content#1900` [[Bug]: Elemental Smite update for PHB 3.0.0](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1900) | dnd-heroes-faerun |
+| 2026-11-23 | `foundryvtt-premium-content#1901` [[Bug]:  Pyarados Militia - Map issues](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1901) | dnd-arcana-unleashed |
+| 2026-11-23 | `foundryvtt-premium-content#1902` [[Bug]: Potent Stone Mighty Build faulty active effect](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1902) | dnd-arcana-unleashed |
 | 2026-11-22 | `foundryvtt-premium-content#1899` [[Bug]: Trail to the Temple - Mystery Man icon](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1899) | dnd-arcana-unleashed |
 | 2026-11-21 | `foundryvtt-premium-content#1891` [[Bug]: Xorn: range on Charge ability](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1891) | dnd-monster-manual |
 | 2026-11-21 | `foundryvtt-premium-content#1892` [[Bug]: Abominable Yeti's Chilling Gaze description](https://github.com/foundryvtt/foundryvtt-premium-content/issues/1892) | dnd-monster-manual |
@@ -160,5 +166,5 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 27 | 18 | 1 | 8 | 2 |
-| foundryvtt/foundryvtt-premium-content | 99 | 80 | 12 | 26 | 24 |
+| foundryvtt/dnd5e | 28 | 18 | 2 | 8 | 2 |
+| foundryvtt/foundryvtt-premium-content | 102 | 80 | 12 | 26 | 27 |

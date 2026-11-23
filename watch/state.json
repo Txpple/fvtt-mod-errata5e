@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-22",
+ "lastScan": "2026-11-23",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -219,6 +219,24 @@
    "title": "Periodically/regularly update embedded items in SRD actors to keep up with updated \"canonical\" versions",
    "package": "dnd5e",
    "url": "https://github.com/foundryvtt/dnd5e/issues/1338"
+  },
+  "foundryvtt-premium-content#1902": {
+   "firstSeen": "2026-11-23",
+   "title": "[Bug]: Potent Stone Mighty Build faulty active effect",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1902"
+  },
+  "foundryvtt-premium-content#1901": {
+   "firstSeen": "2026-11-23",
+   "title": "[Bug]:  Pyarados Militia - Map issues",
+   "package": "dnd-arcana-unleashed",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1901"
+  },
+  "foundryvtt-premium-content#1900": {
+   "firstSeen": "2026-11-23",
+   "title": "[Bug]: Elemental Smite update for PHB 3.0.0",
+   "package": "dnd-heroes-faerun",
+   "url": "https://github.com/foundryvtt/foundryvtt-premium-content/issues/1900"
   },
   "foundryvtt-premium-content#1899": {
    "firstSeen": "2026-11-22",
