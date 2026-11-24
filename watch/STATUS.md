@@ -1,6 +1,6 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-23. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-24. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
@@ -9,7 +9,7 @@ a day with something to act on, and the verdicts on its pairs are the run notes 
 | **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14); Dungeon Master's Guide (2024) 2.0.0 → **3.0.0** (first seen 2026-11-20) |
 | **To judge** | 11 same-document pair(s), 3 possible |
 | **Cited upstream reports now closed** | 56 |
-| **New to us** | 29 open report(s), 3 first seen today |
+| **New to us** | 29 open report(s), 0 first seen today |
 
 ## To judge
 
