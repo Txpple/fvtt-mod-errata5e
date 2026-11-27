@@ -59,3 +59,4 @@ One row per run of `node tools/upstream-watch.mjs`, oldest first; a rerun on the
 | 2026-11-24 | dnd5e system 6.1.1; Player's Handbook (2024) 3.0.0; Dungeon Master's Guide (2024) 3.0.0 | 11 + 3 | 0 | 0 | [yes](2026-11-24.md) |
 | 2026-11-25 | dnd5e system 6.1.1; Player's Handbook (2024) 3.0.0; Dungeon Master's Guide (2024) 3.0.0 | 11 + 3 | 0 | 0 | [yes](2026-11-25.md) |
 | 2026-11-26 | dnd5e system 6.1.1; Player's Handbook (2024) 3.0.0; Dungeon Master's Guide (2024) 3.0.0 | 11 + 3 | 0 | 0 | [yes](2026-11-26.md) |
+| 2026-11-27 | Foundry VTT 14.371; dnd5e system 6.1.2; Player's Handbook (2024) 3.0.0; Dungeon Master's Guide (2024) 3.0.0 | 11 + 3 | 2 | 0 | [yes](2026-11-27.md) |

@@ -13,8 +13,8 @@ When **Latest published** is newer than **Reviewed**, the package needs a versio
 <!-- versions:start -->
 | Package | Name | Reviewed | Reviewed on | Latest published | First seen |
 | --- | --- | --- | --- | --- | --- |
-| foundry | Foundry VTT | 14.370 | 2026-11-06 | 14.370 | 2026-11-04 |
-| dnd5e | dnd5e system | 6.0.6 | 2026-10-08 | 6.1.1 | 2026-11-17 |
+| foundry | Foundry VTT | 14.370 | 2026-11-06 | 14.371 | 2026-11-27 |
+| dnd5e | dnd5e system | 6.0.6 | 2026-10-08 | 6.1.2 | 2026-11-27 |
 | dnd-players-handbook | Player's Handbook (2024) | 2.2.0 | 2026-10-01 | 3.0.0 | 2026-11-14 |
 | dnd-dungeon-masters-guide | Dungeon Master's Guide (2024) | 2.0.0 | 2026-10-01 | 3.0.0 | 2026-11-20 |
 | dnd-monster-manual | Monster Manual (2024) | 1.4.0 | 2026-10-01 | 1.4.0 | 2026-10-01 |

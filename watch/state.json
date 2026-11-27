@@ -1,5 +1,5 @@
 {
- "lastScan": "2026-11-26",
+ "lastScan": "2026-11-27",
  "judged": {
   "260=foundryvtt-premium-content#1666": {
    "verdict": "different",
@@ -385,9 +385,9 @@
  },
  "cited": {
   "foundryvtt/dnd5e#7597": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-26",
    "title": "D&D Modern Content Polymorph Spell No Transform Activity",
    "url": "https://github.com/foundryvtt/dnd5e/issues/7597",
    "package": "dnd5e",
@@ -1796,9 +1796,9 @@
    ]
   },
   "foundryvtt/dnd5e#7551": {
-   "state": "open",
-   "reason": null,
-   "closedAt": null,
+   "state": "closed",
+   "reason": "completed",
+   "closedAt": "2026-11-26",
    "title": "Statblock mistake in modern content",
    "url": "https://github.com/foundryvtt/dnd5e/issues/7551",
    "package": "dnd5e",

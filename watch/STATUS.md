@@ -1,14 +1,14 @@
 # Upstream watch
 
-What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-26. Versions are tracked in
+What the daily watch (`node tools/upstream-watch.mjs`) found at its last run, 2026-11-27. Versions are tracked in
 [VERSIONS.md](../VERSIONS.md); every run adds a row to [LOG.md](LOG.md); a dated digest (`YYYY-MM-DD.md`) is written only on
 a day with something to act on, and the verdicts on its pairs are the run notes under it.
 
 | | |
 | --- | --- |
-| **Version reviews due** | dnd5e system 6.0.6 → **6.1.1** (first seen 2026-11-17); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14); Dungeon Master's Guide (2024) 2.0.0 → **3.0.0** (first seen 2026-11-20) |
+| **Version reviews due** | Foundry VTT 14.370 → **14.371** (first seen 2026-11-27); dnd5e system 6.0.6 → **6.1.2** (first seen 2026-11-27); Player's Handbook (2024) 2.2.0 → **3.0.0** (first seen 2026-11-14); Dungeon Master's Guide (2024) 2.0.0 → **3.0.0** (first seen 2026-11-20) |
 | **To judge** | 11 same-document pair(s), 3 possible |
-| **Cited upstream reports now closed** | 56 |
+| **Cited upstream reports now closed** | 58 |
 | **New to us** | 29 open report(s), 0 first seen today |
 
 ## To judge
@@ -43,10 +43,10 @@ record a pair that is with `node tools/upstream-watch.mjs --record <ours>=<upstr
 - `foundryvtt-premium-content#1894` [open] [Bug]: Beholder Zombie Fear Ray (dnd-monster-manual) https://github.com/foundryvtt/foundryvtt-premium-content/issues/1894
   → our #369 Monster Manual (2024) — Beholder (mmBeholder000000): Petrification Ray petrifies on the first failure; no immunity to Prone
   (matched on "Beholder" in the title)
-- `foundryvtt/dnd5e#7751` [open] Persistent Rage feature does not recover rages (dnd5e) https://github.com/foundryvtt/dnd5e/issues/7751
+- `foundryvtt/dnd5e#7751` [closed, completed] Persistent Rage feature does not recover rages (dnd5e) https://github.com/foundryvtt/dnd5e/issues/7751
   → our #28 SRD 2024 (dnd5e system) — Persistent Rage (phbbrbPersistent): restores Rage by a scale value that doesn't exist (`rage`; the scale is `rages`)
   (matched on "Persistent Rage" in the title)
-- `foundryvtt/dnd5e#7770` [open] Bestow Curse: "Cursed Wisdom" effect has the save key twice, Wisdom checks get no Disadvantage (dnd5e) https://github.com/foundryvtt/dnd5e/issues/7770
+- `foundryvtt/dnd5e#7770` [closed, completed] Bestow Curse: "Cursed Wisdom" effect has the save key twice, Wisdom checks get no Disadvantage (dnd5e) https://github.com/foundryvtt/dnd5e/issues/7770
   → our #612 SRD 2024 (dnd5e system) — Bestow Curse (phbsplBestowCurs): Cursed Wisdom imposes Disadvantage on Wisdom saves twice and never on Wisdom checks
   (matched on id phbsplBestowCurs)
 
@@ -123,7 +123,9 @@ Our open issues cite these, and the vendor has closed them: re-check each at the
 | `foundryvtt/dnd5e#5772` D&D 5.04 Hex and Hunters Mark Damage Activities don't allow critical damage | 2025-06-20 (completed) | #766, #432, #430, #427, #425 |
 | `foundryvtt/dnd5e#6132` 2024 Alchemist's Fire has "Half Damage" on save. Should be "No Damage" | 2025-09-09 (completed) | #3 |
 | `foundryvtt/dnd5e#6857` Bestow Curse (2024)'s "Curse Ability" activity does not include the potential effects | 2026-03-31 (completed) | #610 |
+| `foundryvtt/dnd5e#7551` Statblock mistake in modern content | 2026-11-26 (completed) | #146 |
 | `foundryvtt/dnd5e#7586` Sneak Attack activity does not consume or recover its use | 2026-10-22 (completed) | #784 |
+| `foundryvtt/dnd5e#7597` D&D Modern Content Polymorph Spell No Transform Activity | 2026-11-26 (completed) | #787 |
 
 ## New to us
 
@@ -166,5 +168,5 @@ tested on the sandbox, and filed as an issue of ours if it reproduces; the watch
 
 | Upstream repo | Open bug reports on our packages | Cited by our issues | Pairs to judge | Judged different | New to us |
 | --- | --- | --- | --- | --- | --- |
-| foundryvtt/dnd5e | 28 | 18 | 2 | 8 | 2 |
+| foundryvtt/dnd5e | 24 | 18 | 2 | 8 | 2 |
 | foundryvtt/foundryvtt-premium-content | 102 | 80 | 12 | 26 | 27 |
